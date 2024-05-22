@@ -6,6 +6,7 @@ import heroBG from "../../../public/assets/hero-bg.png";
 import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
 import Image1 from "../../../public/assets/image-2.png";
+import Image1Mobile from "../../../public/assets/image-2-mobile.png";
 import Button from "@/components/Button";
 
 const LandingPage: React.FC = () => {
@@ -63,7 +64,49 @@ const LandingPage: React.FC = () => {
                     </div>
                 </div>
             </section>
-          
+            <section className={`flex flex-col py-8 ${isMobile ? "items-center" : ""}`}>
+                {isMobile ? (
+                    <>
+                        <div className="flex flex-col gap-8">
+                            <h1 className="font-extrabold text-3xl text-balance">
+                                Cansado de <span className="text-primary">turnos exaustivos</span>, de passar datas comemorativas longe da família e se sentir
+                                <span className="text-primary"> desvalorizado</span> profissionalmente?
+                            </h1>
+                            <Image
+                                src={Image1}
+                                alt="Imagem de enfermeira sentada no chão"
+                            />
+                            <h1 className="font-medium text-2xl text-balance">
+                                Você ama a sua profissão, ama cuidar das pessoas, mas sabe que pode ir além e conquistar a tão sonhada <span className="italic">independência financeira</span> dentro da área da saúde!
+                            </h1>
+                            <h1 className="font-medium text-2xl text-balance">
+                                E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
+                            </h1>
+
+                        </div>
+                    </>
+                ) : (
+                    <div className="flex flex-row gap-[3rem]">
+                        <Image
+                            src={Image1}
+                            alt="Imagem de enfermeira sentada no chão"
+                        />
+                        <div className="flex flex-col justify-center gap-10">
+                            <h1 className="font-extrabold text-3xl text-balance">
+                                Cansado de <span className="text-primary">turnos exaustivos</span>, de passar datas comemorativas longe da família e se sentir
+                                <span className="text-primary"> desvalorizado</span> profissionalmente?
+                            </h1>
+                            <h1 className="font-medium text-2xl text-balance">
+                                Você ama a sua profissão, ama cuidar das pessoas, mas sabe que pode ir além e conquistar a tão sonhada <span className="italic">independência financeira</span> dentro da área da saúde!
+                            </h1>
+                            <h1 className="font-medium text-2xl text-balance">
+                                E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
+                            </h1>
+                        </div>
+                    </div>
+                )}
+            </section>
+
         </main>
     );
 };
