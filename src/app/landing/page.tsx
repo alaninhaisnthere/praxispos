@@ -5,6 +5,7 @@ import Image from "next/image";
 import heroBG from "../../../public/assets/hero-bg.png";
 import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
+import Image1 from "../../../public/assets/image-2.png";
 import Button from "@/components/Button";
 
 const LandingPage: React.FC = () => {
@@ -25,7 +26,7 @@ const LandingPage: React.FC = () => {
     }, []);
 
     return (
-        <>
+        <main>
             <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
                 <div className="absolute inset-0">
                     <Image
@@ -36,8 +37,8 @@ const LandingPage: React.FC = () => {
                         priority
                     />
                 </div>
-                <div className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "ml-4 bottom-48" : "ml-80"}`}>
-                    <div className={`mb-${isMobile ? 1 : 5}`}>
+                <div className={`relative z-10 flex flex-col items-left justify-center h-full  px-8 ${isMobile ? "gap-1 ml-4 bottom-48" : "gap-5 ml-80"}`}>
+                    <div className={`mb-${isMobile ? 1 : 3}`}>
                         <Image
                             src={logoHero}
                             alt="Logo Hero"
@@ -45,10 +46,10 @@ const LandingPage: React.FC = () => {
                             height={isMobile ? 60 : 100}
                         />
                     </div>
-                    <p className={`text-white text-left font-semibold text-sm tracking-wide mb-${isMobile ? 6 : 8} ${isMobile ? "text-xs" : ""}`}>
+                    <p className={`text-white text-left font-semibold text-sm tracking-wide mb-${isMobile ? "" : 8} ${isMobile ? "text-xs" : ""}`}>
                         ENFERMEIRO - BIOMÉDICO - FARMACÊUTICO
                     </p>
-                    <h1 className={`text-white text-left font-bold text-5xl ${isMobile ? "text-3xl my-3" : ""}`}>
+                    <h1 className={`text-white text-left font-bold ${isMobile ? "text-3xl my-3" : "text-5xl"}`}>
                         UMA NOVA <br />
                         HISTÓRIA ESTÁ <br />
                         PARA COMEÇAR, <br />
@@ -60,10 +61,10 @@ const LandingPage: React.FC = () => {
                             Seu futuro a um clique
                         </Button>
                     </div>
-
                 </div>
             </section>
-        </>
+          
+        </main>
     );
 };
 
