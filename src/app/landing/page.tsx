@@ -38,7 +38,7 @@ const LandingPage: React.FC = () => {
                         priority
                     />
                 </div>
-                <div className={`relative z-10 flex flex-col items-left justify-center h-full  px-8 ${isMobile ? "gap-1 ml-4 bottom-48" : "gap-5 ml-80"}`}>
+                <div className={`relative z-10 flex flex-col items-left justify-center h-full  px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-80"}`}>
                     <div className={`mb-${isMobile ? 1 : 3}`}>
                         <Image
                             src={logoHero}
@@ -82,7 +82,12 @@ const LandingPage: React.FC = () => {
                             <h1 className="font-medium text-2xl text-balance">
                                 E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
                             </h1>
-
+                            <h1 className="font-bold text-2xl text-balance">
+                                Sim! Você, <span className="italic text-[#196193]">enfermeiro</span>, <span className="italic text-[#196193]">biomédico</span> ou <span className="italic text-[#196193]">farmacêutico</span>, pode mudar o rumo da sua carreira profissional fazendo parte do mercado da estética!
+                            </h1>
+                            <h1 className="font-bold text-2xl text-balance">
+                                Receba em 1 dia de consultório o que levaria em plantões exaustivos, tendo mais qualidade de vida, trabalhando com tranquilidade e segurança e se tornando uma <span className="italic text-[#196193]">referência</span> na área.
+                            </h1>
                         </div>
                     </>
                 ) : (
@@ -91,7 +96,7 @@ const LandingPage: React.FC = () => {
                             src={Image1}
                             alt="Imagem de enfermeira sentada no chão"
                         />
-                        <div className="flex flex-col justify-center gap-10">
+                        <div className="flex flex-col justify-center gap-8">
                             <h1 className="font-extrabold text-3xl text-balance">
                                 Cansado de <span className="text-primary">turnos exaustivos</span>, de passar datas comemorativas longe da família e se sentir
                                 <span className="text-primary"> desvalorizado</span> profissionalmente?
@@ -102,6 +107,14 @@ const LandingPage: React.FC = () => {
                             <h1 className="font-medium text-2xl text-balance">
                                 E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
                             </h1>
+                            <h1 className="font-bold text-2xl text-balance">
+                                Sim! Você, <span className="italic text-[#196193]">enfermeiro</span>, <span className="italic text-[#196193]">biomédico</span> ou <span className="italic text-[#196193]">farmacêutico</span>, pode mudar o rumo da sua carreira profissional fazendo parte do mercado da estética!
+                            </h1>
+                            <h1 className="font-bold text-2xl text-balance">
+                                Receba em 1 dia de consultório o que levaria em plantões exaustivos, tendo mais qualidade de vida, trabalhando com tranquilidade e segurança e se tornando uma <span className="italic text-[#196193]">referência</span> na área.
+                            </h1>
+
+
                         </div>
                     </div>
                 )}
