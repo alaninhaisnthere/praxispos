@@ -64,8 +64,8 @@ const LandingPage: React.FC = () => {
                     </div>
                 </div>
             </section>
-            {/* Primeira seção */}
-            <section className={`flex flex-col pt-8 pb-8 ${isMobile ? "items-center" : ""}`}>
+            {/* 1a seção */}
+            <section className={`flex flex-col pt-8 pb-4 ${isMobile ? "items-center pb-2" : ""}`}>
                 {isMobile ? (
                     <div className="flex flex-col gap-8">
                         <h1 className="font-extrabold text-3xl text-wrap">
@@ -117,13 +117,13 @@ const LandingPage: React.FC = () => {
                     </div>
                 )}
             </section>
-            {/* Segunda seção */}
+
+            {/* 2a seção */}
             <section className={`flex flex-col py-4 ${isMobile ? "items-center" : ""}`}>
                 {isMobile ? (
                     <div className="flex flex-col items-center gap-4">
-                        <h1 className="font-bold text-xl text-[#FAFAFA] text-center tracking-wide bg-gradient-to-r from-[#196193] to-[#AA8E4B] px-8 mb-8">
-                            Apresento a você a <br />
-                            Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
+                        <h1 className="font-bold text-2xl text-center text-wrap text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
+                            Apresento a você a Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
                         </h1>
                         <Image
                             src={Image2}
@@ -138,15 +138,20 @@ const LandingPage: React.FC = () => {
                             </ul>
                             além de aulas de biossegurança e empreendedorismo.
                         </h1>
-                        <h1 className="font-bold text-2xl text-wrap leading-relaxed">
+                        <h1 className="font-bold text-2xl text-wrap leading-relaxed mb-4">
                             Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                         </h1>
+                        <h1 className="font-bold text-xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-4">
+                            Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
+                        </h1>
+                        <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
+                            Quero saber mais
+                        </Button>
                     </div>
                 ) : (
-                    <div className="flex flex-col gap-8">
-                        <h1 className="font-bold text-3xl text-[#FAFAFA] text-center tracking-wide bg-gradient-to-r from-[#196193] to-[#AA8E4B] px-8 py-4">
-                            Apresento a você a <br />
-                            Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
+                    <div className="flex flex-col gap-8 pb-8">
+                        <h1 className="font-bold text-5xl text-center text-wrap tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
+                            Apresento a você a Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
                         </h1>
 
                         <div className="flex flex-row gap-8 pt-8">
@@ -154,7 +159,7 @@ const LandingPage: React.FC = () => {
                                 src={Image2}
                                 alt="Imagem de enfermeira sentada no chão"
                             />
-                            <div className="flex flex-col justify-center gap-4">
+                            <div className="flex flex-col justify-center gap-6">
                                 <h1 className="font-medium text-2xl text-wrap leading-relaxed">
                                     Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como:
                                     <ul className="font-bold list-disc list-inside text-primary mt-2">
@@ -167,6 +172,12 @@ const LandingPage: React.FC = () => {
                                 <h1 className="font-bold text-2xl text-wrap leading-relaxed">
                                     Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                                 </h1>
+                                <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-4">
+                                    Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
+                                </h1>
+                                <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
+                                    Quero saber mais
+                                </Button>
                             </div>
                         </div>
                     </div>
