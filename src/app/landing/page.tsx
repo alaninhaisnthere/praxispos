@@ -7,6 +7,8 @@ import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
 import Image1 from "../../../public/assets/image-2.png";
 import Image2 from "../../../public/assets/image-1.png";
+import Target from "../../../public/assets/target.png";
+import Program from "../../../public/assets/program.png";
 import Button from "@/components/Button";
 
 const LandingPage: React.FC = () => {
@@ -183,7 +185,61 @@ const LandingPage: React.FC = () => {
                     </div>
                 )}
             </section>
-        </main>
+
+            {/* 3a seção */}
+            <section className={`flex flex-col py-4 ${isMobile ? "items-center" : ""}`}>
+                {isMobile ? (
+                    <div className="flex flex-col items-center gap-4">
+                    </div>
+                ) : (
+                    <div className="flex flex-row gap-8 pb-8 py-5 px-5 rounded-2xl bg-[#196193]">
+                        <div className="flex flex-col gap-2 bg-gradient-to-r to-[#CBAA5F] from-[#9A792D] py-4 px-16 rounded-2xl">
+                            <div className="flex flex-col gap-4 justify-center items-center">
+                                <Image
+                                    src={Target}
+                                    alt="Imagem de enfermeira sentada no chão"
+                                    width={50}
+                                    height={50}
+                                />
+                                <h1 className="font-bold text-white text-2xl">
+                                    Público-alvo
+                                </h1>
+                            </div>
+                            <h1 className="flex flex-col justify-center font-medium text-2xl text-wrap leading-relaxed">
+                                Graduados em:
+                                <ul className="font-semibold">
+                                    <li>Enfermagem</li>
+                                    <li>Biomedicina </li>
+                                    <li>Farmácia </li>
+                                </ul>
+                            </h1>
+                        </div>
+                        <div className="flex flex-col gap-2 bg-gradient-to-r to-[#CBAA5F] from-[#9A792D] py-4 px-8 rounded-2xl">
+                            <div className="flex flex-col gap-4 justify-center items-center">
+                                <Image
+                                    src={Program}
+                                    alt="Programação do curso"
+                                    width={50}
+                                    height={50}
+                                />
+                                <h1 className="font-bold text-white text-2xl">
+                                    Programa Completo e Atualizado
+                                </h1>
+                            </div>
+                            <h1 className="flex flex-col justify-center font-medium text-2xl text-wrap leading-relaxed">
+                                <ul className="font-semibold">
+                                    <li>500 horas de curso, distribuídas em 365 horas de teoria e 135 horas de prática.
+                                    </li>
+                                    <li>21 módulos abrangendo os tópicos mais relevantes e atuais da estética avançada.
+                                    </li>
+                                    <li>16 módulos presenciais, realizados um final de semana por mês, na cidade de Curitiba, no bairro Portão, dentro da Gran Universidade. </li>
+                                </ul>
+                            </h1>
+                        </div>
+                    </div>
+                )}
+            </section>
+        </main >
     );
 };
 
