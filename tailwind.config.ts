@@ -25,12 +25,7 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          light: "hsl(var(--primary-light))",
-          dark: "hsl(var(--primary-dark))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+        primary: "#9C7F4A", // Definindo a cor primary como #9C7F4A
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
