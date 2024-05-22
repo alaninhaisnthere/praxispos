@@ -25,10 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <NextUIProvider>
-          <main className="text-balance min-h-screen container">
+          <section className="text-balance min-h-screen container">
             {children}
             <ScrollToTopButton />
-          </main>
+          </section>
         </NextUIProvider>
       </body>
     </html>

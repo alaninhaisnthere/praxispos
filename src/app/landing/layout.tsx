@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Práxis Pós-graduação",
-  description: "This is a custom landing page",
+  description: "Landing page Práxis Pós-Graduação",
 };
 
 export default function LandingLayout({
@@ -17,12 +17,12 @@ export default function LandingLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={montserrat.className}>
         <NextUIProvider>
-          <main className="text-balance min-h-screen container">
+          <section className="text-balance min-h-screen container">
             {children}
-          </main>
+          </section>
         </NextUIProvider>
       </body>
     </html>
