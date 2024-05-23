@@ -7,6 +7,8 @@ import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
 import Image1 from "../../../public/assets/image-2.png";
 import Image2 from "../../../public/assets/image-1.png";
+import Image3 from "../../../public/assets/image-3.png";
+import Image4 from "../../../public/assets/image-4.png";
 import arrowR from "../../../public/assets/arrow-r.png";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
@@ -260,7 +262,63 @@ const LandingPage: React.FC = () => {
                 </div>
             </section>
 
+            {/* 5a seção */}
+            <section>
+                {isMobile ? (
+                    <div className="flex flex-col items-center gap-4 py-8">
+                        <h1 className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-3xl text-center" : "text-2xl"}`}>
+                            POR QUE ESCOLHER O INSTITUTO PRÁXIS?
+                        </h1>
+                        <Image
+                            src={Image4}
+                            alt="Imagem"
+                            width={400}
+                            height={400}
+                        />
+                        <p className="font-medium text-lg text-pretty leading-relaxed">
+                            Nossa instituição possui uma longa trajetória de sucesso na formação de profissionais na área da estética. Estamos em um novo momento, com uma marca renovada, mas mantendo o compromisso com a <b>qualidade</b> e a <b>inovação educacional</b>.
+                        </p>
+                        <p className="font-medium text-lg text-pretty leading-relaxed">
+                            Queremos que você, <i>Enfermeiro</i>, <i>Biomédico</i> e <i>Farmacêutico</i>, faça parte da nossa família e se una a nós com um propósito comum: <b>transformar</b> a sua vida e fazer a <b>diferença</b> no mundo da estética e da saúde.
+                            Acreditamos que a <b>educação</b> vai além dos livros e das salas de aula. Trata-se de <b>experiências reais</b>, <b>conexões humanas</b> e <b>crescimento pessoal</b>.
+                        </p>
+                        <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
+                            Vamos mudar o rumo do seu futuro profissional?                        </h1>
+                        <Button variant="default" size="default" className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
+                            QUERO MAIS INFORMAÇÕES
+                        </Button>
+                    </div>
+                ) : (
+                    <div className="flex flex-col gap-8 py-8">
+                        <div className="flex flex-row gap-10 pt-8">
+                            <div className="flex flex-col justify-center gap-6">
+                                <h1 className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-2xl" : "text-2xl"}`}>
+                                    POR QUE ESCOLHER O INSTITUTO PRÁXIS?
+                                </h1>
+                                <p className="font-medium text-lg text-pretty leading-relaxed">
+                                    Nossa instituição possui uma longa trajetória de sucesso na formação de profissionais na área da estética. Estamos em um novo momento, com uma marca renovada, mas mantendo o compromisso com a <b>qualidade</b> e a <b>inovação educacional</b>.
+                                </p>
+                                <p className="font-medium text-lg text-pretty leading-relaxed">
+                                    Queremos que você, <i>Enfermeiro</i>, <i>Biomédico</i> e <i>Farmacêutico</i>, faça parte da nossa família e se una a nós com um propósito comum: <b>transformar</b> a sua vida e fazer a <b>diferença</b> no mundo da estética e da saúde.
+                                    Acreditamos que a <b>educação</b> vai além dos livros e das salas de aula. Trata-se de <b>experiências reais</b>, <b>conexões humanas</b> e <b>crescimento pessoal</b>.
+                                </p>
+                                <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
+                                    Vamos mudar o rumo do seu futuro profissional?                        </h1>
+                                <Button variant="default" size="default" className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
+                                    QUERO MAIS INFORMAÇÕES
+                                </Button>
 
+                            </div>
+                            <Image
+                                src={Image4}
+                                alt="Imagem"
+                                width={700}
+                                height={700}
+                            />
+                        </div>
+                    </div>
+                )}
+            </section>
         </main >
     );
 };
