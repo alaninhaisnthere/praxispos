@@ -10,6 +10,7 @@ import Image2 from "../../../public/assets/image-1.png";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
 import { Divider } from "@nextui-org/react";
+import Link from "next/link";
 
 const LandingPage: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -224,7 +225,14 @@ const LandingPage: React.FC = () => {
                         <h2 className="font-bold text-xl pb-2">Diploma Certificado pelo MEC:</h2>
                         <div className="flex items-start mb-2">
                             <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
-                            <p className="font-medium text-lg leading-relaxed">Clique aqui para verificar a nossa certificação junto ao MEC</p>
+                            <p className="font-medium text-lg leading-relaxed">
+                                <span>
+                                    <Link href="https://emec.mec.gov.br/emec/nova" className="font-semibold text-[#134169]">
+                                        Clique aqui
+                                    </Link>
+                                </span>
+                                <span> para verificar a nossa certificação junto ao MEC.</span>
+                            </p>
                         </div>
                     </div>
                     <Divider
