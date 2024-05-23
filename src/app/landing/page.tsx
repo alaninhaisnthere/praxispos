@@ -36,7 +36,7 @@ const LandingPage: React.FC = () => {
     }, []);
 
     return (
-        <main className="min-h-screen">
+        <main className="flex flex-col min-h-screen">
             <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
                 <div className="absolute inset-0">
                     <Image
@@ -368,7 +368,7 @@ const LandingPage: React.FC = () => {
             </section>
 
             {/* 8a seção */}
-            <section>
+            <section className="pb-10">
                 <FAQ />
             </section>
         </main >

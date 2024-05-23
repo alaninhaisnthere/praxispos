@@ -30,8 +30,8 @@ const Footer = () => {
             <Image
               src={logoHero}
               alt="Logo Hero"
-              width={isMobile ? 100 : 200}
-              height={isMobile ? 40 : 110}
+              width={isMobile ? 150 : 200}
+              height={isMobile ? 90 : 110}
             />
           </div>
           <div className={`text-center md:text-right ${isMobile ? "flex flex-col items-center" : ""}`}>
@@ -41,8 +41,8 @@ const Footer = () => {
             <p>+55 (41) 9246-0242</p>
             <p>Instituto Práxis, 2024.
               <br />
-              Todos os direitos reservados. <br />
-              Feito por Alana Oliveira.</p>
+              Todos os direitos reservados.</p>
+            <p className="text-sm"> Feito por Alana Oliveira.</p>
           </div>
         </div>
         <div className="mt-4 md:mt-0 text-center">

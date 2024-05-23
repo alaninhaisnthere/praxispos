@@ -19,13 +19,13 @@ export default function LandingLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <NextUIProvider>
-          <section className="text-balance min-h-fit container">
+          <section className="text-balance container flex-grow">
             {children}
           </section>
         </NextUIProvider>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
