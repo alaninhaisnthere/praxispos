@@ -7,7 +7,7 @@ import "../globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Práxis Pós-graduação",
+  title: "Pós-graduação Práxis",
   description: "Landing page Práxis Pós-Graduação",
 };
 

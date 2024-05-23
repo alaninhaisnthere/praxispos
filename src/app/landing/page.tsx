@@ -7,8 +7,6 @@ import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
 import Image1 from "../../../public/assets/image-2.png";
 import Image2 from "../../../public/assets/image-1.png";
-import HighlightsBG from "../../../public/assets//bg-highlights.png";
-import HighlightsBGMobile from "../../../public/assets/bg-highlights-mobile.png";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
 
@@ -134,20 +132,18 @@ const LandingPage: React.FC = () => {
                         />
                         <h1 className="flex flex-col justify-center font-medium text-2xl text-wrap leading-relaxed">
                             Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como:
-                            <ul className="font-bold list-disc list-inside text-primary mt-2">
-                                <li>bioestimuladores</li>
-                                <li>ozonioterapia</li>
-                                <li>harmonia facial</li>
-                            </ul>
+                            bioestimuladores
+                            ozonioterapia
+                            harmonia facial
                             além de aulas de biossegurança e empreendedorismo.
                         </h1>
-                        <h1 className="font-bold text-2xl text-wrap leading-relaxed mb-4">
+                        <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
                             Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                         </h1>
-                        <h1 className="font-bold text-xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-4">
+                        <h1 className="font-bold text-2xl text-center leading-relaxed mb-4">
                             Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                         </h1>
-                        <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
                             Quero saber mais
                         </Button>
                     </div>
@@ -157,25 +153,19 @@ const LandingPage: React.FC = () => {
                             Apresento a você a Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
                         </h1>
 
-                        <div className="flex flex-row gap-8 pt-8">
+                        <div className="flex flex-row gap-10 pt-8">
                             <Image
                                 src={Image2}
                                 alt="Imagem de enfermeira sentada no chão"
                             />
                             <div className="flex flex-col justify-center gap-6">
                                 <h1 className="font-medium text-2xl text-wrap leading-relaxed">
-                                    Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como:
-                                    <ul className="font-bold list-disc list-inside text-primary mt-2">
-                                        <li>bioestimuladores</li>
-                                        <li>ozonioterapia</li>
-                                        <li>harmonia facial</li>
-                                    </ul>
-                                    além de aulas de biossegurança e empreendedorismo.
+                                    Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como: bioestimuladores, ozonioterapia, harmonia facial, além de aulas de biossegurança e empreendedorismo.
                                 </h1>
-                                <h1 className="font-bold text-2xl text-wrap leading-relaxed">
+                                <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-2">
                                     Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                                 </h1>
-                                <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-4">
+                                <h1 className="font-bold text-2xl text-wrap leading-relaxed">
                                     Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                                 </h1>
                                 <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -188,7 +178,14 @@ const LandingPage: React.FC = () => {
             </section>
 
             {/* 3a seção */}
-            <section >
+            <section className="relative w-full py-10 my-5">
+                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]">
+                </div>
+                <div>
+                    <h1>
+
+                    </h1>
+                </div>
                 <CardSection />
             </section>
         </main >
