@@ -15,6 +15,7 @@ import CardSection from "@/components/CardSection";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 import Subjects from "@/components/Subjects";
+import FormComponent from "@/components/Forms";
 
 const LandingPage: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -265,7 +266,7 @@ const LandingPage: React.FC = () => {
             {/* 5a seção */}
             <section>
                 {isMobile ? (
-                    <div className="flex flex-col items-center gap-4 py-8">
+                    <div className="flex flex-col items-center gap-4 py-10">
                         <h1 className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-3xl text-center" : "text-2xl"}`}>
                             POR QUE ESCOLHER O INSTITUTO PRÁXIS?
                         </h1>
@@ -289,7 +290,7 @@ const LandingPage: React.FC = () => {
                         </Button>
                     </div>
                 ) : (
-                    <div className="flex flex-col gap-8 py-8">
+                    <div className="flex flex-col gap-8 py-10 mb-10">
                         <div className="flex flex-row gap-10 pt-8">
                             <div className="flex flex-col justify-center gap-6">
                                 <h1 className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-2xl" : "text-2xl"}`}>
@@ -329,6 +330,9 @@ const LandingPage: React.FC = () => {
                     objectFit="cover"
                 />
             </section>
+
+            {/* 7a seção */}
+            <FormComponent />
 
         </main >
     );
