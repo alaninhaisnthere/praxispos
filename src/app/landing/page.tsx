@@ -12,6 +12,7 @@ import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
+import Subjects from "@/components/Subjects";
 
 const LandingPage: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -147,7 +148,7 @@ const LandingPage: React.FC = () => {
                             Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                         </h1>
                         <Button variant="default" size="default" className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
-                        SIM, QUERO SABER MAIS!
+                            SIM, QUERO SABER MAIS!
                         </Button>
                     </div>
                 ) : (
@@ -251,6 +252,11 @@ const LandingPage: React.FC = () => {
                             <p className="font-medium text-lg leading-relaxed">Atendimento totalmente personalizado.</p>
                         </div>
                     </div>
+                    <Divider
+                        orientation="horizontal"
+                        style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                    />
+                    <Subjects />
                 </div>
             </section>
 
