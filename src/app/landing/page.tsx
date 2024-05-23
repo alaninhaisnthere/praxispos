@@ -181,11 +181,6 @@ const LandingPage: React.FC = () => {
             <section className="relative w-full py-10 my-5">
                 <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]">
                 </div>
-                <div>
-                    <h1>
-
-                    </h1>
-                </div>
                 <CardSection />
             </section>
         </main >

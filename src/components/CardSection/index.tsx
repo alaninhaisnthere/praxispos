@@ -38,7 +38,12 @@ const CardSection: React.FC = () => {
     }, []);
 
     return (
-         <section className={isMobile ? "flex flex-col py-4 items-center" : "flex flex-col py-4"}>
+        <section className={isMobile ? "flex flex-col py-4 items-center" : "flex flex-col py-4"}>
+            <div className="text-center mb-8">
+                <h1 className={`relative font-extrabold text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+                    DESCUBRA O MUNDO DA ESTÉTICA AVANÇADA!
+                </h1>
+            </div>
             {isMobile ? (
                 <div className="flex flex-col gap-8 justify-center">
                     <TiltCard
@@ -51,6 +56,7 @@ const CardSection: React.FC = () => {
                                     <li>Biomedicina </li>
                                     <li>Farmácia </li>
                                 </ul>
+                                (Necessário ensino superior completo)
                             </div>
                         }
                         image={Target}
@@ -95,6 +101,7 @@ const CardSection: React.FC = () => {
                                     <li>Biomedicina </li>
                                     <li>Farmácia </li>
                                 </ul>
+                                (Necessário ensino superior completo)
                             </div>
                         }
                         image={Target}
