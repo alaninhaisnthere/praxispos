@@ -25,6 +25,7 @@ export default function LandingLayout({
             {children}
           </section>
         </NextUIProvider>
+        <Footer />
       </body>
     </html>
   );
