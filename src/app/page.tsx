@@ -18,7 +18,7 @@ import Subjects from "@/components/Subjects";
 import FormComponent from "@/components/Forms";
 import FAQ from "@/components/FAQ";
 
-const LandingPage: React.FC = () => {
+export default function Home() {
     const [isMobile, setIsMobile] = useState<boolean>(false);
 
     useEffect(() => {
@@ -374,5 +374,3 @@ const LandingPage: React.FC = () => {
         </main >
     );
 };
-
-export default LandingPage;
