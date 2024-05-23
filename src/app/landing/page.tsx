@@ -7,6 +7,7 @@ import mobileHeroBG from "../../../public/assets/hero-bg-mobile.png";
 import logoHero from "../../../public/assets/logo-hero.png";
 import Image1 from "../../../public/assets/image-2.png";
 import Image2 from "../../../public/assets/image-1.png";
+import arrowR from "../../../public/assets/arrow-r.png";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
 import { Divider } from "@nextui-org/react";
@@ -41,7 +42,7 @@ const LandingPage: React.FC = () => {
                         priority
                     />
                 </div>
-                <div className={`relative z-10 flex flex-col items-left justify-center h-full  px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-80"}`}>
+                <div className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-80"}`}>
                     <div className={`mb-${isMobile ? 1 : 3}`}>
                         <Image
                             src={logoHero}
@@ -145,8 +146,8 @@ const LandingPage: React.FC = () => {
                         <h1 className="font-bold text-2xl text-center leading-relaxed mb-4">
                             Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                         </h1>
-                        <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
-                            Quero saber mais
+                        <Button variant="default" size="default" className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4">
+                        SIM, QUERO SABER MAIS!
                         </Button>
                     </div>
                 ) : (
@@ -170,8 +171,8 @@ const LandingPage: React.FC = () => {
                                 <h1 className="font-bold text-2xl text-pretty leading-relaxed">
                                     Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                                 </h1>
-                                <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
-                                    Quero saber mais
+                                <Button variant="default" size="default" className="text-white text-2xl font-semibold tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out">
+                                    SIM, QUERO SABER MAIS!
                                 </Button>
                             </div>
                         </div>
@@ -194,11 +195,11 @@ const LandingPage: React.FC = () => {
                     <div>
                         <h2 className="font-bold text-xl pb-2">Formação Prática de Excelência:</h2>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Aulas práticas com equipamentos de última geração e técnicas modernas.</p>
                         </div>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Professores experientes e atuantes no mercado, trazendo cases reais e atualizados.</p>
                         </div>
                     </div>
@@ -209,11 +210,11 @@ const LandingPage: React.FC = () => {
                     <div>
                         <h2 className="font-bold text-xl pb-2">Flexibilidade e Conveniência:</h2>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Encontros presenciais uma vez por mês, permitindo que você concilie seus estudos com suas atividades profissionais.</p>
                         </div>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Localização privilegiada na Gran Universidade, no bairro Portão em Curitiba.</p>
                         </div>
                     </div>
@@ -224,7 +225,7 @@ const LandingPage: React.FC = () => {
                     <div>
                         <h2 className="font-bold text-xl pb-2">Diploma Certificado pelo MEC:</h2>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">
                                 <span>
                                     <Link href="https://emec.mec.gov.br/emec/nova" className="font-semibold text-[#134169]">
@@ -242,16 +243,18 @@ const LandingPage: React.FC = () => {
                     <div>
                         <h2 className="font-bold text-xl pb-2">Benefícios:</h2>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Turmas Limitadas para uma melhor experiência educacional.</p>
                         </div>
                         <div className="flex items-start mb-2">
-                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
                             <p className="font-medium text-lg leading-relaxed">Atendimento totalmente personalizado.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+
         </main >
     );
 };
