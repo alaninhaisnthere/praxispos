@@ -3,6 +3,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import { Montserrat } from "next/font/google";
 
 import "../globals.css";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,10 +21,11 @@ export default function LandingLayout({
     <html lang="pt-br">
       <body className={montserrat.className}>
         <NextUIProvider>
-          <section className="text-balance min-h-screen container">
+          <section className="text-balance min-h-fit container">
             {children}
           </section>
         </NextUIProvider>
+        <Footer/>
       </body>
     </html>
   );

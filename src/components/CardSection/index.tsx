@@ -12,7 +12,6 @@ import Target from "../../../public/assets/target.png";
 import Program from "../../../public/assets/program.png";
 import Practice from "../../../public/assets/practice.png";
 import Books from "../../../public/assets/book.png";
-import { Divider } from "@nextui-org/divider";
 
 interface TiltCardProps {
     title: string;

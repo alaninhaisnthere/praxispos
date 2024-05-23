@@ -16,6 +16,7 @@ import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 import Subjects from "@/components/Subjects";
 import FormComponent from "@/components/Forms";
+import FAQ from "@/components/FAQ";
 
 const LandingPage: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -35,7 +36,7 @@ const LandingPage: React.FC = () => {
     }, []);
 
     return (
-        <main>
+        <main className="min-h-screen">
             <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
                 <div className="absolute inset-0">
                     <Image
@@ -55,7 +56,7 @@ const LandingPage: React.FC = () => {
                             height={isMobile ? 60 : 100}
                         />
                     </div>
-                    <p className={`text-white text-left font-semibold text-sm tracking-wide mb-${isMobile ? "" : 8} ${isMobile ? "text-xs" : ""}`}>
+                    <p className={`text-white text-left font-semibold text-sm tracking-wide mb-${isMobile ? "" : 4} ${isMobile ? "text-xs" : ""}`}>
                         ENFERMEIRO - BIOMÉDICO - FARMACÊUTICO
                     </p>
                     <h1 className={`text-white text-left font-bold ${isMobile ? "text-3xl my-3" : "text-5xl"}`}>
@@ -72,6 +73,7 @@ const LandingPage: React.FC = () => {
                     </div>
                 </div>
             </section>
+
             {/* 1a seção */}
             <section className={`flex flex-col pt-8 pb-4 ${isMobile ? "items-center pb-2" : ""}`}>
                 {isMobile ? (
@@ -322,7 +324,7 @@ const LandingPage: React.FC = () => {
             </section>
 
             {/* 6a seção */}
-            <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
+            <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
                 <Image
                     src={Image3}
                     alt="Imagem de fundo"
@@ -332,8 +334,43 @@ const LandingPage: React.FC = () => {
             </section>
 
             {/* 7a seção */}
-            <FormComponent />
+            <section className="relative w-full py-5 pb-10">
+                <div className="text-center">
+                    <div className="mx-auto">
+                        <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+                            <div className="md:w-1/2 text-left pr-5">
+                                <div className="flex flex-col justify-center items-start mb-3">
+                                    <div className="flex flex-row items-center justify-start mb-4">
+                                        <h1 className={`font-bold text-3xl ${isMobile ? 'text-center' : 'text-left'}`}>
+                                            Benefícios Exclusivos para os <span className="text-[#AA8E4B]">Primeiros Inscritos!</span>
+                                        </h1>
+                                    </div>
+                                    <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                                        <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
+                                        <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]"><span className="font-semibold">Descontos</span> especiais na matrícula.</p>
+                                    </div>
+                                    <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                                        <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
+                                        <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">Canal com conteúdos exclusivos para que você já entre no clima da pós enquanto espera o primeiro dia de aula.</p>
+                                    </div>
+                                    <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                                        <Image src={arrowR} alt="Seta" width={10} height={10} className="mt-2 mr-2" />
+                                        <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">Programa de incentivo: indique um amigo para fazer a pós junto com você e ganhe descontos cumulativos, podendo estudar de graça na Práxis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="md:w-1/2">
+                                <FormComponent />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            {/* 8a seção */}
+            <section>
+                <FAQ />
+            </section>
         </main >
     );
 };
