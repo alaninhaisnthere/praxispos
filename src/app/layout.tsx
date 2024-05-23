@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Landing page Práxis Pós-Graduação",
 };
 
-export default function LandingLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
