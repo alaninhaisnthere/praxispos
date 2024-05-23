@@ -319,6 +319,17 @@ const LandingPage: React.FC = () => {
                     </div>
                 )}
             </section>
+
+            {/* 6a seção */}
+            <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
+                <Image
+                    src={Image3}
+                    alt="Imagem de fundo"
+                    layout="responsive"
+                    objectFit="cover"
+                />
+            </section>
+
         </main >
     );
 };
