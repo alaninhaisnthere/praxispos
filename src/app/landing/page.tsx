@@ -9,6 +9,7 @@ import Image1 from "../../../public/assets/image-2.png";
 import Image2 from "../../../public/assets/image-1.png";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
+import { Divider } from "@nextui-org/react";
 
 const LandingPage: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -69,7 +70,7 @@ const LandingPage: React.FC = () => {
             <section className={`flex flex-col pt-8 pb-4 ${isMobile ? "items-center pb-2" : ""}`}>
                 {isMobile ? (
                     <div className="flex flex-col gap-8">
-                        <h1 className="font-extrabold text-3xl text-wrap">
+                        <h1 className="font-extrabold text-3xl text-prety">
                             Cansado de <span className="text-primary">turnos exaustivos</span>, de passar datas comemorativas longe da família e se sentir
                             <span className="text-primary"> desvalorizado</span> profissionalmente?
                         </h1>
@@ -77,16 +78,16 @@ const LandingPage: React.FC = () => {
                             src={Image1}
                             alt="Imagem de enfermeira sentada no chão"
                         />
-                        <h1 className="font-medium text-2xl text-wrap">
+                        <h1 className="font-medium text-2xl text-pretty">
                             Você ama a sua profissão, ama cuidar das pessoas, mas sabe que pode ir além e conquistar a tão sonhada <span className="italic">independência financeira</span> dentro da área da saúde!
                         </h1>
-                        <h1 className="font-medium text-2xl text-wrap">
+                        <h1 className="font-medium text-2xl text-pretty">
                             E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
                         </h1>
-                        <h1 className="font-bold text-2xl text-wrap">
+                        <h1 className="font-bold text-2xl text-pretty">
                             Sim! Você, <span className="italic text-[#196193]">enfermeiro</span>, <span className="italic text-[#196193]">biomédico</span> ou <span className="italic text-[#196193]">farmacêutico</span>, pode mudar o rumo da sua carreira profissional fazendo parte do mercado da estética!
                         </h1>
-                        <h1 className="font-bold text-2xl text-wrap">
+                        <h1 className="font-bold text-2xl text-pretty">
                             Receba em 1 dia de consultório o que levaria em plantões exaustivos, tendo mais qualidade de vida, trabalhando com tranquilidade e segurança e se tornando uma <span className="italic text-[#196193]">referência</span> na área.
                         </h1>
                     </div>
@@ -97,21 +98,21 @@ const LandingPage: React.FC = () => {
                             alt="Imagem de enfermeira sentada no chão"
                         />
                         <div className="flex flex-col justify-center gap-6">
-                            <h1 className="font-extrabold text-3xl text-wrap">
-                                <h1 className="font-extrabold text-3xl text-wrap">
+                            <h1 className="font-extrabold text-3xl text-pretty">
+                                <h1 className="font-extrabold text-3xl text-pretty">
                                     Cansado de <span className="text-primary">turnos exaustivos</span>, de passar datas comemorativas longe da família e se sentir
                                     <span className="text-primary"> desvalorizado</span> profissionalmente?
                                 </h1>                            </h1>
-                            <h1 className="font-medium text-2xl text-wrap leading-relaxed">
+                            <h1 className="font-medium text-2xl text-pretty leading-relaxed">
                                 Você ama a sua profissão, ama cuidar das pessoas, mas sabe que pode ir além e conquistar a tão sonhada <span className="italic">independência financeira</span> dentro da área da saúde!
                             </h1>
-                            <h1 className="font-medium text-2xl text-wrap leading-relaxed">
+                            <h1 className="font-medium text-2xl text-pretty leading-relaxed">
                                 E se eu te falar que existe um mercado extremamente aquecido, que movimenta <span className="italic">bilhões de reais</span> no Brasil, onde cada vez mais as pessoas procuram por tratamentos estéticos para <span className="italic">levantarem a auto-estima</span>?
                             </h1>
-                            <h1 className="font-bold text-2xl text-wrap leading-relaxed">
+                            <h1 className="font-bold text-2xl text-pretty leading-relaxed">
                                 Sim! Você, <span className="italic text-[#196193]">enfermeiro</span>, <span className="italic text-[#196193]">biomédico</span> ou <span className="italic text-[#196193]">farmacêutico</span>, pode mudar o rumo da sua carreira profissional fazendo parte do mercado da estética!
                             </h1>
-                            <h1 className="font-bold text-2xl text-wrap leading-relaxed">
+                            <h1 className="font-bold text-2xl text-pretty leading-relaxed">
                                 Receba em 1 dia de consultório o que levaria em plantões exaustivos, tendo mais qualidade de vida, trabalhando com tranquilidade e segurança e se tornando uma <span className="italic text-[#196193]">referência</span> na área.
                             </h1>
                         </div>
@@ -123,21 +124,21 @@ const LandingPage: React.FC = () => {
             <section className={`flex flex-col py-4 ${isMobile ? "items-center" : ""}`}>
                 {isMobile ? (
                     <div className="flex flex-col items-center gap-4">
-                        <h1 className="font-bold text-2xl text-center text-wrap text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
+                        <h1 className="font-bold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
                             Apresento a você a Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
                         </h1>
                         <Image
                             src={Image2}
                             alt="Imagem de enfermeira sentada no chão"
                         />
-                        <h1 className="flex flex-col justify-center font-medium text-2xl text-wrap leading-relaxed">
+                        <h1 className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
                             Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como:
                             bioestimuladores
                             ozonioterapia
                             harmonia facial
                             além de aulas de biossegurança e empreendedorismo.
                         </h1>
-                        <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
+                        <h1 className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
                             Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                         </h1>
                         <h1 className="font-bold text-2xl text-center leading-relaxed mb-4">
@@ -149,7 +150,7 @@ const LandingPage: React.FC = () => {
                     </div>
                 ) : (
                     <div className="flex flex-col gap-8 pb-8">
-                        <h1 className="font-bold text-5xl text-center text-wrap tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
+                        <h1 className="font-bold text-5xl text-center text-pretty tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
                             Apresento a você a Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis
                         </h1>
 
@@ -159,13 +160,13 @@ const LandingPage: React.FC = () => {
                                 alt="Imagem de enfermeira sentada no chão"
                             />
                             <div className="flex flex-col justify-center gap-6">
-                                <h1 className="font-medium text-2xl text-wrap leading-relaxed">
+                                <h1 className="font-medium text-2xl text-pretty leading-relaxed">
                                     Aqui você aprenderá as técnicas que são tendências no mercado da estética em 2024, como: bioestimuladores, ozonioterapia, harmonia facial, além de aulas de biossegurança e empreendedorismo.
                                 </h1>
-                                <h1 className="font-bold text-2xl text-wrap text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-2">
+                                <h1 className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-2">
                                     Nosso curso levará você a realizar os sonhos que ficaram guardados por muito tempo!
                                 </h1>
-                                <h1 className="font-bold text-2xl text-wrap leading-relaxed">
+                                <h1 className="font-bold text-2xl text-pretty leading-relaxed">
                                     Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a sua vida?
                                 </h1>
                                 <Button variant="default" size="default" className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -178,10 +179,70 @@ const LandingPage: React.FC = () => {
             </section>
 
             {/* 3a seção */}
-            <section className="relative w-full py-10 my-5">
+            <section className="relative w-full py-10">
                 <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]">
                 </div>
                 <CardSection />
+            </section>
+
+            {/* 4a seção */}
+            <section className="relative w-full py-10">
+                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
+                </div>
+                <div className="relative flex flex-col gap-4 p-10 bg-[#FAFAFA] rounded-lg shadow-lg">
+                    <div>
+                        <h2 className="font-bold text-xl pb-2">Formação Prática de Excelência:</h2>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Aulas práticas com equipamentos de última geração e técnicas modernas.</p>
+                        </div>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Professores experientes e atuantes no mercado, trazendo cases reais e atualizados.</p>
+                        </div>
+                    </div>
+                    <Divider
+                        orientation="horizontal"
+                        style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                    />
+                    <div>
+                        <h2 className="font-bold text-xl pb-2">Flexibilidade e Conveniência:</h2>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Encontros presenciais uma vez por mês, permitindo que você concilie seus estudos com suas atividades profissionais.</p>
+                        </div>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Localização privilegiada na Gran Universidade, no bairro Portão em Curitiba.</p>
+                        </div>
+                    </div>
+                    <Divider
+                        orientation="horizontal"
+                        style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                    />
+                    <div>
+                        <h2 className="font-bold text-xl pb-2">Diploma Certificado pelo MEC:</h2>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Clique aqui para verificar a nossa certificação junto ao MEC</p>
+                        </div>
+                    </div>
+                    <Divider
+                        orientation="horizontal"
+                        style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                    />
+                    <div>
+                        <h2 className="font-bold text-xl pb-2">Benefícios:</h2>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Turmas Limitadas para uma melhor experiência educacional.</p>
+                        </div>
+                        <div className="flex items-start mb-2">
+                            <span className="inline-block w-2 h-2 mt-2 mr-2 bg-primary rounded-full"></span>
+                            <p className="font-medium text-lg leading-relaxed">Atendimento totalmente personalizado.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main >
     );
