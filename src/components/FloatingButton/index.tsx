@@ -8,7 +8,7 @@ const FloatingButton: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = () => {\
       setIsMobile(window.innerWidth <= 800);
     };
 
