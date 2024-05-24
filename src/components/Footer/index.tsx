@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import logoHero from "../../../public/assets/logo-hero.png";
+import logoHero from "../../../public/logo-hero.png";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);

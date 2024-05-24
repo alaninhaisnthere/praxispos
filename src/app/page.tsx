@@ -14,14 +14,14 @@ import FormComponent from "@/components/Forms";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import Subjects from "@/components/Subjects";
 
-import arrowR from "../../public/assets/arrow-r.png";
-import mobileHeroBG from "../../public/assets/hero-bg-mobile.png";
-import heroBG from "../../public/assets/hero-bg.png";
-import Image2 from "../../public/assets/image-1.png";
-import Image1 from "../../public/assets/image-2.png";
-import Image3 from "../../public/assets/image-3.png";
-import Image4 from "../../public/assets/image-4.png";
-import logoHero from "../../public/assets/logo-hero.png";
+import arrowR from "../../public/arrow-r.png";
+import mobileHeroBG from "../../public/hero-bg-mobile.png";
+import heroBG from "../../public/hero-bg.png";
+import Image2 from "../../public/image-1.png";
+import Image1 from "../../public/image-2.png";
+import Image3 from "../../public/image-3.png";
+import Image4 from "../../public/image-4.png";
+import logoHero from "../../public/logo-hero.png";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState<boolean>(false);

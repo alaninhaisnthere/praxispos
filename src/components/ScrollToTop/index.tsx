@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Image from 'next/image';
-import arrowUp from '../../../public/assets/arrow-up.png';
+import arrowUp from '../../../public/arrow-up.png';
 
 const ScrollToTopButton = () => {
     const [showScrollButton, setShowScrollButton] = useState(false);

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+"use client";
 
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IconContext } from "react-icons";
 import { FaWhatsapp } from "react-icons/fa";
@@ -8,7 +9,7 @@ const FloatingButton: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => {\
+    const handleResize = () => {
       setIsMobile(window.innerWidth <= 800);
     };
 
@@ -30,7 +31,7 @@ const FloatingButton: React.FC = () => {
       >
         <div
           className={`bg-green-500 text-white ${isMobile ? "p-4" : "p-6"} 
-          rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 w-auto`}
+          rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 w-auto animate-bounce`}
         >
           <IconContext.Provider value={{ color: "white" }}>
             <FaWhatsapp size={isMobile ? 28 : 56} />

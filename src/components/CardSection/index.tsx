@@ -8,10 +8,10 @@ import {
     useSpring,
 } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import Target from "../../../public/assets/target.png";
-import Program from "../../../public/assets/program.png";
-import Practice from "../../../public/assets/practice.png";
-import Books from "../../../public/assets/book.png";
+import Target from "../../../public/target.png";
+import Program from "../../../public/program.png";
+import Practice from "../../../public/practice.png";
+import Books from "../../../public/book.png";
 
 interface TiltCardProps {
     title: string;
