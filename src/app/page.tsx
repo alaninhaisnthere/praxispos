@@ -332,7 +332,7 @@ export default function Home() {
           />
           <div>
             <h2 className="font-bold text-xl pb-2">
-              Diploma Certificado pelo MEC:
+              Certificado reconhecido pelo MEC:
             </h2>
             <div className="flex items-start mb-2">
               <Image
@@ -345,7 +345,7 @@ export default function Home() {
               <p className="font-medium text-lg leading-relaxed">
                 <span>
                   <Link
-                    href="https://emec.mec.gov.br/emec/nova"
+                    href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
                     className="font-semibold text-[#134169]"
                   >
                     Clique aqui

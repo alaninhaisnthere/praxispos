@@ -64,7 +64,7 @@ const CardSection: React.FC = () => {
                         title=""
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                500 horas de curso, distribuídas em 365 horas de teoria e 135 horas de prática.
+                                <span className="underline underline-offset-4">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4">365 horas</span> de teoria e <span className="underline underline-offset-4">135 horas</span> de prática.
                             </div>
                         }
                         image={Practice}
@@ -109,7 +109,7 @@ const CardSection: React.FC = () => {
                         title="Curso Intenso"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                500 horas de curso, distribuídas em 365 horas de teoria e 135 horas de prática.
+                                <span className="underline underline-offset-4">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4">365 horas</span> de teoria e <span className="underline underline-offset-4">135 horas</span> de prática.
                             </div>
                         }
                         image={Practice}

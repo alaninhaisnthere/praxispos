@@ -117,9 +117,9 @@ export default function FAQ() {
                     style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
                 />
                 <div className="py-5">
-                    <h1 className="text-xl font-semibold">O diploma é certificado pelo MEC?</h1>
+                    <h1 className="text-xl font-semibold">O curso é certificado e reconhecido pelo MEC?</h1>
                     <p className="text-lg">
-                        Sim, o diploma da Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis é certificado pelo MEC, garantindo reconhecimento e credibilidade no mercado de trabalho. Você receberá o mesmo após a finalização dos seus estudos.
+                        Sim, o certificado da Pós Graduação Lato Sensu em Estética Avançada do Instituto Práxis é reconhecido pelo MEC, garantindo credibilidade no mercado de trabalho. Você receberá o mesmo após a finalização dos seus estudos.
                     </p>
                 </div>
                 <Divider
