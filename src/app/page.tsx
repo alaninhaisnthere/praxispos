@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import { Divider } from "@nextui-org/react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
@@ -22,6 +22,7 @@ import Image1 from "../../public/image-2.png";
 import Image3 from "../../public/image-3.png";
 import Image4 from "../../public/image-4.png";
 import logoHero from "../../public/logo-hero.png";
+import Link from "next/link";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -77,15 +78,17 @@ export default function Home() {
             NA QUAL VOCÊ SERÁ <br />O{" "}
             <span className="text-[#9C7F4A] italic">PROTAGONISTA!</span>
           </h1>
-          <div className={`mt-${isMobile ? "" : 8}`}>
-            <Button
-              variant="default"
-              size="default"
-              className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out"
-            >
-              Seu futuro a um clique
-            </Button>
-          </div>
+          <ScrollLink to="section-form" smooth={true} duration={500}>
+            <div className={`mt-${isMobile ? "" : 8}`}>
+              <Button
+                variant="default"
+                size="default"
+                className="text-white font-semibold hover:scale-105 transition-transform duration-300 ease-in-out"
+              >
+                Seu futuro a um clique
+              </Button>
+            </div>
+          </ScrollLink>
         </div>
       </section>
 
@@ -130,7 +133,7 @@ export default function Home() {
               <span className="italic text-[#196193]">referência</span> na área.
             </h1>
           </div>
-        : <div className="flex flex-row gap-[3rem] pb-8">
+          : <div className="flex flex-row gap-[3rem] pb-8">
             <Image src={Image1} alt="Imagem de enfermeira sentada no chão" />
             <div className="flex flex-col justify-center gap-6">
               <h1 className="font-extrabold text-3xl text-pretty">
@@ -199,15 +202,17 @@ export default function Home() {
               Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a
               sua vida?
             </h1>
-            <Button
-              variant="default"
-              size="default"
-              className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
-            >
-              SIM, QUERO SABER MAIS!
-            </Button>
+            <ScrollLink to="section-form" smooth={true} duration={500}>
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+              >
+                SIM, QUERO SABER MAIS!
+              </Button>
+            </ScrollLink>
           </div>
-        : <div className="flex flex-col gap-8 pb-8">
+          : <div className="flex flex-col gap-8 pb-8">
             <h1 className="font-bold text-5xl text-center text-pretty tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
               Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
               do Instituto Práxis
@@ -230,13 +235,15 @@ export default function Home() {
                   Quer conhecer um pouco mais sobre a pós-graduação que irá
                   mudar a sua vida?
                 </h1>
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-2xl font-semibold tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out"
-                >
-                  SIM, QUERO SABER MAIS!
-                </Button>
+                <ScrollLink to="section-form" smooth={true} duration={500}>
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="text-white text-2xl font-semibold tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out"
+                  >
+                    SIM, QUERO SABER MAIS!
+                  </Button>
+                </ScrollLink>
               </div>
             </div>
           </div>
@@ -415,15 +422,17 @@ export default function Home() {
             <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
               Vamos mudar o rumo do seu futuro profissional?{" "}
             </h1>
-            <Button
-              variant="default"
-              size="default"
-              className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
-            >
-              QUERO MAIS INFORMAÇÕES
-            </Button>
+            <ScrollLink to="section-form" smooth={true} duration={500}>
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+              >
+                QUERO MAIS INFORMAÇÕES
+              </Button>
+            </ScrollLink>
           </div>
-        : <div className="flex flex-col gap-8 py-10 mb-10">
+          : <div className="flex flex-col gap-8 py-10 mb-10">
             <div className="flex flex-row gap-10 pt-8">
               <div className="flex flex-col justify-center gap-6">
                 <h1
@@ -450,13 +459,15 @@ export default function Home() {
                 <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
                   Vamos mudar o rumo do seu futuro profissional?{" "}
                 </h1>
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
-                >
-                  QUERO MAIS INFORMAÇÕES
-                </Button>
+                <ScrollLink to="section-form" smooth={true} duration={500}>
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+                  >
+                    QUERO MAIS INFORMAÇÕES
+                  </Button>
+                </ScrollLink>
               </div>
               <Image src={Image4} alt="Imagem" width={700} height={700} />
             </div>
@@ -475,7 +486,7 @@ export default function Home() {
       </section>
 
       {/* 7a seção */}
-      <section className="relative w-full py-5 pb-10">
+      <section id="section-form" className="relative w-full py-5 pb-10">
         <div className="text-center">
           <div className="mx-auto">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
