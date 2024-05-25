@@ -56,6 +56,10 @@ export default function FAQ() {
                     content: "",
                 }}
             >
+                <Divider
+                    orientation="horizontal"
+                    style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                />
                 <div className="py-5">
                     <h1 className="text-xl font-semibold">Quais são os pré-requisitos para a inscrição?</h1>
                     <p className="text-lg">
@@ -162,6 +166,10 @@ export default function FAQ() {
                         Além dos descontos especiais na matrícula, os primeiros inscritos têm acesso a um canal com conteúdos exclusivos para que possam entrar no clima da pós-graduação enquanto aguardam o início das aulas. Também participam do programa de incentivo, onde indicar um amigo pode resultar em descontos cumulativos significativos.
                     </p>
                 </div>
+                <Divider
+                    orientation="horizontal"
+                    style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
+                />
             </AccordionItem>
         </Accordion>
     );
