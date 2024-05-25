@@ -64,7 +64,7 @@ const CardSection: React.FC = () => {
                         title=""
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                <span className="underline underline-offset-4">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4">365 horas</span> de teoria e <span className="underline underline-offset-4">135 horas</span> de prática.
+                                <span className="underline underline-offset-4 decoration-2 decoration-dotted">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4 decoration-2 decoration-dotted">365 horas</span> de teoria e <span className="underline underline-offset-4">135 horas</span> de prática.
                             </div>
                         }
                         image={Practice}
@@ -82,7 +82,7 @@ const CardSection: React.FC = () => {
                         title=" "
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                16 módulos presenciais, realizados um final de semana por mês, na cidade de Curitiba, no bairro Portão, dentro da Gran Universidade.
+                                <span className="underline underline-offset-4 decoration-2 decoration-dotted">15 módulos presenciais</span>, realizados um final de semana por mês, na cidade de Curitiba, no bairro Portão, dentro da Gran Universidade.
                             </div>
                         }
                         image={Program}
@@ -109,7 +109,7 @@ const CardSection: React.FC = () => {
                         title="Curso Intenso"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                <span className="underline underline-offset-4">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4">365 horas</span> de teoria e <span className="underline underline-offset-4">135 horas</span> de prática.
+                                <span className="underline underline-offset-4 decoration-2 decoration-dotted">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4 decoration-2 decoration-dotted">365 horas</span> de teoria e <span className="underline underline-offset-4 decoration- decoration-dotted">135 horas</span> de prática.
                             </div>
                         }
                         image={Practice}
@@ -127,7 +127,7 @@ const CardSection: React.FC = () => {
                         title="Experiência Imersiva"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                                16 módulos presenciais, realizados um final de semana por mês, dentro da Gran Universidade em Curitiba.
+                               <span className="underline underline-offset-4 decoration-2 decoration-dotted">15 módulos presenciais</span>, realizados um final de semana por mês, dentro da Gran Universidade em Curitiba.
                             </div>
                         }
                         image={Program}
