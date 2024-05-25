@@ -1171,16 +1171,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/framer-motion/dist/es/render/dom/features-max.mjs":
-/*!************************************************************************!*\
-  !*** ./node_modules/framer-motion/dist/es/render/dom/features-max.mjs ***!
-  \************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   domMax: () => (/* binding */ domMax)\n/* harmony export */ });\n/* harmony import */ var _motion_features_drag_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../motion/features/drag.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/motion/features/drag.mjs\");\n/* harmony import */ var _motion_features_layout_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../motion/features/layout.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/motion/features/layout.mjs\");\n/* harmony import */ var _features_animation_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./features-animation.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/render/dom/features-animation.mjs\");\n\n\n\n\n/**\n * @public\n */\nconst domMax = {\n    ..._features_animation_mjs__WEBPACK_IMPORTED_MODULE_0__.domAnimation,\n    ..._motion_features_drag_mjs__WEBPACK_IMPORTED_MODULE_1__.drag,\n    ..._motion_features_layout_mjs__WEBPACK_IMPORTED_MODULE_2__.layout,\n};\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvZnJhbWVyLW1vdGlvbi9kaXN0L2VzL3JlbmRlci9kb20vZmVhdHVyZXMtbWF4Lm1qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQXNEO0FBQ0k7QUFDRjs7QUFFeEQ7QUFDQTtBQUNBO0FBQ0E7QUFDQSxPQUFPLGlFQUFZO0FBQ25CLE9BQU8sMkRBQUk7QUFDWCxPQUFPLCtEQUFNO0FBQ2I7O0FBRWtCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcHJheGlzLy4vbm9kZV9tb2R1bGVzL2ZyYW1lci1tb3Rpb24vZGlzdC9lcy9yZW5kZXIvZG9tL2ZlYXR1cmVzLW1heC5tanM/ZTBkMyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBkcmFnIH0gZnJvbSAnLi4vLi4vbW90aW9uL2ZlYXR1cmVzL2RyYWcubWpzJztcbmltcG9ydCB7IGxheW91dCB9IGZyb20gJy4uLy4uL21vdGlvbi9mZWF0dXJlcy9sYXlvdXQubWpzJztcbmltcG9ydCB7IGRvbUFuaW1hdGlvbiB9IGZyb20gJy4vZmVhdHVyZXMtYW5pbWF0aW9uLm1qcyc7XG5cbi8qKlxuICogQHB1YmxpY1xuICovXG5jb25zdCBkb21NYXggPSB7XG4gICAgLi4uZG9tQW5pbWF0aW9uLFxuICAgIC4uLmRyYWcsXG4gICAgLi4ubGF5b3V0LFxufTtcblxuZXhwb3J0IHsgZG9tTWF4IH07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/render/dom/features-max.mjs\n");
-
-/***/ }),
-
 /***/ "(ssr)/./node_modules/framer-motion/dist/es/render/dom/motion-minimal.mjs":
 /*!**************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/dom/motion-minimal.mjs ***!
