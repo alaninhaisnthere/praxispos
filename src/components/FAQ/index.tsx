@@ -9,6 +9,7 @@ export default function FAQ() {
             selectionMode="multiple"
             variant="light"
             showDivider={true}
+            defaultExpandedKeys={["1"]}
             motionProps={{
                 variants: {
                     enter: {

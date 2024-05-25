@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#196193] py-10 text-white">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center pb-10 md:py-5">
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
           <div className="mb-4 md:mb-0 flex flex-col items-center">
             <Image

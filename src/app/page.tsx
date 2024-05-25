@@ -99,10 +99,11 @@ export default function Home() {
         {isMobile ?
           <div className="flex flex-col gap-8">
             <h1 className="font-extrabold text-3xl text-prety">
-              Cansado de <span className="text-primary">turnos exaustivos</span>
-              , de passar datas comemorativas longe da família e se sentir
-              <span className="text-primary"> desvalorizado</span>{" "}
-              profissionalmente?
+            Cansado de{" "}
+                  <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">turnos exaustivos</span>, de
+                  passar datas comemorativas longe da família e se sentir{" "}
+                  <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">desvalorizado</span>{" "}
+                  profissionalmente?
             </h1>
             <Image src={Image1} alt="Imagem de enfermeira sentada no chão" />
             <h1 className="font-medium text-2xl text-pretty">
@@ -120,9 +121,9 @@ export default function Home() {
             </h1>
             <h1 className="font-bold text-2xl text-pretty">
               Sim! Você,{" "}
-              <span className="italic text-[#196193]">enfermeiro</span>,{" "}
-              <span className="italic text-[#196193]">biomédico</span> ou{" "}
-              <span className="italic text-[#196193]">farmacêutico</span>, pode
+              <span className="italic text-[#114264]">enfermeiro</span>,{" "}
+              <span className="italic text-[#114264]">biomédico</span> ou{" "}
+              <span className="italic text-[#114264]">farmacêutico</span>, pode
               mudar o rumo da sua carreira profissional fazendo parte do mercado
               da estética!
             </h1>
@@ -130,7 +131,7 @@ export default function Home() {
               Receba em 1 dia de consultório o que levaria em plantões
               exaustivos, tendo mais qualidade de vida, trabalhando com
               tranquilidade e segurança e se tornando uma{" "}
-              <span className="italic text-[#196193]">referência</span> na área.
+              <span className="italic text-[#114264]">referência</span> na área.
             </h1>
           </div>
           : <div className="flex flex-row gap-[3rem] pb-8">
@@ -139,9 +140,9 @@ export default function Home() {
               <h1 className="font-extrabold text-3xl text-pretty">
                 <h1 className="font-extrabold text-3xl text-pretty">
                   Cansado de{" "}
-                  <span className="text-primary">turnos exaustivos</span>, de
-                  passar datas comemorativas longe da família e se sentir
-                  <span className="text-primary"> desvalorizado</span>{" "}
+                  <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">turnos exaustivos</span>, de
+                  passar datas comemorativas longe da família e se sentir{" "}
+                  <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">desvalorizado</span>{" "}
                   profissionalmente?
                 </h1>{" "}
               </h1>
@@ -160,9 +161,9 @@ export default function Home() {
               </h1>
               <h1 className="font-bold text-2xl text-pretty leading-relaxed">
                 Sim! Você,{" "}
-                <span className="italic text-[#196193]">enfermeiro</span>,{" "}
-                <span className="italic text-[#196193]">biomédico</span> ou{" "}
-                <span className="italic text-[#196193]">farmacêutico</span>,
+                <span className="italic text-[#114264]">enfermeiro</span>,{" "}
+                <span className="italic text-[#114264]">biomédico</span> ou{" "}
+                <span className="italic text-[#114264]">farmacêutico</span>,
                 pode mudar o rumo da sua carreira profissional fazendo parte do
                 mercado da estética!
               </h1>
@@ -170,7 +171,7 @@ export default function Home() {
                 Receba em 1 dia de consultório o que levaria em plantões
                 exaustivos, tendo mais qualidade de vida, trabalhando com
                 tranquilidade e segurança e se tornando uma{" "}
-                <span className="italic text-[#196193]">referência</span> na
+                <span className="italic text-[#114264]">referência</span> na
                 área.
               </h1>
             </div>
@@ -184,7 +185,7 @@ export default function Home() {
       >
         {isMobile ?
           <div className="flex flex-col items-center gap-4">
-            <h1 className="font-bold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
+            <h1 className="font-extrabold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
               Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
               do Instituto Práxis
             </h1>
