@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pós-graduação Práxis",
-  description: "Landing page Práxis Pós-Graduação",
+  description: "Pós-graduação Práxis",
 };
 
 export default function Layout({
