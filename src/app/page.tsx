@@ -385,6 +385,30 @@ export default function Home() {
                 Atendimento totalmente personalizado.
               </p>
             </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src={arrowR}
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                Práticas Hands-on supervisionadas.
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src={arrowR}
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                Todo material teórico e prático 100% incluso.
+              </p>
+            </div>
           </div>
           <Divider
             orientation="horizontal"

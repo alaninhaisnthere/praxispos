@@ -25,7 +25,7 @@ const FloatingButton: React.FC = () => {
   return (
     <div className="fixed bottom-32 right-2 z-50">
       <Link
-        href="https://wa.me/5571999444547"
+        href="https://wa.me/5541992460242"
         target="_blank"
         rel="noopener noreferrer"
       >
