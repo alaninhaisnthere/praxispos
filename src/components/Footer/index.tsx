@@ -43,7 +43,7 @@ const Footer = () => {
               >
                 <IconContext.Provider value={{ color: "white" }}>
                   <a
-                    href="https://instagram.com/institutopraxis"
+                    href="https://instagram.com/institutopraxispos"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-gray-300"
@@ -61,7 +61,7 @@ const Footer = () => {
               >
                 <IconContext.Provider value={{ color: "white" }}>
                   <a
-                    href="https://wa.me/5541992460242"
+                    href="https://wa.me/5541992460242?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20p%C3%B3s-gradua%C3%A7%C3%A3o"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-gray-300"
@@ -71,6 +71,7 @@ const Footer = () => {
                   </a>
                 </IconContext.Provider>
               </div>
+
             </div>
           </div>
           <div className={`text-center md:text-right tracking-wide ${isMobile ? "flex flex-col items-center" : ""}`}>
