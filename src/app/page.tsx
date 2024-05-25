@@ -76,7 +76,7 @@ export default function Home() {
             HISTÓRIA ESTÁ <br />
             PARA COMEÇAR, <br />
             NA QUAL VOCÊ SERÁ <br />O{" "}
-            <span className="text-[#9C7F4A] italic">PROTAGONISTA!</span>
+            <span className="text-[#f7dc9c] italic">PROTAGONISTA!</span>
           </h1>
           <ScrollLink to="section-form" smooth={true} duration={500}>
             <div className={`mt-${isMobile ? "" : 8}`}>
