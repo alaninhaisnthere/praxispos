@@ -10,6 +10,7 @@ interface FormData {
 
 const FormComponent: React.FC = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+
     const onSubmit = async (data: FormData) => {
         try {
             if (data.fullName.length <= 3) {
@@ -30,8 +31,22 @@ const FormComponent: React.FC = () => {
                 },
                 body: JSON.stringify(data)
             });
+
             if (response.ok) {
                 alert('Mensagem enviada com sucesso!');
+                
+                if (window.gtag) {
+                    window.gtag('event', 'conversion', {
+                        send_to: 'AW-16557313988/OTj9CKHulLQZEMSfktc9',
+                        value: 1.0,
+                        currency: 'USD',
+                    });
+                }
+
+                if (window.fbq) {
+                    window.fbq('track', 'Lead');
+                }
+
                 reset();
             } else {
                 console.error('Failed to send data.');
