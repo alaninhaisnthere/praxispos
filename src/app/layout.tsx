@@ -6,11 +6,12 @@ import { useEffect, useState } from "react";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { metadata } from "./metadata";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Layout({
+export default function AppLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -43,11 +44,12 @@ export default function Layout({
       </head>
       <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <NextUIProvider>
+          <Header />
           <section className="text-balance container flex-grow">
             {children}
           </section>
+          <Footer />
         </NextUIProvider>
-        <Footer />
       </body>
     </html>
   );
