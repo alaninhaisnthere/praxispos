@@ -76,7 +76,7 @@ const Header = () => {
     return (
         <Navbar
             isBlurred={false}
-            className={`bg-[#134169] fixed top-0 w-full z-50 ${montserrat.className}`}
+            className={`bg-[#134169] top-0 w-full z-50 ${montserrat.className}`}
             onMenuOpenChange={setIsMenuOpen}
             classNames={{
                 wrapper: "max-w-none",
