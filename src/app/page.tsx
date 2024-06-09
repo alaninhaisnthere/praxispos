@@ -6,9 +6,10 @@ import { useRouter } from "next/navigation";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
-import FAQ from "@/components/FAQ";
+
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import CourseSection from "@/components/CoursesSection";
 
 const images = [
   { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/" },
@@ -109,10 +110,9 @@ const Home: React.FC = () => {
           ))}
         </Carousel>
       </section>
+      {/* 2a seção */}
+      <CourseSection />
       {/* 8a seção */}
-      <section className="pb-10">
-        <FAQ />
-      </section>
       <section>
         <FloatingButton />
         <ScrollToTopButton />

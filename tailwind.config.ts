@@ -72,6 +72,12 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        gothamblack: ['Gotham Black', 'sans-serif'],
+        gothammedium: ['Gotham Medium', 'sans-serif'],
+        gothamitalic: ['Gotham Book Italic', 'sans-serif'],
+        triplex: ['Triplex'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],

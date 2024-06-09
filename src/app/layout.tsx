@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Script from 'next/script';
 
 import "./globals.css";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { metadata } from "./metadata";

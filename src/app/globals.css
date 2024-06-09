@@ -1,8 +1,26 @@
-@import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('/fonts/Gotham-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('/fonts/Gotham-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Book Italic';
+  src: url('/fonts/Gotham-BookItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Triplex';
+  src: url('/fonts/Triplex.otf') format('opentype');
+}
 
 @layer base {
   :root {

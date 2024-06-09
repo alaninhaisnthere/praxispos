@@ -25,7 +25,7 @@ import logoHero from "../../../public/logo-hero.png";
 
 import Link from "next/link";
 
-export default function Home() {
+export default function Landing() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
