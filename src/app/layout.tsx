@@ -8,6 +8,7 @@ import Script from 'next/script';
 import "./globals.css";
 
 import { metadata } from "./metadata";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -43,7 +44,7 @@ export default function AppLayout({
         <title>{typeof metadata.title === 'string' ? metadata.title : "Pós-graduação Práxis"}</title>
         <meta name="description" content={typeof metadata.description === 'string' ? metadata.description : ""} />
 
-        {/* Google tag (gtag.js) */}
+        {/* google tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ESTDBVPXJ9"
           strategy="afterInteractive"
@@ -62,7 +63,7 @@ export default function AppLayout({
           }}
         />
 
-        {/* Facebook Pixel */}
+        {/* pixel */}
         <Script
           id="fb-pixel-init"
           strategy="afterInteractive"
@@ -89,6 +90,7 @@ export default function AppLayout({
       </head>
       <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <NextUIProvider>
+          <Header />
           <section className="text-balance container flex-grow">
             {children}
           </section>
