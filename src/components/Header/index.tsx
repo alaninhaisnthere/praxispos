@@ -29,7 +29,7 @@ const Header = () => {
         },
         {
             label: "A Práxis",
-            href: "/sobre",
+            href: "/sobrenos",
         },
         {
             label: "Cursos",

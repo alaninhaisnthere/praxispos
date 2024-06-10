@@ -12,12 +12,13 @@ import Button from "@/components/Button";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import CourseSection from "@/components/CoursesSection";
+import Link from "next/link";
 
 const images = [
   { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/" },
   { desktop: "/home02.png", mobile: "/home02-mobile.png", link: "/" },
   { desktop: "/home03.png", mobile: "/home03-mobile.png", link: "/" },
-  { desktop: "/home04.png", mobile: "/home04-mobile.png", link: "/" },
+  { desktop: "/home04.png", mobile: "/home04-mobile.png", link: "/sobrenos" },
   {
     desktop: "/home05.png", mobile: "/home05-mobile.png",
     link: "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
@@ -131,6 +132,15 @@ const Home: React.FC = () => {
             <h1 className="font-medium text-2xl text-balance">
               O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
             </h1>
+            <Link href="/sobrenos">
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-xl font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mb-4"
+              >
+                Conheça nossa história
+              </Button>
+            </Link>
           </div>
           :
           <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
@@ -143,7 +153,7 @@ const Home: React.FC = () => {
               <h1 className="text-2xl text-pretty leading-relaxed">
                 O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
               </h1>
-              <ScrollLink to="form" smooth={true} duration={500}>
+              <Link href="/sobrenos">
                 <Button
                   variant="default"
                   size="default"
@@ -151,11 +161,12 @@ const Home: React.FC = () => {
                 >
                   Conheça nossa história
                 </Button>
-              </ScrollLink>
+              </Link>
             </div>
           </div>
         }
       </section>
+
 
       {/* 8a seção */}
       <section>

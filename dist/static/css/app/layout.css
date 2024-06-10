@@ -1074,6 +1074,9 @@ input[type="range"]::-ms-fill-lower {
 .top-full {
   top: 100%;
 }
+.bottom-44 {
+  bottom: 11rem;
+}
 .-z-30 {
   z-index: -30;
 }
@@ -1168,6 +1171,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: auto;
   margin-bottom: auto;
 }
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .-ml-\[50vw\] {
   margin-left: -50vw;
 }
@@ -1224,6 +1231,15 @@ input[type="range"]::-ms-fill-lower {
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-80 {
+  margin-left: 20rem;
+}
+.ml-60 {
+  margin-left: 15rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -1850,6 +1866,9 @@ input[type="range"]::-ms-fill-lower {
 .gap-\[3rem\] {
   gap: 3rem;
 }
+.gap-5 {
+  gap: 1.25rem;
+}
 .gap-x-0 {
   column-gap: 0px;
 }
@@ -2417,6 +2436,12 @@ input[type="range"]::-ms-fill-lower {
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.font-gothamblack {
+  font-family: Gotham Black, sans-serif;
+}
+.font-gothammedium {
+  font-family: Gotham Medium, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2462,6 +2487,14 @@ input[type="range"]::-ms-fill-lower {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2479,6 +2512,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .tabular-nums {
   --tw-numeric-spacing: tabular-nums;
@@ -2562,6 +2598,22 @@ input[type="range"]::-ms-fill-lower {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#114264\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 66 100 / var(--tw-text-opacity));
+}
+.text-\[\#493B22\] {
+  --tw-text-opacity: 1;
+  color: rgb(73 59 34 / var(--tw-text-opacity));
+}
+.text-\[\#f7dc9c\] {
+  --tw-text-opacity: 1;
+  color: rgb(247 220 156 / var(--tw-text-opacity));
+}
+.text-\[\#fafafa\] {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
