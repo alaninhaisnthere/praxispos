@@ -154,10 +154,15 @@ export default function Landing() {
                 Estamos comprometidos com a excelência educacional. Valorizamos a inovação e o desenvolvimento humano. Nosso trabalho é pautado pela ética e responsabilidade. Respeitamos sua individualidade e seu potencial único.
               </h1>
             </div>
+            <h1 className="text-2xl uppercase text-transparent font-extrabold text-center bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text pb-5">
+              No Instituto Práxis, você não é apenas um estudante.
+              <br />
+              Você é parte da nossa família.
+            </h1>
           </div>
           :
           <div>
-            <div className="flex flex-row items-start gap-[3rem] pb-8">
+            <div className="flex flex-row items-start gap-[3rem] pb-3">
               <div className="flex flex-col justify-center gap-3">
                 <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
                   Missão
@@ -182,6 +187,36 @@ export default function Landing() {
                   Estamos comprometidos com a excelência educacional. Valorizamos a inovação e o desenvolvimento humano. Nosso trabalho é pautado pela ética e responsabilidade. Respeitamos sua individualidade e seu potencial único.
                 </h1>
               </div>
+            </div>
+            <h1 className="text-4xl uppercase text-transparent font-extrabold text-center bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text py-5">
+              No Instituto Práxis, você não é apenas um estudante.
+              <br />
+              Você é parte da nossa família.
+            </h1>
+          </div>
+        }
+      </section>
+
+      {/* 3a seção */}
+      <section
+        className={`flex flex-col pb-4 ${isMobile ? "items-center pb-2" : ""}`}
+      >
+        {isMobile ?
+          <div className="flex flex-col gap-8">
+            <Image
+              src="/mecfbbr.png"
+              alt="Quem somos"
+              width={700}
+              height={500} />
+          </div>
+          :
+          <div>
+            <div className="flex flex-row gap-[3rem] pb-8">
+              <Image
+                src="/mecfbbr.png"
+                alt="Quem somos"
+                width={700}
+                height={500} />
             </div>
           </div>
         }

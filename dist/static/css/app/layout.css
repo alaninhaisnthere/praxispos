@@ -2418,6 +2418,9 @@ input[type="range"]::-ms-fill-lower {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
 .text-left {
   text-align: left;
 }
