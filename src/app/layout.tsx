@@ -7,9 +7,8 @@ import Script from 'next/script';
 
 import "./globals.css";
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { metadata } from "./metadata";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -44,21 +43,21 @@ export default function AppLayout({
         <title>{typeof metadata.title === 'string' ? metadata.title : "Pós-graduação Práxis"}</title>
         <meta name="description" content={typeof metadata.description === 'string' ? metadata.description : ""} />
 
-        {/* Google Ads */}
+        {/* Google tag (gtag.js) */}
         <Script
-          id="google-ads-init"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ESTDBVPXJ9"
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16557313988"
+          async
         />
         <Script
-          id="google-ads-config"
+          id="google-analytics-config"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-16557313988');
+              gtag('config', 'G-ESTDBVPXJ9');
             `,
           }}
         />
@@ -90,7 +89,6 @@ export default function AppLayout({
       </head>
       <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <NextUIProvider>
-          <Header />
           <section className="text-balance container flex-grow">
             {children}
           </section>
