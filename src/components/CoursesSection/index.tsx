@@ -23,12 +23,11 @@ const CourseSection = () => {
 
 
     return (
-        <section className="container mx-auto my-10 px-4 md:px-0">
+        <section className="container mx-auto my-5 px-4 md:px-0">
             {isMobile ?
-                <div className="flex flex-col items-center gap-4 pb-5">
-                    <h1 className="font-extrabold uppercase text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
+                <div className="flex flex-col items-center pb-5">
+                    <h1 className="font-extrabold uppercase text-3xl text-center text-balance text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
                         A Práxis tem o curso certo para alavancar a sua carreira!
-                        <br />
                         Confira:
                     </h1>
                 </div>

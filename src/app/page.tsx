@@ -72,7 +72,7 @@ const Home: React.FC = () => {
   return (
     <main className="flex flex-col min-h-screen">
       {/* hero */}
-      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px] overflow-hidden">
+      <section className={`relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] ${isMobile ? "h-[350px]" : "h-[778px]"} overflow-hidden`}>
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -92,13 +92,13 @@ const Home: React.FC = () => {
               href={image.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full h-full relative cursor-pointer"
+              className="w-full h-fit relative cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
                 handleImageClick(image.link);
               }}
             >
-              <div className="w-full h-full relative">
+              <div className="w-full h-fit relative">
                 <Image
                   src={isMobile ? image.mobile : image.desktop}
                   alt={`Image ${index + 1}`}
@@ -112,6 +112,10 @@ const Home: React.FC = () => {
       </section>
       {/* 2a seção */}
       <CourseSection />
+
+      {/* 3a seção */}
+
+
       {/* 8a seção */}
       <section>
         <FloatingButton />
