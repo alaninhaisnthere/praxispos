@@ -37,7 +37,7 @@ const Header = () => {
             subItems: [
                 {
                     label: "Pós-graduação",
-                    href: "/cursos/pos-graduacao",
+                    href: "/cursos/posgraduacao",
                 },
                 {
                     label: "Curso de extensão",

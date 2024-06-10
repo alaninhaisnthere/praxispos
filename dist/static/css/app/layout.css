@@ -1228,6 +1228,9 @@ input[type="range"]::-ms-fill-lower {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -2427,6 +2430,9 @@ input[type="range"]::-ms-fill-lower {
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.font-gothamitalic {
+  font-family: Gotham Book Italic, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2490,6 +2496,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-light {
+  font-weight: 300;
 }
 .uppercase {
   text-transform: uppercase;

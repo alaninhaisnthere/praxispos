@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 
-import { Divider } from "@nextui-org/react";
 import Image from "next/image";
 
 
