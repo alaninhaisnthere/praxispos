@@ -2198,6 +2198,9 @@ input[type="range"]::-ms-fill-lower {
 .to-sky-900 {
   --tw-gradient-to: #0c4a6e var(--tw-gradient-to-position);
 }
+.to-\[\#f8e4b4\] {
+  --tw-gradient-to: #f8e4b4 var(--tw-gradient-to-position);
+}
 .bg-\[length\:1\.25rem_1\.25rem\] {
   background-size: 1.25rem 1.25rem;
 }
