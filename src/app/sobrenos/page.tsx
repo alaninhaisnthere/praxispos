@@ -124,6 +124,69 @@ export default function Landing() {
         }
       </section>
 
+      {/* 2a seção */}
+      <section
+        className={`flex flex-col pt-8 pb-4 ${isMobile ? "items-center pb-2" : ""}`}
+      >
+        {isMobile ?
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col justify-center gap-3">
+              <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                Missão
+              </h1>
+              <h1 className="text-balance text-xl">
+                Nosso compromisso é preparar você, enfermeiros, biomédicos e farmacêuticos, para oferecer tratamentos estéticos inovadores com segurança, ética e responsabilidade, enquanto promovemos o seu crescimento pessoal e profissional.
+              </h1>
+            </div>
+            <div className="flex flex-col justify-center gap-3">
+              <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                Visão
+              </h1>
+              <h1 className="text-balance text-xl">
+                Queremos ser mais do que uma referência em educação na área da saúde. Queremos ser o seu parceiro de jornada, proporcionando uma experiência educacional que vai além do técnico, abraçando suas paixões, sonhos e aspirações.
+              </h1>
+            </div>
+            <div className="flex flex-col justify-center gap-3">
+              <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                Valores
+              </h1>
+              <h1 className="text-balance text-xl">
+                Estamos comprometidos com a excelência educacional. Valorizamos a inovação e o desenvolvimento humano. Nosso trabalho é pautado pela ética e responsabilidade. Respeitamos sua individualidade e seu potencial único.
+              </h1>
+            </div>
+          </div>
+          :
+          <div>
+            <div className="flex flex-row items-start gap-[3rem] pb-8">
+              <div className="flex flex-col justify-center gap-3">
+                <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                  Missão
+                </h1>
+                <h1 className="text-balance text-xl">
+                  Nosso compromisso é preparar você, enfermeiros, biomédicos e farmacêuticos, para oferecer tratamentos estéticos inovadores com segurança, ética e responsabilidade, enquanto promovemos o seu crescimento pessoal e profissional.
+                </h1>
+              </div>
+              <div className="flex flex-col justify-center gap-3">
+                <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                  Visão
+                </h1>
+                <h1 className="text-balance text-xl">
+                  Queremos ser mais do que uma referência em educação na área da saúde. Queremos ser o seu parceiro de jornada, proporcionando uma experiência educacional que vai além do técnico, abraçando suas paixões, sonhos e aspirações.
+                </h1>
+              </div>
+              <div className="flex flex-col justify-center gap-3">
+                <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#196193] px-6 py-2">
+                  Valores
+                </h1>
+                <h1 className="text-balance text-xl">
+                  Estamos comprometidos com a excelência educacional. Valorizamos a inovação e o desenvolvimento humano. Nosso trabalho é pautado pela ética e responsabilidade. Respeitamos sua individualidade e seu potencial único.
+                </h1>
+              </div>
+            </div>
+          </div>
+        }
+      </section>
+
       {/* 8a seção */}
       <section>
         <FloatingButton />
