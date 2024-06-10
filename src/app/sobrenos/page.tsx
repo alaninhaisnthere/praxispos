@@ -216,6 +216,52 @@ export default function Landing() {
                 O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
               </h1>
             </div>
+            <div className="flex flex-col justify-center gap-3">
+              <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#AA8E4B] px-6 py-2 my-2">
+                Clique abaixo para acessar os links do MEC:
+              </h1>
+              <div className="flex flex-row justify-evenly pt-2 gap-5">
+                <div className="flex flex-col justify-between gap-2">
+                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
+                    <Image
+                      src="/biomed-mec.png"
+                      alt="Biomedicina"
+                      width={150}
+                      height={150} />
+                  </Link>
+                  <h1 className="text-center uppercase font-extrabold pt-2 text-[#2E467F]">
+                    Biomedicina
+                  </h1>
+                </div>
+
+                <div className="flex flex-col justify-between gap-2">
+                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                    <Image
+                      src="/enfermagem-mec.png"
+                      alt="Enfermagem"
+                      width={150}
+                      height={150} />
+                  </Link>
+                  <h1 className="text-center uppercase font-extrabold pt-2 text-[#2E467F]">
+                    Enfermagem
+                  </h1>
+                </div>
+
+                <div className="flex flex-col justify-between gap-2">
+                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
+                    <Image
+                      src="/farma-mec.png"
+                      alt="Farmácia"
+                      width={150}
+                      height={150} />
+                  </Link>
+                  <h1 className="text-center uppercase font-extrabold text-[#2E467F]">
+                    Farmácia
+                  </h1>
+                </div>
+
+              </div>
+            </div>
           </div>
           :
           <div>
@@ -233,33 +279,48 @@ export default function Landing() {
                   O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
                 </h1>
                 <div className="flex flex-col justify-center gap-3">
-                  <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#AA8E4B] px-6 py-2">
-                    Clique abaixo para acessar os links do MEC
+                  <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#AA8E4B] px-6 py-2 my-5">
+                    Clique abaixo para acessar os links do MEC:
                   </h1>
                   <div className="flex flex-row justify-evenly pt-2 gap-5">
-                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
-                      <Image
-                        src="/biomed-mec.png"
-                        alt="Biomedicina"
-                        width={150}
-                        height={150} />
-                    </Link>
-                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
-                      <Image
-                        src="/enfermagem-mec.png"
-                        alt="Enfermagem"
-                        width={150}
-                        height={150} />
-                    </Link>
-                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
-                      <Image
-                        src="/farma-mec.png"
-                        alt="Farmácia"
-                        width={150}
-                        height={150} />
-                    </Link>
-                  </div>
+                    <div className="flex flex-col justify-between gap-2">
+                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
+                        <Image
+                          src="/biomed-mec.png"
+                          alt="Biomedicina"
+                          width={150}
+                          height={150} />
+                      </Link>
+                      <h1 className="text-center uppercase font-extrabold pt-2 text-[#2E467F]">
+                        Biomedicina
+                      </h1>
+                    </div>
+                    <div className="flex flex-col justify-between gap-2">
+                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                        <Image
+                          src="/enfermagem-mec.png"
+                          alt="Enfermagem"
+                          width={150}
+                          height={150} />
+                      </Link>
+                      <h1 className="text-center uppercase font-extrabold pt-2 text-[#2E467F]">
+                        Enfermagem
+                      </h1>
+                    </div>
 
+                    <div className="flex flex-col justify-between gap-2">
+                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
+                        <Image
+                          src="/farma-mec.png"
+                          alt="Farmácia"
+                          width={150}
+                          height={150} />
+                      </Link>
+                      <h1 className="text-center uppercase font-extrabold text-[#2E467F]">
+                        Farmácia
+                      </h1>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
