@@ -46,7 +46,7 @@ const CourseSection = () => {
                     <div className="mb-4">
                         <Image src="/Enfermagem.png" width={300} height={200} alt="Enfermagem" className="rounded-2xl" />
                     </div>
-                    <h3 className="text-2xl font-semibold mb-2 uppercase tracking-wide text-white">
+                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Enfermagem
                     </h3>
                     <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
@@ -59,7 +59,7 @@ const CourseSection = () => {
                     <div className="mb-4">
                         <Image src="/Biomedicina.png" width={300} height={200} alt="Biomedicina" className="rounded-2xl" />
                     </div>
-                    <h3 className="text-2xl font-semibold mb-2 uppercase tracking-wide text-white">
+                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Biomedicina
                     </h3>
                     <Button className="text-white uppercase tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -72,7 +72,7 @@ const CourseSection = () => {
                     <div className="mb-4">
                         <Image src="/Farmácia.png" width={300} height={200} alt="Farmácia" className="rounded-2xl" />
                     </div>
-                    <h3 className="text-2xl font-semibold mb-2 uppercase tracking-wide text-white">
+                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Farmácia
                     </h3>
                     <Button className="text-white uppercase tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out">
