@@ -44,11 +44,11 @@ export default function AppLayout({
         <title>{typeof metadata.title === 'string' ? metadata.title : "Pós-graduação Práxis"}</title>
         <meta name="description" content={typeof metadata.description === 'string' ? metadata.description : ""} />
 
-        {/* google ads */}
+        {/* Google Ads */}
         <Script
           id="google-ads-init"
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-16557313988`}
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16557313988"
         />
         <Script
           id="google-ads-config"
@@ -57,14 +57,13 @@ export default function AppLayout({
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              window.gtag = function() { dataLayer.push(arguments); }
               gtag('js', new Date());
               gtag('config', 'AW-16557313988');
             `,
           }}
         />
 
-        {/* fb pixel */}
+        {/* Facebook Pixel */}
         <Script
           id="fb-pixel-init"
           strategy="afterInteractive"

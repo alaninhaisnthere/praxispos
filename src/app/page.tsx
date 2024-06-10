@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
+import { Link as ScrollLink } from "react-scroll";
+import Button from "@/components/Button";
 
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
@@ -110,10 +112,49 @@ const Home: React.FC = () => {
           ))}
         </Carousel>
       </section>
+
       {/* 2a seção */}
       <CourseSection />
 
       {/* 3a seção */}
+      <section
+        className={`flex flex-col pt-8 pb-4 ${isMobile ? "items-center pb-2" : ""}`}
+      >
+        {isMobile ?
+          <div className="flex flex-col gap-8">
+            <Image
+              src="./home-impact.png"
+              alt="Imagem de enfermeira sentada no chão"
+              width={100}
+              height={100} />
+            <h1 className="font-medium text-2xl text-pretty">
+              O Instituto Práxis passou por um reposicionamento de marca, adotando um novo nome, uma nova identidade visual e uma nova maneira de se conectar com você, mas trazendo consigo anos de experiência de seus sócios e um corpo docente altamente capacitado.
+            </h1>
+          </div>
+          :
+          <div className="flex flex-row gap-[3rem] pb-8">
+            <Image
+              src="./home-impact.png"
+              alt="Imagem de enfermeira sentada no chão"
+              width={700}
+              height={700} />
+            <div className="flex flex-col justify-center gap-6">
+              <h1 className="font-medium text-xl text-pretty leading-relaxed">
+                O Instituto Práxis passou por um reposicionamento de marca, adotando um novo nome, uma nova identidade visual e uma nova maneira de se conectar com você, mas trazendo consigo anos de experiência de seus sócios e um corpo docente altamente capacitado.
+              </h1>
+              <ScrollLink to="form" smooth={true} duration={500}>
+                <Button
+                  variant="default"
+                  size="default"
+                  className="text-white text-xl font-semibold uppercase hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+                >
+                  Conheça nossa história
+                </Button>
+              </ScrollLink>
+            </div>
+          </div>
+        }
+      </section>
 
 
       {/* 8a seção */}
