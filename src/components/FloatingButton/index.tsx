@@ -20,6 +20,17 @@ const FloatingButton: React.FC = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    // evento do google analytics
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'WhatsApp Button',
+        event_label: 'WhatsApp Contact',
+      });
+    }
+
+  };
+
   return (
     <div className="fixed bottom-32 right-2 z-50">
       <Link
@@ -28,6 +39,7 @@ const FloatingButton: React.FC = () => {
         rel="noopener noreferrer"
       >
         <div
+          onClick={handleClick}
           className={`bg-green-500 text-white ${isMobile ? "p-4" : "p-6"} 
           rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 w-auto animate-bounce`}
         >

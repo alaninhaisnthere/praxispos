@@ -37,16 +37,15 @@ const FormComponent: React.FC = () => {
             if (response.ok) {
                 alert('Mensagem enviada com sucesso!');
 
-                // Google Ads
-                if (window.gtag) {
-                    window.gtag('event', 'conversion', {
-                        send_to: 'AW-16557313988/OTj9CKHulLQZEMSfktc9',
-                        value: 1.0,
-                        currency: 'BRL',
+                // evento google analytics
+                if (typeof window !== "undefined" && window.gtag) {
+                    window.gtag('event', 'submit', {
+                        event_category: 'Form',
+                        event_label: 'Contact Form',
                     });
                 }
 
-                // Facebook Pixel
+                // meta pixel
                 if (window.fbq) {
                     window.fbq('track', 'Lead');
                 }

@@ -10,6 +10,7 @@ import "./globals.css";
 import { metadata } from "./metadata";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -44,24 +45,8 @@ export default function AppLayout({
         <title>{typeof metadata.title === 'string' ? metadata.title : "Pós-graduação Práxis"}</title>
         <meta name="description" content={typeof metadata.description === 'string' ? metadata.description : ""} />
 
-        {/* google tag */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ESTDBVPXJ9"
-          strategy="afterInteractive"
-          async
-        />
-        <Script
-          id="google-analytics-config"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ESTDBVPXJ9');
-            `,
-          }}
-        />
+        {/* google analytics */}
+        <GoogleAnalytics conversionId="G-ESTDBVPXJ9" />
 
         {/* pixel */}
         <Script

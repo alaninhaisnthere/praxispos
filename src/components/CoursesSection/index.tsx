@@ -62,7 +62,7 @@ const CourseSection = () => {
                     <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Biomedicina
                     </h3>
-                    <Button className="text-white uppercase tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
                         Saiba Mais
                     </Button>
                 </div>
@@ -75,7 +75,7 @@ const CourseSection = () => {
                     <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Farmácia
                     </h3>
-                    <Button className="text-white uppercase tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
                         Saiba Mais
                     </Button>
                 </div>
