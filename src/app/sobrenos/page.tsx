@@ -69,7 +69,7 @@ export default function Landing() {
       >
         {isMobile ?
           <div className="flex flex-col gap-8">
-            <h1 className="font-extrabold text-3xl tracking-wide uppercase text-center">
+            <h1 className="font-bold  text-3xl tracking-wide uppercase">
               Quem Somos?
             </h1>
             <Image
@@ -96,7 +96,7 @@ export default function Landing() {
           <div>
             <div className="flex flex-row gap-[3rem] pb-8">
               <div className="flex flex-col justify-center gap-3">
-                <h1 className="font-extrabold text-3xl tracking-wide uppercase">
+                <h1 className="font-bold  text-3xl tracking-wide uppercase">
                   Quem Somos?
                 </h1>
                 <h1 className="text-balance text-xl">
@@ -154,7 +154,7 @@ export default function Landing() {
                 Estamos comprometidos com a excelência educacional. Valorizamos a inovação e o desenvolvimento humano. Nosso trabalho é pautado pela ética e responsabilidade. Respeitamos sua individualidade e seu potencial único.
               </h1>
             </div>
-            <h1 className="text-2xl uppercase text-transparent font-extrabold text-center bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text pb-5">
+            <h1 className="text-2xl uppercase text-transparent font-extrabold text-center bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
               No Instituto Práxis, você não é apenas um estudante.
               <br />
               Você é parte da nossa família.
@@ -199,7 +199,7 @@ export default function Landing() {
 
       {/* 3a seção */}
       <section
-        className={`flex flex-col pb-4 ${isMobile ? "items-center pb-2" : ""}`}
+        className={`flex flex-col pt-4 ${isMobile ? "items-center pb-2" : ""}`}
       >
         {isMobile ?
           <div className="flex flex-col gap-8">
@@ -208,6 +208,14 @@ export default function Landing() {
               alt="Quem somos"
               width={700}
               height={500} />
+            <div className="flex flex-col justify-center gap-3">
+              <h1 className="font-bold text-2xl tracking-wide uppercase">
+                Nossas Pós-graduações são certificadas pelo MEC!
+              </h1>
+              <h1 className="text-balance text-xl">
+                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+              </h1>
+            </div>
           </div>
           :
           <div>
@@ -217,6 +225,43 @@ export default function Landing() {
                 alt="Quem somos"
                 width={700}
                 height={500} />
+              <div className="flex flex-col justify-center gap-3">
+                <h1 className="font-bold  text-3xl tracking-wide uppercase">
+                  Nossas Pós-graduações são certificadas pelo MEC!
+                </h1>
+                <h1 className="text-balance text-xl">
+                  O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+                </h1>
+                <div className="flex flex-col justify-center gap-3">
+                  <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#AA8E4B] px-6 py-2">
+                    Clique abaixo para acessar os links do MEC
+                  </h1>
+                  <div className="flex flex-row justify-evenly pt-2 gap-5">
+                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
+                      <Image
+                        src="/biomed-mec.png"
+                        alt="Biomedicina"
+                        width={150}
+                        height={150} />
+                    </Link>
+                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                      <Image
+                        src="/enfermagem-mec.png"
+                        alt="Enfermagem"
+                        width={150}
+                        height={150} />
+                    </Link>
+                    <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
+                      <Image
+                        src="/farma-mec.png"
+                        alt="Farmácia"
+                        width={150}
+                        height={150} />
+                    </Link>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         }
