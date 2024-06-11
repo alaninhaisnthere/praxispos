@@ -6,13 +6,11 @@ import { useRouter } from "next/navigation";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
-import { Link as ScrollLink } from "react-scroll";
-import Button from "@/components/Button";
-
-import FloatingButton from "@/components/FloatingButton";
-import ScrollToTopButton from "@/components/ScrollToTop";
 import CourseSection from "@/components/CoursesSection";
 import Link from "next/link";
+import Button from "@/components/Button";
+import FloatingButton from "@/components/FloatingButton";
+import ScrollToTopButton from "@/components/ScrollToTop";
 
 const images = [
   { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/" },
@@ -74,7 +72,6 @@ const Home: React.FC = () => {
 
   return (
     <main className="flex flex-col min-h-screen">
-      {/* hero */}
       <section className={`relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] ${isMobile ? "h-[350px]" : "h-[778px]"} overflow-hidden`}>
         <Carousel
           showThumbs={false}
@@ -107,6 +104,9 @@ const Home: React.FC = () => {
                   alt={`Image ${index + 1}`}
                   width={100}
                   height={100}
+                  layout="responsive"
+                  objectFit="cover"
+                  priority
                 />
               </div>
             </a>
@@ -128,7 +128,11 @@ const Home: React.FC = () => {
               src="./home-impact.png"
               alt="Imagem de enfermeira sentada no chão"
               width={700}
-              height={700} />
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
             <h1 className="font-medium text-2xl text-balance">
               O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
             </h1>
@@ -148,7 +152,11 @@ const Home: React.FC = () => {
               src="./home-impact.png"
               alt="Imagem de enfermeira sentada no chão"
               width={700}
-              height={700} />
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
             <div className="flex flex-col justify-center gap-6">
               <h1 className="text-2xl text-pretty leading-relaxed">
                 O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
@@ -166,7 +174,6 @@ const Home: React.FC = () => {
           </div>
         }
       </section>
-
 
       {/* 8a seção */}
       <section>
