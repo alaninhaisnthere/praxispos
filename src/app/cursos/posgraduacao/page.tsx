@@ -242,7 +242,7 @@ export default function Landing() {
               <h1 className="text-balance font-medium text-xl">
                 Combine seu desejo de ajudar pessoas com prestígio profissional: Especialize-se em Estética Avançada com nossa Pós e alcance um novo patamar de reconhecimento e sucesso!
               </h1>
-              <Link href="/cursos/posgraduacao/farmácia">
+              <Link href="/cursos/posgraduacao/farmacia">
                 <Button
                   variant="default"
                   size="default"
@@ -274,7 +274,7 @@ export default function Landing() {
                 <h1 className="text-balance font-medium text-xl">
                   Combine seu desejo de ajudar pessoas com prestígio profissional: Especialize-se em Estética Avançada com nossa Pós e alcance um novo patamar de reconhecimento e sucesso!
                 </h1>
-                <Link href="/cursos/posgraduacao/farmácia">
+                <Link href="/cursos/posgraduacao/farmacia">
                   <Button
                     variant="default"
                     size="default"
@@ -312,7 +312,7 @@ export default function Landing() {
 
       {/* 8a seção */}
       <section>
-      <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
+        <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>
     </main >

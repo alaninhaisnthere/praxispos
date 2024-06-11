@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/sobrenos/page": [
+    "/cursos/posgraduacao/enfermagem/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sobrenos/page.js"
+      "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,26 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/sobrenos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/sobrenos/page.js"
     ],
     "/cursos/posgraduacao/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/cursos/posgraduacao/page.js"
     ],
-    "/cursos/posgraduacao/biomedicina/page": [
+    "/cursos/posgraduacao/farmacia/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/biomedicina/page.js"
-    ],
-    "/cursos/posgraduacao/enfermagem/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
+      "static/chunks/app/cursos/posgraduacao/farmacia/page.js"
     ]
   }
 }

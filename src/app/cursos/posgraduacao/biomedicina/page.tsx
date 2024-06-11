@@ -57,9 +57,9 @@ export default function Landing() {
             />
           </div>
           <p
-            className={`text-white text-left font-semibold text-lg tracking-wide ${isMobile ? "text-xs" : ""}`}
+            className={`text-white text-left font-semibold text-lg tracking-wide uppercase ${isMobile ? "text-xs" : ""}`}
           >
-            ENFERMAGEM
+            BIOMEDICINA
           </p>
           <h1
             className={`text-white text-left font-bold ${isMobile ? "text-3xl my-3" : "text-5xl"}`}
@@ -117,7 +117,7 @@ export default function Landing() {
             </h1>
             <h1 className="font-bold text-2xl text-pretty">
               Sim! Você,{" "}
-              <span className="italic text-[#114264]">enfermeiro</span>,{" "}
+              <span className="italic text-[#114264]">Biomédico</span>,{" "}
               mudar o rumo da sua carreira profissional fazendo parte do mercado
               da estética!
             </h1>
@@ -159,7 +159,7 @@ export default function Landing() {
               </h1>
               <h1 className="font-bold text-xl text-pretty leading-relaxed">
                 Sim! Você,{" "}
-                <span className="italic underline underline-offset-4 uppercase text-[#114264]">enfermeiro</span>,{" "}pode
+                <span className="italic underline underline-offset-4 uppercase text-[#114264]">Biomédico</span>,{" "}pode
                 mudar o rumo da sua carreira profissional fazendo parte do mercado
                 da estética!
               </h1>
@@ -441,8 +441,7 @@ export default function Landing() {
               <b>qualidade</b> e a <b>inovação educacional</b>.
             </p>
             <p className="font-medium text-lg text-pretty leading-relaxed">
-              Queremos que você, <i>Enfermeiro</i>, <i>Biomédico</i> e{" "}
-              <i>Farmacêutico</i>, faça parte da nossa família e se una a nós
+              Queremos que você, <i>Biomédico</i>, faça parte da nossa família e se una a nós
               com um propósito comum: <b>transformar</b> a sua vida e fazer a{" "}
               <b>diferença</b> no mundo da estética e da saúde. Acreditamos que
               a <b>educação</b> vai além dos livros e das salas de aula.
@@ -478,8 +477,7 @@ export default function Landing() {
                   <b>inovação educacional</b>.
                 </p>
                 <p className="font-medium text-lg text-pretty leading-relaxed">
-                  Queremos que você, <i>Enfermeiro</i>, <i>Biomédico</i> e{" "}
-                  <i>Farmacêutico</i>, faça parte da nossa família e se una a
+                  Queremos que você, <i>Biomédico</i>, faça parte da nossa família e se una a
                   nós com um propósito comum: <b>transformar</b> a sua vida e
                   fazer a <b>diferença</b> no mundo da estética e da saúde.
                   Acreditamos que a <b>educação</b> vai além dos livros e das
