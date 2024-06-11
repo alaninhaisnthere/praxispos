@@ -13,7 +13,7 @@ import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 
 const images = [
-  { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/" },
+  { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/cursos/posgraduacao" },
   { desktop: "/home02.png", mobile: "/home02-mobile.png", link: "/" },
   { desktop: "/home03.png", mobile: "/home03-mobile.png", link: "/" },
   { desktop: "/home04.png", mobile: "/home04-mobile.png", link: "/sobrenos" },
@@ -87,11 +87,7 @@ const Home: React.FC = () => {
           renderArrowNext={renderArrowNext}
         >
           {images.map((image, index) => (
-            <a
-              key={index}
-              href={image.link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link key={index} href={image.link}
               className="w-full h-fit relative cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
@@ -109,7 +105,7 @@ const Home: React.FC = () => {
                   priority
                 />
               </div>
-            </a>
+            </Link>
           ))}
         </Carousel>
       </section>
