@@ -76,7 +76,7 @@ const config: Config = {
         gothamblack: ['Gotham Black', 'sans-serif'],
         gothammedium: ['Gotham Medium', 'sans-serif'],
         gothamitalic: ['Gotham Book Italic', 'sans-serif'],
-        triplex: ['Triplex'],
+        triplex: ['Triplex', 'sans-serif'],
       },
     },
   },

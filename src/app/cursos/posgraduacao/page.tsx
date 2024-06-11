@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import Button from "@/components/Button";
 
 export default function Landing() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -83,7 +84,7 @@ export default function Landing() {
       {/* 3a seção */}
 
       <section
-        className={`flex flex-col p-4 ${isMobile ? "items-center pb-2" : ""}`}
+        className={`flex flex-col p-4 ${isMobile ? "items-center" : ""}`}
       >
 
         {/* Enfermagem */}
@@ -93,20 +94,30 @@ export default function Landing() {
             <Image
               src="/enfer-main.png"
               alt="Enfermagem"
-              width={700}
-              height={500}
+              width={500}
+              height={300}
               className="rounded-2xl" />
-            <div className="flex flex-col justify-center gap-3">
+            <div className="flex flex-col justify-center gap-[1rem]">
               <h1 className="font-bold text-2xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
               <h1 className="p-2 font-bold text-2xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
                 text-[#FAFAFA]">
-                Dermatologia Estética
+                Enfermagem Dermatológica Estética
               </h1>
               <h1 className="text-balance font-medium text-xl">
                 Transforme sua paixão em prosperidade: Torne-se um especialista em Estética Avançada com a nossa Pós e alcance a independência financeira que você sempre sonhou!
               </h1>
+              <Link href="/cursos/posgraduacao/enfermagem">
+                <Button
+                  variant="default"
+                  size="default"
+                  className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                >
+                  Saiba mais
+                </Button>
+              </Link>
             </div>
           </div>
           :
@@ -115,20 +126,30 @@ export default function Landing() {
               <Image
                 src="/enfer-main.png"
                 alt="Enfermagem"
-                width={700}
-                height={500}
+                width={500}
+                height={300}
                 className="rounded-2xl" />
-              <div className="flex flex-col justify-center gap-3">
+              <div className="flex flex-col justify-center gap-[1rem]">
                 <h1 className="font-bold text-3xl tracking-wide uppercase">
                   Pós-graduação Lato Sensu em
                 </h1>
                 <h1 className="p-2 font-bold text-3xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
                 text-[#FAFAFA]">
-                  Dermatologia Estética
+                  Enfermagem Dermatológica Estética
                 </h1>
                 <h1 className="text-balance font-medium text-xl">
                   Transforme sua paixão em prosperidade: Torne-se um especialista em Estética Avançada com a nossa Pós e alcance a independência financeira que você sempre sonhou!
                 </h1>
+                <Link href="/cursos/posgraduacao/enfermagem">
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                  >
+                    Saiba mais
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -140,10 +161,10 @@ export default function Landing() {
             <Image
               src="/biomed-main.png"
               alt="Biomedicina"
-              width={700}
-              height={500}
+              width={500}
+              height={300}
               className="rounded-2xl" />
-            <div className="flex flex-col justify-center gap-3">
+            <div className="flex flex-col justify-center gap-[1rem]">
               <h1 className="font-bold text-2xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
@@ -152,8 +173,18 @@ export default function Landing() {
                 Biomedicina em Estética
               </h1>
               <h1 className="text-balance font-medium text-xl">
-                Elevate sua carreira na Farmácia: Especialize-se em Estética Avançada com nossa Pós e conquiste um futuro de sucesso e reconhecimento!
+                Eleve sua carreira na Farmácia: Especialize-se em Estética Avançada com nossa Pós e conquiste um futuro de sucesso e reconhecimento!
               </h1>
+              <Link href="/cursos/posgraduacao/biomedicina">
+                <Button
+                  variant="default"
+                  size="default"
+                  className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                >
+                  Saiba mais
+                </Button>
+              </Link>
             </div>
           </div>
           :
@@ -162,10 +193,10 @@ export default function Landing() {
               <Image
                 src="/biomed-main.png"
                 alt="Biomedicina"
-                width={700}
-                height={500}
+                width={500}
+                height={300}
                 className="rounded-2xl" />
-              <div className="flex flex-col justify-center gap-3">
+              <div className="flex flex-col justify-center gap-[1rem]">
                 <h1 className="font-bold text-3xl tracking-wide uppercase">
                   Pós-graduação Lato Sensu em
                 </h1>
@@ -174,8 +205,18 @@ export default function Landing() {
                   Biomedicina em Estética
                 </h1>
                 <h1 className="text-balance font-medium text-xl">
-                  Elevate sua carreira na Farmácia: Especialize-se em Estética Avançada com nossa Pós e conquiste um futuro de sucesso e reconhecimento!
+                  Eleve sua carreira na Farmácia: Especialize-se em Estética Avançada com nossa Pós e conquiste um futuro de sucesso e reconhecimento!
                 </h1>
+                <Link href="/cursos/posgraduacao/biomedicina">
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                  >
+                    Saiba mais
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -187,10 +228,10 @@ export default function Landing() {
             <Image
               src="/farma-main.png"
               alt="Farmácia"
-              width={700}
-              height={500}
+              width={500}
+              height={300}
               className="rounded-2xl" />
-            <div className="flex flex-col justify-center gap-3">
+            <div className="flex flex-col justify-center gap-[1rem]">
               <h1 className="font-bold text-2xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
@@ -201,6 +242,16 @@ export default function Landing() {
               <h1 className="text-balance font-medium text-xl">
                 Combine seu desejo de ajudar pessoas com prestígio profissional: Especialize-se em Estética Avançada com nossa Pós e alcance um novo patamar de reconhecimento e sucesso!
               </h1>
+              <Link href="/cursos/posgraduacao/farmácia">
+                <Button
+                  variant="default"
+                  size="default"
+                  className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                >
+                  Saiba mais
+                </Button>
+              </Link>
             </div>
           </div>
           :
@@ -209,10 +260,10 @@ export default function Landing() {
               <Image
                 src="/farma-main.png"
                 alt="Farmácia"
-                width={700}
-                height={500}
+                width={500}
+                height={300}
                 className="rounded-2xl" />
-              <div className="flex flex-col justify-center gap-3">
+              <div className="flex flex-col justify-center gap-[1rem]">
                 <h1 className="font-bold text-3xl tracking-wide uppercase">
                   Pós-graduação Lato Sensu em
                 </h1>
@@ -223,8 +274,38 @@ export default function Landing() {
                 <h1 className="text-balance font-medium text-xl">
                   Combine seu desejo de ajudar pessoas com prestígio profissional: Especialize-se em Estética Avançada com nossa Pós e alcance um novo patamar de reconhecimento e sucesso!
                 </h1>
+                <Link href="/cursos/posgraduacao/farmácia">
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="text-white text-xl font-semibold uppercase bg-[#134169]
+                hover:scale-110 hover:bg-[#134169] transition-transform duration-300 ease-in-out mb-4"
+                  >
+                    Saiba mais
+                  </Button>
+                </Link>
               </div>
             </div>
+          </div>
+        }
+      </section>
+
+      {/* 4a seção */}
+      <section
+        className={`flex flex-col py-4 ${isMobile ? "items-center" : ""}`}
+      >
+        {isMobile ?
+          <div className="flex flex-col items-center gap-4">
+            <h1 className="font-bold text-2xl text-pretty">
+              O mercado da estética é o terceiro mercado que mais cresce no Brasil. <br />
+              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
+            </h1>
+          </div>
+          : <div className="flex flex-col gap-8 pb-8">
+            <h1 className="font-bold text-3xl text-center">
+              O mercado da estética é o terceiro mercado que mais cresce no Brasil.
+              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
+            </h1>
           </div>
         }
       </section>

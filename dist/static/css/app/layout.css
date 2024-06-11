@@ -1144,6 +1144,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -1163,10 +1167,6 @@ input[type="range"]::-ms-fill-lower {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 .-ml-\[50vw\] {
   margin-left: -50vw;
@@ -1230,9 +1230,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .mt-5 {
   margin-top: 1.25rem;
-}
-.mt-6 {
-  margin-top: 1.5rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -1799,9 +1796,6 @@ input[type="range"]::-ms-fill-lower {
 .place-content-center {
   place-content: center;
 }
-.content-between {
-  align-content: space-between;
-}
 .items-start {
   align-items: flex-start;
 }
@@ -1810,9 +1804,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .items-center {
   align-items: center;
-}
-.items-baseline {
-  align-items: baseline;
 }
 .justify-start {
   justify-content: flex-start;
@@ -1826,14 +1817,8 @@ input[type="range"]::-ms-fill-lower {
 .justify-between {
   justify-content: space-between;
 }
-.justify-around {
-  justify-content: space-around;
-}
 .justify-evenly {
   justify-content: space-evenly;
-}
-.justify-stretch {
-  justify-content: stretch;
 }
 .\!gap-0 {
   gap: 0px !important;
@@ -1867,6 +1852,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-\[1rem\] {
+  gap: 1rem;
 }
 .gap-\[3rem\] {
   gap: 3rem;
@@ -2108,6 +2096,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-bg-opacity: 1;
   background-color: rgb(134 110 52 / var(--tw-bg-opacity));
 }
+.bg-\[\#AA8E4B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 142 75 / var(--tw-bg-opacity));
+}
 .bg-background {
   background-color: hsl(var(--background));
 }
@@ -2159,14 +2151,6 @@ input[type="range"]::-ms-fill-lower {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-\[\#AA8E4B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 142 75 / var(--tw-bg-opacity));
-}
-.bg-\[\#FAFAFA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
@@ -2419,6 +2403,9 @@ input[type="range"]::-ms-fill-lower {
 .text-center {
   text-align: center;
 }
+.text-justify {
+  text-align: justify;
+}
 .text-start {
   text-align: start;
 }
@@ -2428,6 +2415,9 @@ input[type="range"]::-ms-fill-lower {
 .font-gothamblack {
   font-family: Gotham Black, sans-serif;
 }
+.font-gothamitalic {
+  font-family: Gotham Book Italic, sans-serif;
+}
 .font-gothammedium {
   font-family: Gotham Medium, sans-serif;
 }
@@ -2436,9 +2426,6 @@ input[type="range"]::-ms-fill-lower {
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.font-gothamitalic {
-  font-family: Gotham Book Italic, sans-serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -2504,9 +2491,6 @@ input[type="range"]::-ms-fill-lower {
 .font-semibold {
   font-weight: 600;
 }
-.font-light {
-  font-weight: 300;
-}
 .uppercase {
   text-transform: uppercase;
 }
@@ -2539,9 +2523,17 @@ input[type="range"]::-ms-fill-lower {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.text-\[\#2E467F\] {
+  --tw-text-opacity: 1;
+  color: rgb(46 70 127 / var(--tw-text-opacity));
+}
 .text-\[\#6B7280\] {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-\[\#FAFAFA\] {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 .text-\[\#dab167\] {
   --tw-text-opacity: 1;
@@ -2607,14 +2599,6 @@ input[type="range"]::-ms-fill-lower {
 .text-\[\#196193\] {
   --tw-text-opacity: 1;
   color: rgb(25 97 147 / var(--tw-text-opacity));
-}
-.text-\[\#2E467F\] {
-  --tw-text-opacity: 1;
-  color: rgb(46 70 127 / var(--tw-text-opacity));
-}
-.text-\[\#FAFAFA\] {
-  --tw-text-opacity: 1;
-  color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
