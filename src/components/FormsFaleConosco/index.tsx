@@ -12,7 +12,7 @@ interface FormData {
     mensagem: string;
 }
 
-const ContatoForm: React.FC = () => {
+const FormsFaleConosco: React.FC = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
     const onSubmit = async (data: FormData) => {
@@ -187,4 +187,4 @@ const ContatoForm: React.FC = () => {
     );
 };
 
-export default ContatoForm;
+export default FormsFaleConosco;

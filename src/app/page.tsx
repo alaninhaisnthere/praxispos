@@ -171,9 +171,70 @@ const Home: React.FC = () => {
         }
       </section>
 
+      {/* 4a seção */}
+      <section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8] z-0"></div>
+        {isMobile ?
+          <div className="relative z-10 flex flex-col items-center gap-8">
+            <Image
+              src="./compromisso.png"
+              alt="Compromisso Práxis"
+              width={700}
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
+            <h1 className="font-medium text-2xl text-balance leading-relaxed text-[#FAFAFA]">
+              Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+            </h1>
+            <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-lg font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mb-4"
+              >
+                Confira os nossos certificados              </Button>
+            </Link>
+          </div>
+          :
+          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+            <div className="flex flex-col justify-center gap-6">
+              <h1 className="text-2xl text-pretty leading-relaxed text-[#FAFAFA]">
+                Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+              </h1>
+              <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                <Button
+                  variant="default"
+                  size="default"
+                  className="text-white text-xl font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mb-4"
+                >
+                  Confira os nossos certificados
+                </Button>
+              </Link>
+            </div>
+            <Image
+              src="./compromisso.png"
+              alt="Compromisso Práxis"
+              width={700}
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
+          </div>
+        }
+      </section>
+
+      {/* 5a seção
+      <section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8] z-0"></div>
+
+      </section> */}
+
       {/* 8a seção */}
       <section>
-      <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
+        <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>
     </main>
