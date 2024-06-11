@@ -2,5 +2,6 @@
   "/sobrenos/page": "app/sobrenos/page.js",
   "/page": "app/page.js",
   "/cursos/posgraduacao/page": "app/cursos/posgraduacao/page.js",
-  "/cursos/posgraduacao/biomedicina/page": "app/cursos/posgraduacao/biomedicina/page.js"
+  "/cursos/posgraduacao/biomedicina/page": "app/cursos/posgraduacao/biomedicina/page.js",
+  "/icon.ico/route": "app/icon.ico/route.js"
 }
