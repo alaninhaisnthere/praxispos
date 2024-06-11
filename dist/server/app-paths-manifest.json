@@ -1,8 +1,7 @@
 {
-  "/cursos/posgraduacao/enfermagem/page": "app/cursos/posgraduacao/enfermagem/page.js",
   "/sobrenos/page": "app/sobrenos/page.js",
   "/cursos/posgraduacao/farmacia/page": "app/cursos/posgraduacao/farmacia/page.js",
   "/page": "app/page.js",
   "/cursos/posgraduacao/biomedicina/page": "app/cursos/posgraduacao/biomedicina/page.js",
-  "/icon.ico/route": "app/icon.ico/route.js"
+  "/faleconosco/page": "app/faleconosco/page.js"
 }

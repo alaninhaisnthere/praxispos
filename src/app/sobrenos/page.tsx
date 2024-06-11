@@ -9,7 +9,7 @@ import Link from "next/link";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 
-export default function Landing() {
+export default function SobreNos() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {

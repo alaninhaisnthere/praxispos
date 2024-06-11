@@ -10,7 +10,7 @@ import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import Button from "@/components/Button";
 
-export default function Landing() {
+export default function PosGraduacao() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {

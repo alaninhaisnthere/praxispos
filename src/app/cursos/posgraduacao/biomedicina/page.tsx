@@ -16,7 +16,7 @@ import Subjects from "@/components/Subjects";
 
 import Link from "next/link";
 
-export default function Landing() {
+export default function Biomedicina() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
