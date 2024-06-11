@@ -90,7 +90,7 @@ export default function Landing() {
         {/* Enfermagem */}
 
         {isMobile ?
-          <div className="flex flex-col gap-8 p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
+          <div className="flex flex-col gap-8 p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
             <Image
               src="/enfer-main.png"
               alt="Enfermagem"
@@ -122,7 +122,7 @@ export default function Landing() {
           </div>
           :
           <div>
-            <div className="flex flex-row gap-[3rem] p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
+            <div className="flex flex-row gap-[3rem] p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
               <Image
                 src="/enfer-main.png"
                 alt="Enfermagem"
@@ -157,7 +157,7 @@ export default function Landing() {
 
         {/* Biomedicina */}
         {isMobile ?
-          <div className="flex flex-col gap-8 p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
+          <div className="flex flex-col gap-8 p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
             <Image
               src="/biomed-main.png"
               alt="Biomedicina"
@@ -189,7 +189,7 @@ export default function Landing() {
           </div>
           :
           <div>
-            <div className="flex flex-row gap-[3rem] p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
+            <div className="flex flex-row gap-[3rem] p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
               <Image
                 src="/biomed-main.png"
                 alt="Biomedicina"
@@ -317,4 +317,4 @@ export default function Landing() {
       </section>
     </main >
   );
-}
+} 
