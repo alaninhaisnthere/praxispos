@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 const CourseSection = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -49,9 +50,13 @@ const CourseSection = () => {
                     <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Enfermagem
                     </h3>
-                    <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
-                        Saiba Mais
-                    </Button>
+                    <Link legacyBehavior href="/cursos/posgraduacao/enfermagem">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                            <Button>
+                                Saiba Mais
+                            </Button>
+                        </a>
+                    </Link>
                 </div>
 
                 {/* Biomedicina */}
@@ -62,9 +67,13 @@ const CourseSection = () => {
                     <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Biomedicina
                     </h3>
-                    <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
-                        Saiba Mais
-                    </Button>
+                    <Link legacyBehavior href="/cursos/posgraduacao/biomedicina">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                            <Button>
+                                Saiba Mais
+                            </Button>
+                        </a>
+                    </Link>
                 </div>
 
                 {/* Farmácia */}
@@ -75,10 +84,15 @@ const CourseSection = () => {
                     <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Farmácia
                     </h3>
-                    <Button className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
-                        Saiba Mais
-                    </Button>
+                    <Link legacyBehavior href="/cursos/posgraduacao/farmacia">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                            <Button>
+                                Saiba Mais
+                            </Button>
+                        </a>
+                    </Link>
                 </div>
+
             </div>
         </section>
     );
