@@ -11,6 +11,7 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import FormComponent from "@/components/Forms";
 
 const images = [
   { desktop: "/home01.png", mobile: "/home01-mobile.png", link: "/cursos/posgraduacao" },
@@ -115,7 +116,7 @@ const Home: React.FC = () => {
         <CourseSection />
       </section>
 
-      {/* 3a seção */}
+      {/* 4a seção */}
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4] z-0"></div>
         {isMobile ?
@@ -153,7 +154,7 @@ const Home: React.FC = () => {
               objectFit="cover"
               priority
             />
-            <div className="flex flex-col justify-center gap-6">
+            <div className="flex flex-col justify-center gap-[1.5rem]">
               <h1 className="text-2xl text-pretty leading-relaxed">
                 O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
               </h1>
@@ -171,7 +172,47 @@ const Home: React.FC = () => {
         }
       </section>
 
-      {/* 4a seção */}
+      {/* 5a seção */}
+      <section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
+        {isMobile ?
+          <div className="relative z-10 flex flex-col items-center gap-[2rem]">
+            <h1 className="text-2xl text-balance text-center leading-relaxed text-[#FAFAFA] font-semibold">
+              Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+            </h1>
+            <Image
+              src="/arrow-d.png"
+              alt="Seta"
+              width={30}
+              height={30}
+              className="animate-bounce"
+            />
+            <div className="flex justify-center">
+              <FormComponent />
+            </div>
+          </div>
+          :
+          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+            <div className="flex flex-col justify- items-center gap-[3rem]">
+              <h1 className="text-3xl text-pretty text-center leading-relaxed text-[#FAFAFA] font-semibold">
+                Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+              </h1>
+              <Image
+                src="/arrow-d.png"
+                alt="Seta"
+                width={30}
+                height={30}
+                className="animate-bounce"
+              />
+              <div className="flex justify-center">
+                <FormComponent />
+              </div>
+            </div>
+          </div>
+        }
+      </section>
+
+      {/* 5a seção */}
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8] z-0"></div>
         {isMobile ?
@@ -186,7 +227,7 @@ const Home: React.FC = () => {
               priority
             />
             <h1 className="font-medium text-2xl text-balance leading-relaxed text-[#FAFAFA]">
-              Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+              O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
             </h1>
             <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
               <Button
@@ -201,7 +242,7 @@ const Home: React.FC = () => {
           <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
             <div className="flex flex-col justify-center gap-6">
               <h1 className="text-2xl text-pretty leading-relaxed text-[#FAFAFA]">
-                Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
               </h1>
               <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
                 <Button
@@ -226,13 +267,7 @@ const Home: React.FC = () => {
         }
       </section>
 
-      {/* 5a seção
-      <section className="relative w-full py-10">
-        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8] z-0"></div>
-
-      </section> */}
-
-      {/* 8a seção */}
+      {/* floatings */}
       <section>
         <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />

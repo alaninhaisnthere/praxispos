@@ -327,7 +327,7 @@ export default function SobreNos() {
         }
       </section>
 
-      {/* 8a seção */}
+      {/* floatings */}
       <section>
       <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
       <ScrollToTopButton />

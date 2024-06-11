@@ -1906,6 +1906,9 @@ input[type="range"]::-ms-fill-lower {
 .gap-\[3rem\] {
   gap: 3rem;
 }
+.gap-\[1\.5rem\] {
+  gap: 1.5rem;
+}
 .gap-x-0 {
   column-gap: 0px;
 }
@@ -2412,6 +2415,10 @@ input[type="range"]::-ms-fill-lower {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .\!pb-0 {
   padding-bottom: 0px !important;

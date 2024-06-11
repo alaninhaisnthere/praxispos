@@ -583,7 +583,7 @@ export default function Farmacia() {
         </div>
       </section>
 
-      {/* 8a seção */}
+      {/* floatings */}
       <section className="pb-5">
         <FAQ />
       </section>

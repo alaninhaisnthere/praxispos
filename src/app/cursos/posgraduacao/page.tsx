@@ -9,6 +9,7 @@ import Link from "next/link";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import Button from "@/components/Button";
+import FormComponent from "@/components/Forms";
 
 export default function PosGraduacao() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -290,27 +291,61 @@ export default function PosGraduacao() {
         }
       </section>
 
-      {/* 4a seção */}
+       {/* impacto */}
+       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <Image
+          src="/image-3.png"
+          alt="Imagem de fundo"
+          width={1900}
+          height={1900}
+        />
+      </section>
+
+
+      {/* form lead */}
       <section
-        className={`flex flex-col py-4 ${isMobile ? "items-center" : ""}`}
+        className={`flex flex-col py-2 ${isMobile ? "items-center" : ""}`}
       >
+      </section><section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
         {isMobile ?
-          <div className="flex flex-col items-center gap-4">
-            <h1 className="font-bold text-2xl text-pretty">
+          <div className="relative z-10 flex flex-col items-center gap-[2rem]">
+            <h1 className="text-2xl text-balance text-center leading-relaxed text-[#FAFAFA] font-semibold">
               O mercado da estética é o terceiro mercado que mais cresce no Brasil. <br />
-              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
-            </h1>
+              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.            </h1>
+            <Image
+              src="/arrow-d.png"
+              alt="Seta"
+              width={30}
+              height={30}
+              className="animate-bounce"
+            />
+            <div className="flex justify-center">
+              <FormComponent />
+            </div>
           </div>
-          : <div className="flex flex-col gap-8 pb-8">
-            <h1 className="font-bold text-3xl text-center">
-              O mercado da estética é o terceiro mercado que mais cresce no Brasil.
-              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
-            </h1>
+          :
+          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+            <div className="flex flex-col justify- items-center gap-[3rem]">
+              <h1 className="text-3xl text-pretty text-center leading-relaxed text-[#FAFAFA] font-semibold">
+                O mercado da estética é o terceiro mercado que mais cresce no Brasil.
+                Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.              </h1>
+              <Image
+                src="/arrow-d.png"
+                alt="Seta"
+                width={30}
+                height={30}
+                className="animate-bounce"
+              />
+              <div className="flex justify-center">
+                <FormComponent />
+              </div>
+            </div>
           </div>
         }
       </section>
 
-      {/* 8a seção */}
+      {/* floatings */}
       <section>
         <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
