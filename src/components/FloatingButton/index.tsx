@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IconContext } from "react-icons";
 import { FaWhatsapp } from "react-icons/fa";
 
-const FloatingButton: React.FC = () => {
+const FloatingButton: React.FC<{ message: string }> = ({ message }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
@@ -31,10 +33,12 @@ const FloatingButton: React.FC = () => {
 
   };
 
+  const whatsappLink = `https://wa.me/5541992460242?text=${encodeURIComponent(message)}`;
+
   return (
     <div className="fixed bottom-32 right-2 z-50">
       <Link
-        href="https://wa.me/5541992460242?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20p%C3%B3s-gradua%C3%A7%C3%A3o"
+        href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
       >

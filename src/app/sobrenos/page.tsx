@@ -329,8 +329,8 @@ export default function Landing() {
 
       {/* 8a seção */}
       <section>
-        <FloatingButton />
-        <ScrollToTopButton />
+      <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
+      <ScrollToTopButton />
       </section>
     </main >
   );

@@ -508,14 +508,90 @@ export default function Landing() {
         }
       </section>
 
+      {/* 6a seção */}
+      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <Image
+          src="/image-3.png"
+          alt="Imagem de fundo"
+          width={2000}
+          height={2000}
+        />
+      </section>
+
+      {/* 7a seção */}
+      <section id="section-form" className="relative w-full py-5 pb-10">
+        <div className="text-center">
+          <div className="mx-auto">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+              <div className="md:w-1/2 text-left pr-5">
+                <div className="flex flex-col justify-center items-start mb-3">
+                  <div className="flex flex-row items-center justify-start mb-4">
+                    <h1
+                      className={`font-bold text-3xl ${isMobile ? "text-center" : "text-left"}`}
+                    >
+                      Benefícios Exclusivos para os{" "}
+                      <span className="text-[#AA8E4B]">
+                        Primeiros Inscritos!
+                      </span>
+                    </h1>
+                  </div>
+                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Image
+                      src="/arrow-r.png"
+                      alt="Seta"
+                      width={10}
+                      height={10}
+                      className="mt-2 mr-2"
+                    />
+                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
+                      <span className="font-semibold">Descontos</span> especiais
+                      na matrícula.
+                    </p>
+                  </div>
+                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Image
+                      src="/arrow-r.png"
+                      alt="Seta"
+                      width={10}
+                      height={10}
+                      className="mt-2 mr-2"
+                    />
+                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
+                      Canal com conteúdos exclusivos para que você já entre no
+                      clima da pós enquanto espera o primeiro dia de aula.
+                    </p>
+                  </div>
+                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <Image
+                      src="/arrow-r.png"
+                      alt="Seta"
+                      width={10}
+                      height={10}
+                      className="mt-2 mr-2"
+                    />
+                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
+                      Programa de incentivo: indique um amigo para fazer a pós
+                      junto com você e ganhe descontos cumulativos, podendo
+                      estudar de graça na Práxis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <FormComponent />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 8a seção */}
-      <section className="pb-10">
+      <section className="pb-5">
         <FAQ />
       </section>
       <section>
-        <FloatingButton />
-        <ScrollToTopButton />
+      <FloatingButton message="Olá! Tenho formação em Biomedicina e gostaria de mais informações sobre a pós-graduação da Práxis."/>
+      <ScrollToTopButton />
       </section>
     </main>
   );

@@ -173,7 +173,7 @@ const Home: React.FC = () => {
 
       {/* 8a seção */}
       <section>
-        <FloatingButton />
+      <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
         <ScrollToTopButton />
       </section>
     </main>
