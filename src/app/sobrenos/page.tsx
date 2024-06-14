@@ -40,26 +40,6 @@ export default function SobreNos() {
             priority
           />
         </div>
-        <div
-          className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-60"}`}
-        >
-          <div className={`mb-${isMobile ? 1 : 1}`}>
-            <Image
-              src="/logo-hero.png"
-              alt="Logo Hero"
-              width={isMobile ? 250 : 250}
-              height={isMobile ? 100 : 100}
-            />
-          </div>
-          <h1
-            className={`text-left uppercase font-gothammedium text-[#f7dc9c] ${isMobile ? "text-5xl" : "text-6xl"}`}
-          >
-            conheça a <span className="font-bold font-gothamblack italic">práxis</span>
-          </h1>
-          <p className={`text-left uppercase font-gothammedium text-[#fafafa] ${isMobile ? "text-xl" : "text-4xl"}`}>
-            um pouco da nossa história.
-          </p>
-        </div>
       </section>
 
       {/* 1a seção */}
@@ -328,9 +308,9 @@ export default function SobreNos() {
       </section>
 
       {/* floatings */}
-      <section>
-      <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis."/>
-      <ScrollToTopButton />
+      <section className="z-50">
+        <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
+        <ScrollToTopButton />
       </section>
     </main >
   );

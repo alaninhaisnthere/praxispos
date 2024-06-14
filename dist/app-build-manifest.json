@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/cursos/posgraduacao/enfermagem/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -15,32 +16,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/sobrenos/page.js"
-    ],
-    "/cursos/posgraduacao/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/page.js"
-    ],
-    "/cursos/posgraduacao/farmacia/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/farmacia/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/cursos/posgraduacao/biomedicina/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/biomedicina/page.js"
-    ],
-    "/faleconosco/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/faleconosco/page.js"
     ]
   }
 }

@@ -11,6 +11,7 @@ import { metadata } from "./metadata";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Image from "next/image";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -51,7 +52,7 @@ export default function AppLayout({
         {/* pixel */}
         <Script
           id="fb-pixel-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -68,7 +69,7 @@ export default function AppLayout({
           }}
         />
         <noscript>
-          <img height="1" width="1" style={{ display: "none" }}
+          <Image alt="script" height="1" width="1" style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=997382224690371&ev=PageView&noscript=1"
           />
         </noscript>

@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import {
     Link,
     Navbar,
@@ -14,6 +13,7 @@ import {
 import Image from "next/image";
 import Button from "../Button";
 import { Montserrat } from "next/font/google";
+import { useState, useEffect, useRef } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -23,36 +23,18 @@ const Header = () => {
     const flyoutRef = useRef<HTMLDivElement>(null);
 
     const menuItems = [
-        {
-            label: "Página inicial",
-            href: "/",
-        },
-        {
-            label: "A Práxis",
-            href: "/sobrenos",
-        },
+        { label: "Página inicial", href: "/" },
+        { label: "A Práxis", href: "/sobrenos" },
         {
             label: "Cursos",
             href: "#",
             subItems: [
-                {
-                    label: "Pós-graduação",
-                    href: "/cursos/posgraduacao",
-                },
-                {
-                    label: "Curso de extensão",
-                    href: "/",
-                },
-                {
-                    label: "Workshops",
-                    href: "/",
-                },
+                { label: "Pós-graduação", href: "/cursos/posgraduacao" },
+                { label: "Curso de extensão", href: "/" },
+                { label: "Workshops", href: "/" },
             ],
         },
-        {
-            label: "Fale Conosco",
-            href: "/faleconosco",
-        },
+        { label: "Fale Conosco", href: "/faleconosco" },
     ];
 
     const handleFlyoutToggle = () => {
@@ -78,9 +60,7 @@ const Header = () => {
             isBlurred={false}
             className={`bg-[#134169] top-0 w-full z-50 ${montserrat.className}`}
             onMenuOpenChange={setIsMenuOpen}
-            classNames={{
-                wrapper: "max-w-none",
-            }}
+            classNames={{ wrapper: "max-w-none" }}
         >
             <div className="container mx-auto flex justify-between items-center py-4">
                 <NavbarContent justify="start">
@@ -93,10 +73,7 @@ const Header = () => {
 
                 <NavbarContent className="hidden md:flex gap-4 justify-center items-center" justify="end">
                     {menuItems.map((item, index) => (
-                        <NavbarItem
-                            className="relative data-[active=true]:font-bold"
-                            key={`${item.label}-${index}`}
-                        >
+                        <NavbarItem className="relative data-[active=true]:font-bold" key={`${item.label}-${index}`}>
                             <div>
                                 <Link
                                     className="w-full uppercase font-medium tracking-wide text-white text-center"
@@ -110,7 +87,7 @@ const Header = () => {
                                     <div
                                         ref={flyoutRef}
                                         className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-[#134169] py-2 w-48 shadow-lg rounded-md ${isFlyoutOpen ? "block" : "hidden"
-                                            }`}
+                                            } z-50`}
                                     >
                                         {item.subItems.map((subItem, subIndex) => (
                                             <Link
@@ -140,6 +117,7 @@ const Header = () => {
                     <NavbarMenuToggle
                         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                         className="md:hidden"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                     />
                 </NavbarContent>
             </div>
@@ -151,6 +129,7 @@ const Header = () => {
                             className="w-full font-bold text-center items-center tracking-wider uppercase text-white py-4"
                             href={item.href}
                             size="lg"
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             {item.label}
                         </Link>
@@ -162,6 +141,7 @@ const Header = () => {
                                         href={subItem.href}
                                         className="w-full font-bold text-center items-center tracking-wider uppercase text-[#dab167] py-4"
                                         size="lg"
+                                        onClick={() => setIsMenuOpen(false)}
                                     >
                                         {subItem.label}
                                     </Link>

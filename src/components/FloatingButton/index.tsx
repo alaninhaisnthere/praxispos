@@ -23,20 +23,18 @@ const FloatingButton: React.FC<{ message: string }> = ({ message }) => {
   }, []);
 
   const handleClick = () => {
-    // evento do google analytics
     if (typeof window !== "undefined" && window.gtag) {
       window.gtag('event', 'click', {
         event_category: 'WhatsApp Button',
         event_label: 'WhatsApp Contact',
       });
     }
-
   };
 
   const whatsappLink = `https://wa.me/5541992460242?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="fixed bottom-32 right-2 z-50">
+    <div className="fixed bottom-24 right-4 md:bottom-32 md:right-8 z-50">
       <Link
         href={whatsappLink}
         target="_blank"

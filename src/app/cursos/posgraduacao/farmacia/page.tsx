@@ -45,43 +45,6 @@ export default function Farmacia() {
             priority
           />
         </div>
-        <div
-          className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-80"}`}
-        >
-          <div className={`mb-${isMobile ? 1 : 1}`}>
-            <Image
-              src="/logo-hero.png"
-              alt="Logo Hero"
-              width={isMobile ? 150 : 250}
-              height={isMobile ? 60 : 100}
-            />
-          </div>
-          <p
-            className={`text-white text-left font-semibold uppercase text-lg tracking-wide ${isMobile ? "text-xs" : ""}`}
-          >
-            Farmácia
-          </p>
-          <h1
-            className={`text-white text-left font-bold ${isMobile ? "text-3xl my-3" : "text-5xl"}`}
-          >
-            UMA NOVA <br />
-            HISTÓRIA ESTÁ <br />
-            PARA COMEÇAR, <br />
-            NA QUAL VOCÊ SERÁ <br />O{" "}
-            <span className="text-[#114264] italic">PROTAGONISTA!</span>
-          </h1>
-          <ScrollLink to="section-form" smooth={true} duration={500}>
-            <div className={`mt-${isMobile ? "" : 8}`}>
-              <Button
-                variant="default"
-                size="default"
-                className="text-white bg-[#114264] hover:bg-[#114264] font-semibold hover:scale-110 transition-transform duration-300 ease-in-out"
-              >
-                Seu futuro a um clique
-              </Button>
-            </div>
-          </ScrollLink>
-        </div>
       </section>
 
       {/* 1a seção */}
@@ -587,7 +550,7 @@ export default function Farmacia() {
       <section className="pb-5">
         <FAQ />
       </section>
-      <section>
+      <section className="z-50">
         <FloatingButton message="Olá! Tenho formação em Farmácia e gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>

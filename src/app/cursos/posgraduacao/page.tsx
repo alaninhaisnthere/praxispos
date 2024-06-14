@@ -42,44 +42,6 @@ export default function PosGraduacao() {
             priority
           />
         </div>
-        <div
-          className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-60"}`}
-        >
-          <div className={`mb-${isMobile ? 1 : 1}`}>
-            <Image
-              src="/logo-hero.png"
-              alt="Logo Hero"
-              width={isMobile ? 150 : 250}
-              height={isMobile ? 50 : 100}
-            />
-          </div>
-          <p className={`text-left uppercase font-gothammedium text-[#fafafa] ${isMobile ? "text-xl" : "text-3xl"}`}>
-            conheça as nossas
-          </p>
-          <h1
-            className={`text-left uppercase font-gothamblack text-[#f7dc9c] ${isMobile ? "text-3xl" : "text-6xl"}`}
-          >
-            pós-graduações
-          </h1>
-          <p className={`text-left font-gothamitalic text-[#fafafa] ${isMobile ? "text-xl gap-3" : "text-4xl"}`}>
-            Seja um profissional da área da estética <br />
-            e transforme o seu futuro!
-          </p>
-          <div className={isMobile ? "flex flex-col mt-5" : "flex flex-row"}>
-            <Image
-              src="/FBBR.png"
-              alt="Logo Hero"
-              width={isMobile ? 150 : 250}
-              height={isMobile ? 50 : 100}
-            />
-            <Image
-              src="/mec.png"
-              alt="Logo Hero"
-              width={isMobile ? 150 : 250}
-              height={isMobile ? 50 : 100}
-            />
-          </div>
-        </div>
       </section>
 
       {/* 3a seção */}
@@ -291,14 +253,16 @@ export default function PosGraduacao() {
         }
       </section>
 
-       {/* impacto */}
-       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
-        <Image
-          src="/image-3.png"
-          alt="Imagem de fundo"
-          width={1900}
-          height={1900}
-        />
+      {/* impacto */}
+      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div className="flex justify-center">
+          <Image
+            src="/image-3.png"
+            alt="Imagem de fundo"
+            width={2500}
+            height={1900}
+          />
+        </div>
       </section>
 
 
@@ -346,7 +310,7 @@ export default function PosGraduacao() {
       </section>
 
       {/* floatings */}
-      <section>
+      <section className="z-50">
         <FloatingButton message="Olá! Gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>

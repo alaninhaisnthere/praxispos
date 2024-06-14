@@ -43,12 +43,12 @@ const CourseSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 {/* Enfermagem */}
-                <div className="flex flex-col items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
+                <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
                         <Image src="/Enfermagem.png" width={300} height={200} alt="Enfermagem" className="rounded-2xl" />
                     </div>
-                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
-                        Enfermagem
+                    <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+                        Enfermagem Dermatológica em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/enfermagem">
                         <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
@@ -60,12 +60,12 @@ const CourseSection = () => {
                 </div>
 
                 {/* Biomedicina */}
-                <div className="flex flex-col items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
+                <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
                         <Image src="/Biomedicina.png" width={300} height={200} alt="Biomedicina" className="rounded-2xl" />
                     </div>
-                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
-                        Biomedicina
+                    <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+                        Biomedicina em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/biomedicina">
                         <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
@@ -77,12 +77,13 @@ const CourseSection = () => {
                 </div>
 
                 {/* Farmácia */}
-                <div className="flex flex-col items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
+                <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
-                        <Image src="/Farmácia.png" width={300} height={200} alt="Farmácia" className="rounded-2xl" />
+                        <Image src="/Farmacia.png" width={300} height={200} alt="Farmácia" className="rounded-2xl" />
                     </div>
-                    <h3 className={`relative font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
-                        Farmácia
+                    <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+                        Farmácia <br />
+                        em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/farmacia">
                         <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">

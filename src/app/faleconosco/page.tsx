@@ -137,7 +137,7 @@ export default function FaleConosco() {
             </section>
 
             {/* floatings */}
-            <section>
+            <section className="z-50">
                 <FloatingButton message="Olá! Tenho formação em Biomedicina e gostaria de mais informações sobre a pós-graduação da Práxis." />
                 <ScrollToTopButton />
             </section>

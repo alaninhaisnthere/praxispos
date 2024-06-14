@@ -6,12 +6,12 @@ const GoogleAnalytics = ({ conversionId }: { conversionId: string }) => (
      {/* google tag script */}
      <Script
       src="https://www.googletagmanager.com/gtag/js?id=G-ESTDBVPXJ9"
-      strategy="afterInteractive"
+      strategy="lazyOnload"
       async
     />
     <Script
       id="google-analytics-config"
-      strategy="afterInteractive"
+      strategy="lazyOnload"
       dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
