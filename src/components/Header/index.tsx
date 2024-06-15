@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../Button";
 
 const Header = () => {
@@ -11,32 +11,24 @@ const Header = () => {
   const coursesMenuRef = useRef<HTMLDivElement>(null);
 
   const menuItems = [
-    {
-      label: "Página inicial",
-      href: "/",
-    },
-    {
-      label: "A Práxis",
-      href: "/sobrenos",
-    },
+    { label: "Página inicial", href: "/" },
+    { label: "A Práxis", href: "/sobrenos" },
     {
       label: "Cursos",
-      href: "#",
       subItems: [
         { label: "Pós-graduação", href: "/cursos/posgraduacao" },
         { label: "Curso de extensão", href: "/" },
         { label: "Workshops", href: "/" },
       ],
     },
-    {
-      label: "Fale Conosco",
-      href: "/faleconosco",
-    },
+    { label: "Fale Conosco", href: "/faleconosco" },
   ];
 
-  const handleCoursesMenuToggle = useCallback(() => {
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleCoursesMenuToggle = () => {
     setIsCoursesMenuOpen((prev) => !prev);
-  }, []);
+  };
 
   const handleClickOutside = useCallback((event: MouseEvent) => {
     if (coursesMenuRef.current && !coursesMenuRef.current.contains(event.target as Node)) {
@@ -52,109 +44,83 @@ const Header = () => {
   }, [handleClickOutside]);
 
   return (
-    <Navbar
-      isBlurred={false}
-      className="bg-[#134169] top-0 w-full z-50"
-      classNames={{
-        wrapper: "max-w-none",
-      }}
-      position="static"
-    >
-      <div className="container mx-auto flex justify-between items-center py-4">
-        <NavbarContent justify="start">
-          <NavbarBrand>
-            <Link href="/">
-              <Image src="/logo-header.webp" alt="Logo" width={142} height={150} />
-            </Link>
-          </NavbarBrand>
-        </NavbarContent>
-
-        <NavbarContent className="hidden md:flex gap-4 justify-end items-center">
-          {menuItems.map((item, index) => (
-            <NavbarItem className="relative" key={`${item.label}-${index}`}>
-              <Link
-                className="uppercase text-white"
-                href={item.href}
-                size="lg"
-                onClick={item.subItems ? handleCoursesMenuToggle : undefined}
-              >
-                {item.label}
-              </Link>
-              {item.subItems && (
-                <div
-                  ref={coursesMenuRef}
-                  className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-[#134169] py-2 w-48 shadow-lg rounded-md ${isCoursesMenuOpen ? "block" : "hidden"
-                    } z-50`}
-                >
-                  {item.subItems.map((subItem, subIndex) => (
-                    <Link
-                      key={`${subItem.label}-${subIndex}`}
-                      href={subItem.href}
-                      className="block px-4 py-2 font-semibold tracking-wide uppercase text-sm text-[#dab167] hover:bg-[#0a2e4d] text-center"
-                      onClick={() => setIsCoursesMenuOpen(false)}
+    <nav className="bg-[#134169] uppercase">
+      <div className="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-2">
+        <Link href="/" className="flex items-center space-x-3">
+          <Image src="/logo-header.webp" alt="Logo" width={142} height={150} />
+        </Link>
+        <button
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm bg-[#134169] rounded-lg md:hidden"
+          onClick={handleMenuToggle}
+        >
+          <svg className="w-5 h-5 text-white" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1h15M1 7h15M1 13h15" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+          </svg>
+        </button>
+        <div className={`w-full md:block md:w-auto uppercase ${isMenuOpen ? "block" : "hidden"}`}>
+          <ul className="flex flex-col items-center font-medium uppercase p-4 md:p-0 mt-4 rounded-lg bg-[#134169] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#134169]">
+            {menuItems.map((item, index) => (
+              <li key={`${item.label}-${index}`} className="relative">
+                {item.subItems ? (
+                  <>
+                    <button
+                      className="flex items-center justify-between w-full uppercase py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#AA8E4B] md:p-0 md:w-auto"
+                      onClick={handleCoursesMenuToggle}
                     >
-                      {subItem.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </NavbarItem>
-          ))}
-          <NavbarItem>
-            <Button asChild>
-              <Link href="https://praxis.mitikas.com.br" className="text-white uppercase tracking-wider" target="_blank">
-                Portal do aluno
-              </Link>
-            </Button>
-          </NavbarItem>
-        </NavbarContent>
+                      {item.label}
+                      <svg
+                        className={`w-5 h-5 ml-2 transition-transform duration-300 ease-in-out transform ${
+                          isCoursesMenuOpen ? "rotate-180" : ""
+                        }`}
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 12.586L3.707 6.293a1 1 0 111.414-1.414L10 10.758l5.879-5.879a1 1 0 111.414 1.414L10 12.586z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </button>
 
-        <NavbarContent className="md:hidden" justify="end">
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          />
-        </NavbarContent>
-      </div>
-
-      <NavbarMenu className={`bg-[#134169] flex flex-col items-center text-center ${isMenuOpen ? "block" : "hidden"}`}>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item.label}-${index}`}>
-            <Link
-              className="w-full font-bold text-center tracking-wider uppercase text-white py-4"
-              href={item.href}
-              size="lg"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-            {item.subItems && (
-              <div className="flex flex-col items-center text-center w-full">
-                {item.subItems.map((subItem, subIndex) => (
+                    <div
+                      className={`absolute left-1/2 transform -translate-x-1/2 mt-2 bg-[#134169] py-2 w-44 shadow-lg rounded-lg z-10 ${isCoursesMenuOpen ? "block" : "hidden"
+                        }`}
+                      ref={coursesMenuRef}
+                    >
+                      <ul className="py-2 text-sm text-[#AA8E4B] font-semibold">
+                        {item.subItems.map((subItem, subIndex) => (
+                          <li key={`${subItem.label}-${subIndex}`}>
+                            <Link href={subItem.href} className="block px-4 py-2 hover:bg-[#FAFAFA]">
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                ) : (
                   <Link
-                    key={`${subItem.label}-${subIndex}`}
-                    href={subItem.href}
-                    className="w-full font-bold text-center items-center tracking-wider uppercase text-[#dab167] py-4"
-                    size="lg"
-                    onClick={() => setIsMenuOpen(false)}
+                    href={item.href}
+                    className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#AA8E4B] md:p-0"
                   >
-                    {subItem.label}
+                    {item.label}
                   </Link>
-                ))}
-              </div>
-            )}
-          </NavbarMenuItem>
-        ))}
-        <NavbarMenuItem>
-          <Button asChild>
-            <Link href="https://praxis.mitikas.com.br" className="text-white uppercase tracking-wide" target="_blank">
-              Portal do aluno
-            </Link>
-          </Button>
-        </NavbarMenuItem>
-      </NavbarMenu>
-    </Navbar>
+                )}
+              </li>
+            ))}
+            <li>
+              <Button asChild>
+                <Link href="https://praxis.mitikas.com.br" className="text-white uppercase tracking-wide" target="_blank">
+                  Portal do aluno
+                </Link>
+              </Button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

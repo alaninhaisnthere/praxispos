@@ -129,7 +129,7 @@ const Home: React.FC = () => {
       {imagesMobile.map((image, index) => (
         <Link key={index} href={image.link} passHref >
           <div
-            className="w-full h-[750px] cursor-pointer relative"
+            className="w-full h-[650px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
           >
             <Image
