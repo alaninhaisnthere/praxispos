@@ -45,19 +45,23 @@ const Header = () => {
 
   return (
     <nav className="bg-[#134169] uppercase">
-      <div className="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-2">
-        <Link href="/" className="flex items-center space-x-3">
-          <Image src="/logo-header.webp" alt="Logo" width={142} height={150} />
-        </Link>
-        <button
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm bg-[#134169] rounded-lg md:hidden"
-          onClick={handleMenuToggle}
-        >
-          <svg className="w-5 h-5 text-white" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1h15M1 7h15M1 13h15" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-          </svg>
-        </button>
+      <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto p-2">
+
+        <div className="flex flex-row items-center">
+          <Link href="/" className="flex items-center space-x-3">
+            <Image src="/logo-header.webp" alt="Logo" width={142} height={150} />
+          </Link>
+          <button
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm bg-[#134169] rounded-lg md:hidden"
+            onClick={handleMenuToggle}
+          >
+            <svg className="w-5 h-5 text-white" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1h15M1 7h15M1 13h15" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+
         <div className={`w-full md:block md:w-auto uppercase ${isMenuOpen ? "block" : "hidden"}`}>
           <ul className="flex flex-col items-center font-medium uppercase p-4 md:p-0 mt-4 rounded-lg bg-[#134169] md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#134169]">
             {menuItems.map((item, index) => (
@@ -70,9 +74,8 @@ const Header = () => {
                     >
                       {item.label}
                       <svg
-                        className={`w-5 h-5 ml-2 transition-transform duration-300 ease-in-out transform ${
-                          isCoursesMenuOpen ? "rotate-180" : ""
-                        }`}
+                        className={`w-5 h-5 ml-2 transition-transform duration-300 ease-in-out transform ${isCoursesMenuOpen ? "rotate-180" : ""
+                          }`}
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >

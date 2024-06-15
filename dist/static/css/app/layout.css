@@ -1848,6 +1848,9 @@ input[type="range"]::-ms-fill-lower {
 .justify-between {
   justify-content: space-between;
 }
+.justify-around {
+  justify-content: space-around;
+}
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -5394,6 +5397,10 @@ body {
   .md\:bg-\[\#134169\] {
     --tw-bg-opacity: 1;
     background-color: rgb(19 65 105 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:p-0 {
