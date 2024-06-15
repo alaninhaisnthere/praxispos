@@ -28,7 +28,6 @@ export default function SobreNos() {
 
   return (
     <main className="flex flex-col min-h-screen">
-
       {/* hero */}
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
@@ -178,16 +177,17 @@ export default function SobreNos() {
 
       {/* 3a seção */}
       <section
+        id="MEC"
         className={`flex flex-col pt-4 ${isMobile ? "items-center pb-2" : ""}`}
       >
         {isMobile ?
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-[2rem]">
             <Image
               src="/mecfbbr.webp"
               alt="Quem somos"
               width={700}
               height={500} />
-            <div className="flex flex-col justify-center gap-3">
+            <div className="flex flex-col justify-center gap-3 px-5">
               <h1 className="font-bold text-2xl tracking-wide uppercase">
                 Nossas Pós-graduações são certificadas pelo MEC!
               </h1>

@@ -3,12 +3,14 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Button from "../Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCoursesMenuOpen, setIsCoursesMenuOpen] = useState(false);
   const coursesMenuRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const menuItems = [
     { label: "Página inicial", href: "/" },
@@ -35,6 +37,12 @@ const Header = () => {
       setIsCoursesMenuOpen(false);
     }
   }, []);
+
+  const handleLinkClick = (href: string) => {
+    setIsMenuOpen(false);
+    setIsCoursesMenuOpen(false);
+    router.push(href);
+  };
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -74,8 +82,7 @@ const Header = () => {
                     >
                       {item.label}
                       <svg
-                        className={`w-5 h-5 ml-2 transition-transform duration-300 ease-in-out transform ${isCoursesMenuOpen ? "rotate-180" : ""
-                          }`}
+                        className={`w-5 h-5 ml-2 transition-transform duration-300 ease-in-out transform ${isCoursesMenuOpen ? "rotate-180" : ""}`}
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -88,28 +95,32 @@ const Header = () => {
                     </button>
 
                     <div
-                      className={`absolute left-1/2 transform -translate-x-1/2 mt-2 bg-[#134169] py-2 w-44 shadow-lg rounded-lg z-10 ${isCoursesMenuOpen ? "block" : "hidden"
-                        }`}
+                      className={`absolute left-1/2 transform -translate-x-1/2 mt-2 bg-[#134169] py-2 w-44 shadow-lg rounded-lg z-10 ${isCoursesMenuOpen ? "block" : "hidden"}`}
                       ref={coursesMenuRef}
                     >
                       <ul className="py-2 text-sm text-[#AA8E4B] font-semibold">
                         {item.subItems.map((subItem, subIndex) => (
                           <li key={`${subItem.label}-${subIndex}`}>
-                            <Link href={subItem.href} className="block px-4 py-2 hover:bg-[#FAFAFA]">
+                            <a
+                              href={subItem.href}
+                              className="block px-4 py-2 hover:bg-[#e4c06d] hover:text-[#134169]"
+                              onClick={() => handleLinkClick(subItem.href)}
+                            >
                               {subItem.label}
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
                     </div>
                   </>
                 ) : (
-                  <Link
+                  <a
                     href={item.href}
                     className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#AA8E4B] md:p-0"
+                    onClick={() => handleLinkClick(item.href)}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 )}
               </li>
             ))}

@@ -388,7 +388,7 @@ export default function Biomedicina() {
       </section>
 
       {/* destaques */}
-      <section id="section-form" className="relative w-full py-5 pb-10">
+      <section className="relative w-full py-5 pb-10">
         <div className="text-center">
           <div className="mx-auto">
             <div className="flex flex-col items-center justify-between">
@@ -450,7 +450,7 @@ export default function Biomedicina() {
       </section>
 
       {/* form */}
-      <section className="pb-5 flex justify-center">
+      <section id="section-form" className="pb-5 flex justify-center">
         <div className="md:w-1/2">
           <FormComponent />
         </div>
