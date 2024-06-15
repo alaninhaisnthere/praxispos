@@ -17,30 +17,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/cursos/posgraduacao/page.js"
     ],
-    "/cursos/posgraduacao/enfermagem/page": [
+    "/faleconosco/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
-    ],
-    "/cursos/posgraduacao/biomedicina/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/biomedicina/page.js"
-    ],
-    "/cursos/posgraduacao/farmacia/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cursos/posgraduacao/farmacia/page.js"
+      "static/chunks/app/faleconosco/page.js"
     ],
     "/sobrenos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/sobrenos/page.js"
     ],
-    "/faleconosco/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/faleconosco/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
