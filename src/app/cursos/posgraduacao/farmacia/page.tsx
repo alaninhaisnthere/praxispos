@@ -37,13 +37,16 @@ export default function Farmacia() {
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
-          <Image
-            src={isMobile ? "/farmacia-hero-mobile.webp" : "/farmacia-hero.webp"}
-            alt="Imagem de fundo"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
+          <ScrollLink to="section-form" smooth={true} duration={500}>
+            <Image
+              src={isMobile ? "/farmacia-hero-mobile.webp" : "/farmacia-hero.webp"}
+              alt="Imagem de fundo"
+              layout="fill"
+              objectFit="cover"
+              priority
+              className="cursor-pointer"
+            />
+          </ScrollLink>
         </div>
       </section>
 
@@ -65,31 +68,31 @@ export default function Farmacia() {
               alt="Farmácia"
               width={800}
               height={700} />
-            <h1 className="font-medium text-2xl text-pretty">
+            <p className="font-medium text-2xl text-pretty">
               Você ama a sua profissão, ama cuidar das pessoas, mas sabe que
               pode ir além e conquistar a tão sonhada{" "}
               <span className="italic">independência financeira</span> dentro da
               área da saúde!
-            </h1>
-            <h1 className="font-medium text-2xl text-pretty">
+            </p>
+            <p className="font-medium text-2xl text-pretty">
               E se eu te falar que existe um mercado extremamente aquecido, que
               movimenta <span className="italic">bilhões de reais</span> no
               Brasil, onde cada vez mais as pessoas procuram por tratamentos
               estéticos para{" "}
               <span className="italic">levantarem a auto-estima</span>?
-            </h1>
-            <h1 className="font-bold text-2xl text-pretty">
+            </p>
+            <p className="font-bold text-2xl text-pretty">
               Sim! Você,{" "}
-              <span className="italic text-[#114264] uppercase">Farmacêutico</span>,{" "}
+              <span className="italic text-[#114264]">farmacêutico</span>,{" "}
               mudar o rumo da sua carreira profissional fazendo parte do mercado
               da estética!
-            </h1>
-            <h1 className="font-bold text-2xl text-pretty">
+            </p>
+            <p className="font-bold text-2xl text-pretty">
               Receba em 1 dia de consultório o que levaria em plantões
               exaustivos, tendo mais qualidade de vida, trabalhando com
               tranquilidade e segurança e se tornando uma{" "}
               <span className="italic text-[#114264]">referência</span> na área.
-            </h1>
+            </p>
           </div>
           : <div className="flex flex-row gap-[2rem] pb-8">
             <Image
@@ -98,7 +101,7 @@ export default function Farmacia() {
               width={700}
               height={800} />
             <div className="flex flex-col justify-center gap-6">
-              <h1 className="font-extrabold text-2xl text-pretty">
+              <div className="font-extrabold text-2xl text-pretty">
                 <h1 className="font-extrabold text-2xl text-pretty">
                   Cansado de{" "}
                   <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">turnos exaustivos</span>, de
@@ -106,32 +109,32 @@ export default function Farmacia() {
                   <span className="text-[#493B22] underline underline-offset-4 decoration-2 decoration-dotted">desvalorizado</span>{" "}
                   profissionalmente?
                 </h1>{" "}
-              </h1>
-              <h1 className="font-medium text-xl text-pretty leading-relaxed">
+              </div>
+              <p className="font-medium text-xl text-pretty leading-relaxed">
                 Você ama a sua profissão, ama cuidar das pessoas, mas sabe que
                 pode ir além e conquistar a tão sonhada{" "}
                 <span className="italic">independência financeira</span> dentro
                 da área da saúde!
-              </h1>
-              <h1 className="font-medium text-xl text-pretty leading-relaxed">
+              </p>
+              <p className="font-medium text-xl text-pretty leading-relaxed">
                 E se eu te falar que existe um mercado extremamente aquecido,
                 que movimenta <span className="italic">bilhões de reais</span>{" "}
                 no Brasil, onde cada vez mais as pessoas procuram por
                 tratamentos estéticos para{" "}
                 <span className="italic">levantarem a auto-estima</span>?
-              </h1>
-              <h1 className="font-bold text-xl text-pretty leading-relaxed">
+              </p>
+              <p className="font-bold text-xl text-pretty leading-relaxed">
                 Sim! Você,{" "}
-                <span className="italic underline underline-offset-4 uppercase text-[#114264]">Farmacêutico</span>,{" "}pode
+                <span className="italic underline underline-offset-4 uppercase text-[#114264]">farmacêutico</span>,{" "}pode
                 mudar o rumo da sua carreira profissional fazendo parte do mercado
                 da estética!
-              </h1>
-              <h1 className="font-bold text-xl text-pretty leading-relaxed">
+              </p>
+              <p className="font-bold text-xl text-pretty leading-relaxed">
                 Receba em 1 dia de consultório o que levaria em plantões
                 exaustivos, tendo mais qualidade de vida, trabalhando com
                 tranquilidade e segurança e se tornando uma referência na
                 área.
-              </h1>
+              </p>
             </div>
           </div>
         }
@@ -148,19 +151,19 @@ export default function Farmacia() {
               do Instituto Práxis
             </h1>
             <Image
-              src="/farmacia-main.webp"
+              src="/farma-main.webp"
               alt="Farmácia"
               width={800}
               height={700} />
-            <h1 className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
+            <p className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
               Aqui você aprenderá as técnicas que são tendências no mercado da
               estética em 2024, como: bioestimuladores ozonioterapia harmonia
               facial além de aulas de biossegurança e empreendedorismo.
-            </h1>
-            <h1 className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
+            </p>
+            <p className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
               Nosso curso levará você a realizar os sonhos que ficaram guardados
               por muito tempo!
-            </h1>
+            </p>
             <h1 className="font-bold text-2xl text-center leading-relaxed mb-4">
               Quer conhecer um pouco mais sobre a pós-graduação que irá mudar a
               sua vida?
@@ -187,20 +190,20 @@ export default function Farmacia() {
                 width={600}
                 height={500} />
               <div className="flex flex-col justify-center gap-6">
-                <h1 className="font-medium text-2xl text-pretty leading-relaxed">
+                <p className="font-medium text-2xl text-pretty leading-relaxed">
                   Aqui você aprenderá as técnicas que são tendências no mercado
                   da estética em 2024, como: bioestimuladores, ozonioterapia,
                   harmonia facial, além de aulas de biossegurança e
                   empreendedorismo.
-                </h1>
-                <h1 className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-2">
+                </p>
+                <p className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-2 mb-2">
                   Nosso curso levará você a realizar os sonhos que ficaram
                   guardados por muito tempo!
-                </h1>
-                <h1 className="font-bold text-2xl text-pretty leading-relaxed">
+                </p>
+                <p className="font-bold text-2xl text-pretty leading-relaxed">
                   Quer conhecer um pouco mais sobre a pós-graduação que irá
                   mudar a sua vida?
-                </h1>
+                </p>
                 <ScrollLink to="section-form" smooth={true} duration={500}>
                   <Button
                     variant="default"
@@ -214,6 +217,14 @@ export default function Farmacia() {
             </div>
           </div>
         }
+      </section>
+
+      {/* 3a seção */}
+      <section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]"></div>
+        <CardSection
+          headerText={"Descubra o mundo da Farmácia Dermatológica em Estética"}
+          targetText={"Farmácia"} />
       </section>
 
       {/* 4a seção */}
@@ -378,95 +389,66 @@ export default function Farmacia() {
         </div>
       </section>
 
-      {/* 3a seção */}
-      <section className="relative w-full py-10">
-        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]"></div>
-        <CardSection />
-      </section>
+      {/* destaques */}
+      <section id="section-form" className="relative w-full py-5 pb-10">
+        <div className="text-center">
+          <div className="mx-auto">
+            <div className="flex flex-col items-center justify-between">
+              <div className="md:w-1/2 text-left pr-5">
+                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900"></div>
+                <div className="relative flex flex-col justify-center items-center mb-3">
+                  <div className="flex flex-row items-center justify-start my-4">
+                    <h1
+                      className="font-bold text-white text-3xl text-center tracking-wide"
+                    >
+                      Benefícios Exclusivos para os{" "}
+                      <span className="text-[#e9c163] underline underline-offset-8 decoration-dotted">
+                        Primeiros Inscritos!
+                      </span>
+                    </h1>
+                  </div>
+                  <div>
 
-      {/* 5a seção */}
-      <section>
-        {isMobile ?
-          <div className="flex flex-col items-center gap-4 py-10">
-            <h1
-              className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-3xl text-center" : "text-2xl"}`}
-            >
-              POR QUE ESCOLHER O INSTITUTO PRÁXIS?
-            </h1>
-            <Image src="/image-4.webp"
-              alt="Imagem"
-              width={400}
-              height={400} />
-            <p className="font-medium text-lg text-pretty leading-relaxed">
-              Nossa instituição possui uma longa trajetória de sucesso na
-              formação de profissionais na área da estética. Estamos em um novo
-              momento, com uma marca renovada, mas mantendo o compromisso com a{" "}
-              <b>qualidade</b> e a <b>inovação educacional</b>.
-            </p>
-            <p className="font-medium text-lg text-pretty leading-relaxed">
-              Queremos que você,<i> Farmacêutico</i>, faça parte da nossa família e se una a
-              nós com um propósito comum: <b>transformar</b> a sua vida e
-              fazer a <b>diferença</b> no mundo da estética e da saúde.
-              Acreditamos que a <b>educação</b> vai além dos livros e das
-              salas de aula. Trata-se de <b>experiências reais</b>,{" "}
-              <b>conexões humanas</b> e <b>crescimento pessoal</b>.
-            </p>
-            <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
-              Vamos mudar o rumo do seu futuro profissional?{" "}
-            </h1>
-            <ScrollLink to="section-form" smooth={true} duration={500}>
-              <Button
-                variant="default"
-                size="default"
-                className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
-              >
-                QUERO MAIS INFORMAÇÕES
-              </Button>
-            </ScrollLink>
-          </div>
-          : <div className="flex flex-col gap-8 py-10 mb-10">
-            <div className="flex flex-row gap-10 pt-8">
-              <div className="flex flex-col justify-center gap-6">
-                <h1
-                  className={`relative font-bold text-black tracking-wide leading-relaxed ${isMobile ? "text-2xl" : "text-2xl"}`}
-                >
-                  POR QUE ESCOLHER O INSTITUTO PRÁXIS?
-                </h1>
-                <p className="font-medium text-lg text-pretty leading-relaxed">
-                  Nossa instituição possui uma longa trajetória de sucesso na
-                  formação de profissionais na área da estética. Estamos em um
-                  novo momento, com uma marca renovada, mas mantendo o
-                  compromisso com a <b>qualidade</b> e a{" "}
-                  <b>inovação educacional</b>.
-                </p>
-                <p className="font-medium text-lg text-pretty leading-relaxed">
-                  Queremos que você,<i> Farmacêutico</i>, faça parte da nossa família e se una a
-                  nós com um propósito comum: <b>transformar</b> a sua vida e
-                  fazer a <b>diferença</b> no mundo da estética e da saúde.
-                  Acreditamos que a <b>educação</b> vai além dos livros e das
-                  salas de aula. Trata-se de <b>experiências reais</b>,{" "}
-                  <b>conexões humanas</b> e <b>crescimento pessoal</b>.
-                </p>
-                <h1 className="font-bold text-2xl leading-relaxed mb-2 text-pretty">
-                  Vamos mudar o rumo do seu futuro profissional?{" "}
-                </h1>
-                <ScrollLink to="section-form" smooth={true} duration={500}>
-                  <Button
-                    variant="default"
-                    size="default"
-                    className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
-                  >
-                    QUERO MAIS INFORMAÇÕES
-                  </Button>
-                </ScrollLink>
+                    <div className="flex bg-gradient-to-r from-[#f8e4b4] to-[#AA8E4B] items-center mb-2 py-2 px-4 gap-2 hover:scale-105 transition-transform duration-300 ease-in-out">
+                      <p className="font-bold text-2xl text-[#112A46]">
+                        Descontos especiais na matrícula.
+                      </p>
+                    </div>
+
+                    <div className="flex bg-gradient-to-r from-[#f8e4b4] to-[#AA8E4B] items-center mb-2 py-2 px-4 gap-2 hover:scale-105 transition-transform duration-300 ease-in-out">
+                      <p className="font-bold text-2xl text-[#112A46]">
+                        Canal com conteúdos exclusivos para que você já entre no
+                        clima da pós enquanto espera o primeiro dia de aula.
+                      </p>
+                    </div>
+
+                    <div className="flex bg-gradient-to-r from-[#f8e4b4] to-[#AA8E4B] items-center mb-2 py-2 px-4 gap-2 hover:scale-105 transition-transform duration-300 ease-in-out">
+                      <p className="font-bold text-2xl text-[#112A46]">
+                        Programa de incentivo: <br />
+                        Indique um amigo para fazer a pós junto com você e ganhe descontos cumulativos, podendo estudar de graça na Práxis.                      </p>
+                    </div>
+                  </div>
+                  <div className="pt-10">
+                    <Image
+                      src="/arrow-d.webp"
+                      alt="Seta"
+                      width={60}
+                      height={60}
+                      className="animate-bounce"
+                    />
+                  </div>
+                </div>
               </div>
-              <Image src="/image-4.webp"
-                alt="Imagem"
-                width={700}
-                height={700} />
             </div>
           </div>
-        }
+        </div>
+      </section>
+
+      {/* form */}
+      <section className="py-5 flex justify-center">
+        <div className="md:w-1/2">
+          <FormComponent />
+        </div>
       </section>
 
       {/* 6a seção */}
@@ -479,81 +461,18 @@ export default function Farmacia() {
         />
       </section>
 
-      {/* 7a seção */}
-      <section id="section-form" className="relative w-full py-5 pb-10">
-        <div className="text-center">
-          <div className="mx-auto">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
-              <div className="md:w-1/2 text-left pr-5">
-                <div className="flex flex-col justify-center items-start mb-3">
-                  <div className="flex flex-row items-center justify-start mb-4">
-                    <h1
-                      className={`font-bold text-3xl ${isMobile ? "text-center" : "text-left"}`}
-                    >
-                      Benefícios Exclusivos para os{" "}
-                      <span className="text-[#AA8E4B]">
-                        Primeiros Inscritos!
-                      </span>
-                    </h1>
-                  </div>
-                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <Image
-                      src="/arrow-r.webp"
-                      alt="Seta"
-                      width={10}
-                      height={10}
-                      className="mt-2 mr-2"
-                    />
-                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
-                      <span className="font-semibold">Descontos</span> especiais
-                      na matrícula.
-                    </p>
-                  </div>
-                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <Image
-                      src="/arrow-r.webp"
-                      alt="Seta"
-                      width={10}
-                      height={10}
-                      className="mt-2 mr-2"
-                    />
-                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
-                      Canal com conteúdos exclusivos para que você já entre no
-                      clima da pós enquanto espera o primeiro dia de aula.
-                    </p>
-                  </div>
-                  <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
-                    <Image
-                      src="/arrow-r.webp"
-                      alt="Seta"
-                      width={10}
-                      height={10}
-                      className="mt-2 mr-2"
-                    />
-                    <p className="font-medium text-xl leading-relaxed text-[#FAFAFA]">
-                      Programa de incentivo: indique um amigo para fazer a pós
-                      junto com você e ganhe descontos cumulativos, podendo
-                      estudar de graça na Práxis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-1/2">
-                <FormComponent />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* floatings */}
-      <section className="pb-5">
+      {/* FAQ */}
+      <section className="relative z-10 pb-10 mt-10 md:mt-28">
         <FAQ />
       </section>
-      <section className="z-50">
+
+      {/* Floating buttons */}
+      <section className="relative z-50">
         <FloatingButton message="Olá! Tenho formação em Farmácia e gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>
+
     </main>
   );
 }

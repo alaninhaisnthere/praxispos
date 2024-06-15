@@ -37,13 +37,16 @@ export default function Biomedicina() {
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
-          <Image
-            src={isMobile ? "/biomed-hero-mobile.webp" : "/biomed-hero.webp"}
-            alt="Imagem de fundo"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
+          <ScrollLink to="section-form" smooth={true} duration={500}>
+            <Image
+              src={isMobile ? "/biomed-hero-mobile.webp" : "/biomed-hero.webp"}
+              alt="Imagem de fundo"
+              layout="fill"
+              objectFit="cover"
+              priority
+              className="cursor-pointer"
+            />
+          </ScrollLink>
         </div>
       </section>
 
@@ -61,8 +64,8 @@ export default function Biomedicina() {
               profissionalmente?
             </h1>
             <Image
-              src="/enfermagem-impacto.webp"
-              alt="Enfermagem"
+              src="/biomed-impacto.webp"
+              alt="Biomedicina"
               width={800}
               height={700} />
             <p className="font-medium text-2xl text-pretty">
@@ -80,7 +83,7 @@ export default function Biomedicina() {
             </p>
             <p className="font-bold text-2xl text-pretty">
               Sim! Você,{" "}
-              <span className="italic text-[#114264]">enfermeiro</span>,{" "}
+              <span className="italic text-[#114264]">biomédico</span>,{" "}
               mudar o rumo da sua carreira profissional fazendo parte do mercado
               da estética!
             </p>
@@ -93,8 +96,8 @@ export default function Biomedicina() {
           </div>
           : <div className="flex flex-row gap-[2rem] pb-8">
             <Image
-              src="/Enfermagem-impacto.webp"
-              alt="Enfermagem"
+              src="/biomed-impacto.webp"
+              alt="Biomedicina"
               width={700}
               height={800} />
             <div className="flex flex-col justify-center gap-6">
@@ -122,7 +125,7 @@ export default function Biomedicina() {
               </p>
               <p className="font-bold text-xl text-pretty leading-relaxed">
                 Sim! Você,{" "}
-                <span className="italic underline underline-offset-4 uppercase text-[#114264]">enfermeiro</span>,{" "}pode
+                <span className="italic underline underline-offset-4 uppercase text-[#114264]">biomédico</span>,{" "}pode
                 mudar o rumo da sua carreira profissional fazendo parte do mercado
                 da estética!
               </p>
@@ -148,8 +151,8 @@ export default function Biomedicina() {
               do Instituto Práxis
             </h1>
             <Image
-              src="/enfer-main.webp"
-              alt="Enfermagem"
+              src="/biomed-main.webp"
+              alt="Biomedicina"
               width={800}
               height={700} />
             <p className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
@@ -182,8 +185,8 @@ export default function Biomedicina() {
             </h1>
             <div className="flex flex-row gap-10 pt-8">
               <Image
-                src="/enfer-main.webp"
-                alt="Enfermagem"
+                src="/biomed-main.webp"
+                alt="Biomedicina"
                 width={600}
                 height={500} />
               <div className="flex flex-col justify-center gap-6">
@@ -220,8 +223,8 @@ export default function Biomedicina() {
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]"></div>
         <CardSection
-          headerText={"Descubra o mundo da Enfermagem Dermatológica em Estética"}
-          targetText={"Enfermagem"} />
+          headerText={"Descubra o mundo da Biomedicina Dermatológica em Estética"}
+          targetText={"Biomedicina"} />
       </section>
 
       {/* 4a seção */}
@@ -466,7 +469,7 @@ export default function Biomedicina() {
 
       {/* Floating buttons */}
       <section className="relative z-50">
-        <FloatingButton message="Olá! Tenho formação em Enfermagem e gostaria de mais informações sobre a pós-graduação da Práxis." />
+        <FloatingButton message="Olá! Tenho formação em Biomedicina e gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>
 
