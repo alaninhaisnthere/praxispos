@@ -31,7 +31,7 @@ export default function FaleConosco() {
             <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
                 <div className="absolute inset-0">
                     <Image
-                        src={isMobile ? "/faleconosco-mobile.png" : "/faleconosco-hero.png"}
+                        src={isMobile ? "/faleconosco-mobile.webp" : "/faleconosco-hero.webp"}
                         alt="Imagem de fundo"
                         layout="fill"
                         objectFit="cover"
@@ -43,7 +43,7 @@ export default function FaleConosco() {
                 >
                     <div>
                         <Image
-                            src="/logo-hero.png"
+                            src="/logo-hero.webp"
                             alt="Logo Hero"
                             width={isMobile ? 150 : 250}
                             height={isMobile ? 60 : 100}
@@ -77,7 +77,7 @@ export default function FaleConosco() {
                                 <div className="flex flex-col justify-center items-start mb-3">
                                     <div className="flex items-start mb-2 p-2 bg-[#134169]">
                                         <Image
-                                            src="/arrow-r.png"
+                                            src="/arrow-r.webp"
                                             alt="Seta"
                                             width={10}
                                             height={10}
@@ -92,7 +92,7 @@ export default function FaleConosco() {
 
                                     <div className="flex items-start mb-2 p-2 bg-[#134169]">
                                         <Image
-                                            src="/arrow-r.png"
+                                            src="/arrow-r.webp"
                                             alt="Seta"
                                             width={10}
                                             height={10}
@@ -107,7 +107,7 @@ export default function FaleConosco() {
 
                                     <div className="flex items-start p-2 pr-4 bg-[#134169]">
                                         <Image
-                                            src="/arrow-r.png"
+                                            src="/arrow-r.webp"
                                             alt="Seta"
                                             width={10}
                                             height={10}

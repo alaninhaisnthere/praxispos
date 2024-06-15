@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Image from 'next/image';
-import arrowUp from '../../../public/arrow-up.png';
 
 const ScrollToTopButton = () => {
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -38,7 +37,7 @@ const ScrollToTopButton = () => {
                 <Image
                     width={20}
                     height={20}
-                    src={arrowUp}
+                    src="/arrow-up.webp"
                     alt="Seta para cima"
                 />
             </button>

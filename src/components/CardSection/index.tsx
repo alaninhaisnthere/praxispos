@@ -8,10 +8,10 @@ import {
     useSpring,
 } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import Target from "../../../public/target.png";
-import Program from "../../../public/program.png";
-import Practice from "../../../public/practice.png";
-import Books from "../../../public/book.png";
+import Target from "../../../public/target.webp";
+import Program from "../../../public/program.webp";
+import Practice from "../../../public/practice.webp";
+import Books from "../../../public/book.webp";
 
 interface TiltCardProps {
     title: string;
@@ -19,7 +19,12 @@ interface TiltCardProps {
     image?: StaticImageData;
 }
 
-const CardSection: React.FC = () => {
+interface CardSectionProps {
+    headerText: string;
+    targetText: string;
+}
+
+const CardSection: React.FC<CardSectionProps> = ({ headerText, targetText }) => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
 
     useEffect(() => {
@@ -39,8 +44,8 @@ const CardSection: React.FC = () => {
     return (
         <section className={isMobile ? "flex flex-col py-4 items-center" : "flex flex-col py-4"}>
             <div className="text-center mb-8">
-                <h1 className={`relative font-extrabold text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
-                    DESCUBRA O MUNDO DA ESTÉTICA AVANÇADA!
+                <h1 className={`relative font-extrabold text-transparent uppercase bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+                    {headerText}
                 </h1>
             </div>
             {isMobile ? (
@@ -50,10 +55,8 @@ const CardSection: React.FC = () => {
                         content={
                             <div className="font-medium text-lg leading-relaxed">
                                 Graduados em:
-                                <ul className="font-semibold">
-                                    <li>Enfermagem</li>
-                                    <li>Biomedicina </li>
-                                    <li>Farmácia </li>
+                                <ul className="font-bold uppercase">
+                                    <li>{targetText}</li>
                                 </ul>
                                 (Necessário ensino superior completo)
                             </div>
@@ -61,7 +64,7 @@ const CardSection: React.FC = () => {
                         image={Target}
                     />
                     <TiltCard
-                        title=""
+                        title="Curso Intenso"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
                                 <span className="underline underline-offset-4 decoration-2 decoration-dotted">500 horas</span> de curso, distribuídas em <span className="underline underline-offset-4 decoration-2 decoration-dotted">365 horas</span> de teoria e <span className="underline underline-offset-4 decoration-2 decoration-dotted">135 horas</span> de prática.
@@ -70,7 +73,7 @@ const CardSection: React.FC = () => {
                         image={Practice}
                     />
                     <TiltCard
-                        title=" "
+                        title="Tópicos Essenciais"
                         content={
                             <div className="font-medium text-lg leading-relaxed px-2">
                                 21 módulos abrangendo os tópicos mais relevantes e atuais da estética avançada.
@@ -79,7 +82,7 @@ const CardSection: React.FC = () => {
                         image={Books}
                     />
                     <TiltCard
-                        title=" "
+                        title="Experiência Imersiva"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
                                 <span className="underline underline-offset-4 decoration-2 decoration-dotted">15 módulos presenciais</span>, realizados um final de semana por mês, na cidade de Curitiba, no bairro Portão, dentro da Gran Universidade.
@@ -95,10 +98,8 @@ const CardSection: React.FC = () => {
                         content={
                             <div className="font-medium text-lg leading-relaxed">
                                 Graduados em:
-                                <ul className="font-semibold">
-                                    <li>Enfermagem</li>
-                                    <li>Biomedicina </li>
-                                    <li>Farmácia </li>
+                                <ul className="font-bold uppercase">
+                                    <li>{targetText}</li>
                                 </ul>
                                 (Necessário ensino superior completo)
                             </div>
@@ -127,7 +128,7 @@ const CardSection: React.FC = () => {
                         title="Experiência Imersiva"
                         content={
                             <div className="font-medium text-lg leading-relaxed">
-                               <span className="underline underline-offset-4 decoration-2 decoration-dotted">15 módulos presenciais</span>, realizados um final de semana por mês, dentro da Gran Universidade em Curitiba.
+                                <span className="underline underline-offset-4 decoration-2 decoration-dotted">15 módulos presenciais</span>, realizados um final de semana por mês, dentro da Gran Universidade em Curitiba.
                             </div>
                         }
                         image={Program}

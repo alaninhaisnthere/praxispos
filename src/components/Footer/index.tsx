@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-import logoHero from "../../../public/logo-hero.png";
 import { IconContext } from "react-icons";
 
 const Footer = () => {
@@ -30,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
           <div className="mb-4 md:mb-0 flex flex-col items-center">
             <Image
-              src={logoHero}
+              src="/logo-hero.webp"
               alt="Logo Hero"
               width={isMobile ? 150 : 200}
               height={isMobile ? 90 : 110}

@@ -38,7 +38,7 @@ export default function Biomedicina() {
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
           <Image
-            src={isMobile ? "/biomed-hero-mobile.png" : "/biomed-hero.png"}
+            src={isMobile ? "/biomed-hero-mobile.webp" : "/biomed-hero.webp"}
             alt="Imagem de fundo"
             layout="fill"
             objectFit="cover"
@@ -61,7 +61,7 @@ export default function Biomedicina() {
               profissionalmente?
             </h1>
             <Image
-              src="/biomed-impacto.png"
+              src="/biomed-impacto.webp"
               alt="Biomedicina"
               width={800}
               height={700} />
@@ -93,7 +93,7 @@ export default function Biomedicina() {
           </div>
           : <div className="flex flex-row gap-[2rem] pb-8">
             <Image
-              src="/biomed-impacto.png"
+              src="/biomed-impacto.webp"
               alt="Biomedicina"
               width={700}
               height={800} />
@@ -148,7 +148,7 @@ export default function Biomedicina() {
               do Instituto Práxis
             </h1>
             <Image
-              src="/biomed-main.png"
+              src="/biomed-main.webp"
               alt="Biomedicina"
               width={800}
               height={700} />
@@ -182,7 +182,7 @@ export default function Biomedicina() {
             </h1>
             <div className="flex flex-row gap-10 pt-8">
               <Image
-                src="/biomed-main.png"
+                src="/biomed-main.webp"
                 alt="Biomedicina"
                 width={600}
                 height={500} />
@@ -226,7 +226,7 @@ export default function Biomedicina() {
             </h2>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -239,7 +239,7 @@ export default function Biomedicina() {
             </div>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -261,7 +261,7 @@ export default function Biomedicina() {
             </h2>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -274,7 +274,7 @@ export default function Biomedicina() {
             </div>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -296,7 +296,7 @@ export default function Biomedicina() {
             </h2>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -323,7 +323,7 @@ export default function Biomedicina() {
             <h2 className="font-bold text-xl pb-2">Benefícios:</h2>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -335,7 +335,7 @@ export default function Biomedicina() {
             </div>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -347,7 +347,7 @@ export default function Biomedicina() {
             </div>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -359,7 +359,7 @@ export default function Biomedicina() {
             </div>
             <div className="flex items-start mb-2">
               <Image
-                src="/arrow-r.png"
+                src="/arrow-r.webp"
                 alt="Seta"
                 width={10}
                 height={10}
@@ -393,7 +393,7 @@ export default function Biomedicina() {
             >
               POR QUE ESCOLHER O INSTITUTO PRÁXIS?
             </h1>
-            <Image src="/image-4.png"
+            <Image src="/image-4.webp"
               alt="Imagem"
               width={400}
               height={400} />
@@ -460,7 +460,7 @@ export default function Biomedicina() {
                   </Button>
                 </ScrollLink>
               </div>
-              <Image src="/image-4.png"
+              <Image src="/image-4.webp"
                 alt="Imagem"
                 width={700}
                 height={700} />
@@ -472,7 +472,7 @@ export default function Biomedicina() {
       {/* 6a seção */}
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <Image
-          src="/image-3.png"
+          src="/image-3.webp"
           alt="Imagem de fundo"
           width={2000}
           height={2000}
@@ -498,7 +498,7 @@ export default function Biomedicina() {
                   </div>
                   <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Image
-                      src="/arrow-r.png"
+                      src="/arrow-r.webp"
                       alt="Seta"
                       width={10}
                       height={10}
@@ -511,7 +511,7 @@ export default function Biomedicina() {
                   </div>
                   <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Image
-                      src="/arrow-r.png"
+                      src="/arrow-r.webp"
                       alt="Seta"
                       width={10}
                       height={10}
@@ -524,7 +524,7 @@ export default function Biomedicina() {
                   </div>
                   <div className="flex items-start mb-2 py-2 px-2 bg-[#134169c9] hover:scale-105 transition-transform duration-300 ease-in-out">
                     <Image
-                      src="/arrow-r.png"
+                      src="/arrow-r.webp"
                       alt="Seta"
                       width={10}
                       height={10}

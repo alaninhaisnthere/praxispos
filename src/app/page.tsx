@@ -16,28 +16,28 @@ import FormComponent from "@/components/Forms";
 
 // imgs desktop
 const imagesDesktop = [
-  { desktop: "/home01.png", link: "/cursos/posgraduacao" },
-  { desktop: "/home02.png", link: "/" },
-  { desktop: "/home03.png", link: "/" },
-  { desktop: "/home04.png", link: "/sobrenos" },
+  { desktop: "/home01.webp", link: "/cursos/posgraduacao" },
+  { desktop: "/home02.webp", link: "/" },
+  { desktop: "/home03.webp", link: "/" },
+  { desktop: "/home04.webp", link: "/sobrenos" },
   {
-    desktop: "/home05.png",
+    desktop: "/home05.webp",
     link: "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
   },
-  { desktop: "/home06.png", link: "/" },
+  { desktop: "/home06.webp", link: "/" },
 ];
 
 // imgs mobile
 const imagesMobile = [
-  { mobile: "/home01-mobile.png", link: "/cursos/posgraduacao" },
-  { mobile: "/home02-mobile.png", link: "/" },
-  { mobile: "/home03-mobile.png", link: "/" },
-  { mobile: "/home04-mobile.png", link: "/sobrenos" },
+  { mobile: "/home01-mobile.webp", link: "/cursos/posgraduacao" },
+  { mobile: "/home02-mobile.webp", link: "/" },
+  { mobile: "/home03-mobile.webp", link: "/" },
+  { mobile: "/home04-mobile.webp", link: "/sobrenos" },
   {
-    mobile: "/home05-mobile.png",
+    mobile: "/home05-mobile.webp",
     link: "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
   },
-  { mobile: "/home06-mobile.png", link: "/" },
+  { mobile: "/home06-mobile.webp", link: "/" },
 ];
 
 const Home: React.FC = () => {
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
             onClick={() => handleImageClick(image.link)}
           >
             <Image
-              src={image.desktop}  // Corrigido para image.desktop
+              src={image.desktop}
               alt={`Image ${index + 1}`}
               layout="fill"
               objectFit="cover"
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
             onClick={() => handleImageClick(image.link)}
           >
             <Image
-              src={image.mobile}  // Corrigido para image.mobile
+              src={image.mobile}
               alt={`Image ${index + 1}`}
               layout="fill"
               objectFit="cover"
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
         {isMobile ? (
           <div className="relative z-10 flex flex-col items-center gap-8">
             <Image
-              src="./home-impact.png"
+              src="./home-impact.webp"
               alt="Imagem de enfermeira sentada no chão"
               width={700}
               height={700}
@@ -193,7 +193,7 @@ const Home: React.FC = () => {
         ) : (
           <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
             <Image
-              src="./home-impact.png"
+              src="./home-impact.webp"
               alt="Imagem de enfermeira sentada no chão"
               width={700}
               height={700}
@@ -225,7 +225,7 @@ const Home: React.FC = () => {
         {isMobile ? (
           <div className="relative z-10 flex flex-col items-center gap-8">
             <Image
-              src="./compromisso.png"
+              src="./compromisso.webp"
               alt="Compromisso Práxis"
               width={700}
               height={700}
@@ -265,7 +265,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <Image
-              src="./compromisso.png"
+              src="./compromisso.webp"
               alt="Compromisso Práxis"
               width={700}
               height={700}
@@ -286,7 +286,7 @@ const Home: React.FC = () => {
               Preencha o cadastro e seja atendido pela nossa equipe de consultores:
             </h1>
             <Image
-              src="/arrow-d.png"
+              src="/arrow-d.webp"
               alt="Seta"
               width={30}
               height={30}
@@ -303,7 +303,7 @@ const Home: React.FC = () => {
                 Preencha o cadastro e seja atendido pela nossa equipe de consultores:
               </h1>
               <Image
-                src="/arrow-d.png"
+                src="/arrow-d.webp"
                 alt="Seta"
                 width={30}
                 height={30}

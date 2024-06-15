@@ -12,10 +12,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/sobrenos/page": [
+    "/cursos/posgraduacao/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sobrenos/page.js"
+      "static/chunks/app/cursos/posgraduacao/page.js"
+    ],
+    "/cursos/posgraduacao/enfermagem/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
     ]
   }
 }

@@ -45,7 +45,7 @@ const CourseSection = () => {
                 {/* Enfermagem */}
                 <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
-                        <Image src="/Enfermagem.png" width={300} height={200} alt="Enfermagem" className="rounded-2xl" />
+                        <Image src="/Enfermagem.webp" width={300} height={200} alt="Enfermagem" className="rounded-2xl" />
                     </div>
                     <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Enfermagem Dermatológica em Estética
@@ -62,7 +62,7 @@ const CourseSection = () => {
                 {/* Biomedicina */}
                 <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
-                        <Image src="/Biomedicina.png" width={300} height={200} alt="Biomedicina" className="rounded-2xl" />
+                        <Image src="/Biomedicina.webp" width={300} height={200} alt="Biomedicina" className="rounded-2xl" />
                     </div>
                     <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Biomedicina em Estética
@@ -79,7 +79,7 @@ const CourseSection = () => {
                 {/* Farmácia */}
                 <div className="flex flex-col justify-between items-center bg-gradient-to-r from-cyan-900 to-sky-900 py-5 rounded-2xl">
                     <div className="mb-4">
-                        <Image src="/Farmacia.png" width={300} height={200} alt="Farmácia" className="rounded-2xl" />
+                        <Image src="/Farmacia.webp" width={300} height={200} alt="Farmácia" className="rounded-2xl" />
                     </div>
                     <h3 className={`relative text-center font-extrabold uppercase text-transparent bg-gradient-to-r to-[#d3ad4e] from-[#FAFAFA] bg-clip-text tracking-wide leading-relaxed mb-4 ${isMobile ? "text-2xl" : "text-3xl"}`}>
                         Farmácia <br />

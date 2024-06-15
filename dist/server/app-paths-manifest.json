@@ -1,4 +1,5 @@
 {
-  "/sobrenos/page": "app/sobrenos/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/cursos/posgraduacao/page": "app/cursos/posgraduacao/page.js",
+  "/cursos/posgraduacao/enfermagem/page": "app/cursos/posgraduacao/enfermagem/page.js"
 }

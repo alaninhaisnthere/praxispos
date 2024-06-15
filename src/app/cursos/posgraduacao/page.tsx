@@ -35,7 +35,7 @@ export default function PosGraduacao() {
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
           <Image
-            src={isMobile ? "/cursos-main-mobile.png" : "/cursos-main.png"}
+            src={isMobile ? "/cursos-main-mobile.webp" : "/cursos-main.webp"}
             alt="Imagem de fundo"
             layout="fill"
             objectFit="cover"
@@ -55,7 +55,7 @@ export default function PosGraduacao() {
         {isMobile ?
           <div className="flex flex-col gap-8 p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
             <Image
-              src="/enfer-main.png"
+              src="/enfer-main.webp"
               alt="Enfermagem"
               width={500}
               height={300}
@@ -87,7 +87,7 @@ export default function PosGraduacao() {
           <div>
             <div className="flex flex-row gap-[3rem] p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
               <Image
-                src="/enfer-main.png"
+                src="/enfer-main.webp"
                 alt="Enfermagem"
                 width={500}
                 height={300}
@@ -122,7 +122,7 @@ export default function PosGraduacao() {
         {isMobile ?
           <div className="flex flex-col gap-8 p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
             <Image
-              src="/biomed-main.png"
+              src="/biomed-main.webp"
               alt="Biomedicina"
               width={500}
               height={300}
@@ -154,7 +154,7 @@ export default function PosGraduacao() {
           <div>
             <div className="flex flex-row gap-[3rem] p-8 mb-4 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
               <Image
-                src="/biomed-main.png"
+                src="/biomed-main.webp"
                 alt="Biomedicina"
                 width={500}
                 height={300}
@@ -189,7 +189,7 @@ export default function PosGraduacao() {
         {isMobile ?
           <div className="flex flex-col gap-8 p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
             <Image
-              src="/farma-main.png"
+              src="/farma-main.webp"
               alt="Farmácia"
               width={500}
               height={300}
@@ -221,7 +221,7 @@ export default function PosGraduacao() {
           <div>
             <div className="flex flex-row gap-[3rem] p-8 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]">
               <Image
-                src="/farma-main.png"
+                src="/farma-main.webp"
                 alt="Farmácia"
                 width={500}
                 height={300}
@@ -257,7 +257,7 @@ export default function PosGraduacao() {
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div className="flex justify-center">
           <Image
-            src="/image-3.png"
+            src="/image-3.webp"
             alt="Imagem de fundo"
             width={2500}
             height={1900}
@@ -278,7 +278,7 @@ export default function PosGraduacao() {
               O mercado da estética é o terceiro mercado que mais cresce no Brasil. <br />
               Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.            </h1>
             <Image
-              src="/arrow-d.png"
+              src="/arrow-d.webp"
               alt="Seta"
               width={30}
               height={30}
@@ -295,7 +295,7 @@ export default function PosGraduacao() {
                 O mercado da estética é o terceiro mercado que mais cresce no Brasil.
                 Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.              </h1>
               <Image
-                src="/arrow-d.png"
+                src="/arrow-d.webp"
                 alt="Seta"
                 width={30}
                 height={30}

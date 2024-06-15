@@ -33,7 +33,7 @@ export default function SobreNos() {
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
           <Image
-            src={isMobile ? "/sobrenos-mobile.png" : "/sobrenos.png"}
+            src={isMobile ? "/sobrenos-mobile.webp" : "/sobrenos.webp"}
             alt="Imagem de fundo"
             layout="fill"
             objectFit="cover"
@@ -52,7 +52,7 @@ export default function SobreNos() {
               Quem Somos?
             </h1>
             <Image
-              src="/quemsomos.png"
+              src="/quemsomos.webp"
               alt="Quem somos"
               width={700}
               height={500} />
@@ -94,7 +94,7 @@ export default function SobreNos() {
                 </h1>
               </div>
               <Image
-                src="/quemsomos.png"
+                src="/quemsomos.webp"
                 alt="Quem somos"
                 width={700}
                 height={500} />
@@ -183,7 +183,7 @@ export default function SobreNos() {
         {isMobile ?
           <div className="flex flex-col gap-8">
             <Image
-              src="/mecfbbr.png"
+              src="/mecfbbr.webp"
               alt="Quem somos"
               width={700}
               height={500} />
@@ -203,7 +203,7 @@ export default function SobreNos() {
                 <div className="flex flex-col justify-between gap-2">
                   <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
                     <Image
-                      src="/biomed-mec.png"
+                      src="/biomed-mec.webp"
                       alt="Biomedicina"
                       width={150}
                       height={150} />
@@ -216,7 +216,7 @@ export default function SobreNos() {
                 <div className="flex flex-col justify-between gap-2">
                   <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
                     <Image
-                      src="/enfermagem-mec.png"
+                      src="/enfermagem-mec.webp"
                       alt="Enfermagem"
                       width={150}
                       height={150} />
@@ -229,7 +229,7 @@ export default function SobreNos() {
                 <div className="flex flex-col justify-between gap-2">
                   <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
                     <Image
-                      src="/farma-mec.png"
+                      src="/farma-mec.webp"
                       alt="Farmácia"
                       width={150}
                       height={150} />
@@ -246,7 +246,7 @@ export default function SobreNos() {
           <div>
             <div className="flex flex-row gap-[3rem] pb-8">
               <Image
-                src="/mecfbbr.png"
+                src="/mecfbbr.webp"
                 alt="Quem somos"
                 width={700}
                 height={500} />
@@ -265,7 +265,7 @@ export default function SobreNos() {
                     <div className="flex flex-col justify-between gap-2">
                       <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
                         <Image
-                          src="/biomed-mec.png"
+                          src="/biomed-mec.webp"
                           alt="Biomedicina"
                           width={150}
                           height={150} />
@@ -277,7 +277,7 @@ export default function SobreNos() {
                     <div className="flex flex-col justify-between gap-2">
                       <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
                         <Image
-                          src="/enfermagem-mec.png"
+                          src="/enfermagem-mec.webp"
                           alt="Enfermagem"
                           width={150}
                           height={150} />
@@ -290,7 +290,7 @@ export default function SobreNos() {
                     <div className="flex flex-col justify-between gap-2">
                       <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
                         <Image
-                          src="/farma-mec.png"
+                          src="/farma-mec.webp"
                           alt="Farmácia"
                           width={150}
                           height={150} />
