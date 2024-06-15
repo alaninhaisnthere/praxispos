@@ -136,7 +136,7 @@ const Home: React.FC = () => {
       {imagesMobile.map((image, index) => (
         <Link key={index} href={image.link} passHref>
           <div
-            className="w-full h-[350px] cursor-pointer relative"
+            className="w-full h-[750px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
           >
             <Image
@@ -151,6 +151,7 @@ const Home: React.FC = () => {
       ))}
     </Carousel>
   );
+
   return (
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
@@ -280,7 +281,7 @@ const Home: React.FC = () => {
       {/* texto */}
       <section>
         <h1 className="font-extrabold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text py-5">
-        Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+          Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
         </h1>
       </section>
 

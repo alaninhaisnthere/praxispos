@@ -1395,6 +1395,18 @@ input[type="range"]::-ms-fill-lower {
 .h-min {
   height: min-content;
 }
+.h-\[450px\] {
+  height: 450px;
+}
+.h-\[750px\] {
+  height: 750px;
+}
+.h-\[800px\] {
+  height: 800px;
+}
+.h-\[900px\] {
+  height: 900px;
+}
 .max-h-64 {
   max-height: 16rem;
 }
