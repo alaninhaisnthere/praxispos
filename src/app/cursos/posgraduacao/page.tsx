@@ -254,29 +254,64 @@ export default function PosGraduacao() {
       </section>
 
       {/* impacto */}
-      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
-        <div className="flex justify-center">
-          <Image
-            src="/image-3.webp"
-            alt="Imagem de fundo"
-            width={2500}
-            height={1900}
-          />
-        </div>
+      <section className="relative w-full py-10">
+        <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-[#134169] z-0"></div>
+        {isMobile ? (
+          <div className="relative z-10 flex flex-col items-center gap-8">
+            <Image
+              src="/mec-form.webp"
+              alt="MEC"
+              width={700}
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
+            <div className="text-center">
+            <h1 className="text-2xl text-[#FAFAFA] text-pretty font-semibold leading-relaxed tracking-wide">
+                O mercado da estética é o terceiro mercado que mais cresce no Brasil.
+                <br />
+                <span className="font-bold underline underline-offset-8 decoration-dotted">
+                  Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
+                </span>
+              </h1>
+            </div>
+          </div>
+        ) : (
+          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+            <Image
+              src="/mec-form.webp"
+              alt="MEC"
+              width={700}
+              height={700}
+              layout="responsive"
+              objectFit="cover"
+              priority
+            />
+            <div className="flex flex-col justify-center gap-6">
+              <h1 className="text-2xl text-[#FAFAFA] text-pretty font-semibold leading-relaxed tracking-wide">
+                O mercado da estética é o terceiro mercado que mais cresce no Brasil.
+                <br />
+                <span className="font-bold underline underline-offset-8 decoration-dotted">
+                  Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.
+                </span>
+              </h1>
+            </div>
+          </div>
+        )}
       </section>
-
 
       {/* form lead */}
       <section
-        className={`flex flex-col py-2 ${isMobile ? "items-center" : ""}`}
+        className={`flex flex-col ${isMobile ? "items-center" : ""}`}
       >
       </section><section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
         {isMobile ?
           <div className="relative z-10 flex flex-col items-center gap-[2rem]">
             <h1 className="text-2xl text-balance text-center leading-relaxed text-[#FAFAFA] font-semibold">
-              O mercado da estética é o terceiro mercado que mais cresce no Brasil. <br />
-              Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.            </h1>
+              Preencha o cadastro e seja atendido pela nossa equipe de consultores
+            </h1>
             <Image
               src="/arrow-d.webp"
               alt="Seta"
@@ -289,11 +324,11 @@ export default function PosGraduacao() {
             </div>
           </div>
           :
-          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
-            <div className="flex flex-col justify- items-center gap-[3rem]">
+          <div className="relative z-10 flex flex-row justify-center gap-[3rem] pb-8">
+            <div className="flex flex-col justify-center items-center gap-[2rem]">
               <h1 className="text-3xl text-pretty text-center leading-relaxed text-[#FAFAFA] font-semibold">
-                O mercado da estética é o terceiro mercado que mais cresce no Brasil.
-                Ganhe em 1 dia em seu consultório com todo conforto e tranquilidade o que você ganharia em um plantão exaustivo.              </h1>
+                Preencha o cadastro e seja atendido pela nossa equipe de consultores
+              </h1>
               <Image
                 src="/arrow-d.webp"
                 alt="Seta"
