@@ -13,31 +13,24 @@ import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import FormComponent from "@/components/Forms";
 
-
 // imgs desktop
 const imagesDesktop = [
   { desktop: "/home01.webp", link: "/cursos/posgraduacao" },
-  { desktop: "/home02.webp", link: "/" },
-  { desktop: "/home03.webp", link: "/" },
+  { desktop: "/home02.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20de%20extens%C3%A3o%20da%20Pr%C3%A1xis" },
+  { desktop: "/home03.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20workshops%20da%20Pr%C3%A1xis" },
   { desktop: "/home04.webp", link: "/sobrenos" },
-  {
-    desktop: "/home05.webp",
-    link: "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
-  },
-  { desktop: "/home06.webp", link: "/" },
+  { desktop: "/home05.webp", link: "/sobrenos" },
+  { desktop: "/home06.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20programas%20de%20incentivo%20da%20Pr%C3%A1xis" },
 ];
 
 // imgs mobile
 const imagesMobile = [
   { mobile: "/home01-mobile.webp", link: "/cursos/posgraduacao" },
-  { mobile: "/home02-mobile.webp", link: "/" },
-  { mobile: "/home03-mobile.webp", link: "/" },
+  { mobile: "/home02-mobile.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20de%20extens%C3%A3o%20da%20Pr%C3%A1xis" },
+  { mobile: "/home03-mobile.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20workshops%20da%20Pr%C3%A1xis" },
   { mobile: "/home04-mobile.webp", link: "/sobrenos" },
-  {
-    mobile: "/home05-mobile.webp",
-    link: "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
-  },
-  { mobile: "/home06-mobile.webp", link: "/" },
+  { mobile: "/home05-mobile.webp", link: "/sobrenos" },
+  { mobile: "/home06-mobile.webp", link: "https://wa.me/5541992460242?text=Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20programas%20de%20incentivo%20da%20Pr%C3%A1xis" },
 ];
 
 const Home: React.FC = () => {
@@ -101,7 +94,7 @@ const Home: React.FC = () => {
       renderArrowNext={renderArrowNext}
     >
       {imagesDesktop.map((image, index) => (
-        <Link key={index} href={image.link} passHref>
+        <Link key={index} href={image.link} passHref target="_blank">
           <div
             className="w-full h-[778px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
@@ -134,7 +127,7 @@ const Home: React.FC = () => {
       renderArrowNext={renderArrowNext}
     >
       {imagesMobile.map((image, index) => (
-        <Link key={index} href={image.link} passHref>
+        <Link key={index} href={image.link} passHref target="_blank" >
           <div
             className="w-full h-[750px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
