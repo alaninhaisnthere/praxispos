@@ -238,7 +238,7 @@ const Home: React.FC = () => {
               <h1 className="font-medium text-2xl text-wrap text-left leading-relaxed px-5 text-[#FAFAFA]">
                 O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
               </h1>
-              <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+              <Link href="/sobrenos">
                 <Button
                   variant="default"
                   size="default"
@@ -255,7 +255,7 @@ const Home: React.FC = () => {
               <h1 className="text-2xl text-pretty leading-relaxed text-[#FAFAFA]">
                 O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
               </h1>
-              <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+              <Link href="/sobrenos">
                 <Button
                   variant="default"
                   size="default"

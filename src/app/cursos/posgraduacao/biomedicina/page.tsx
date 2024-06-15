@@ -152,8 +152,7 @@ export default function Biomedicina() {
               width={800}
               height={700} />
             <h1 className="font-extrabold text-2xl uppercase text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
-              Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
-              do Instituto Práxis
+            Apresento a você a Pós Graduação Lato Sensu em Biomedicina em Estética do Instituto Práxis
             </h1>
             <p className="flex flex-col justify-center text-center font-medium text-2xl text-pretty leading-relaxed">
               Aqui você aprenderá as técnicas que são tendências no mercado da
@@ -180,8 +179,7 @@ export default function Biomedicina() {
           </div>
           : <div className="flex flex-col gap-8 pb-8">
             <h1 className="font-bold text-5xl text-center text-pretty tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
-              Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
-              do Instituto Práxis
+            Apresento a você a Pós Graduação Lato Sensu em Biomedicina em Estética do Instituto Práxis
             </h1>
             <div className="flex flex-row gap-10 pt-8">
               <Image
@@ -223,7 +221,7 @@ export default function Biomedicina() {
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8]"></div>
         <CardSection
-          headerText={"Descubra o mundo da Biomedicina Dermatológica em Estética"}
+          headerText={"Descubra o mundo da Biomedicina em Estética"}
           targetText={"Biomedicina"} />
       </section>
 
@@ -471,8 +469,9 @@ export default function Biomedicina() {
 
       {/* FAQ */}
       <section className="relative z-10 pb-10 mt-10 md:mt-28">
-        <FAQ />
+        <FAQ content={"Para se inscrever na Pós Graduação Lato Sensu em <strong>Biomedicina Estética</strong> do Instituto Práxis, é necessário ter graduação completa em <strong>Biomedicina</strong>."} />
       </section>
+
 
       {/* Floating buttons */}
       <section className="relative z-50">

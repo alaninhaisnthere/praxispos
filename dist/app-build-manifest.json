@@ -31,6 +31,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/cursos/posgraduacao/farmacia/page.js"
+    ],
+    "/sobrenos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sobrenos/page.js"
+    ],
+    "/faleconosco/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/faleconosco/page.js"
     ]
   }
 }

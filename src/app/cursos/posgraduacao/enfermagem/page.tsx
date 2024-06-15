@@ -470,7 +470,7 @@ export default function Enfermagem() {
 
       {/* FAQ */}
       <section className="relative z-10 pb-10 mt-10 md:mt-28">
-        <FAQ />
+        <FAQ content={"Para se inscrever na Pós Graduação Lato Sensu em <strong>Enfermagem Dermatológica em Estética</strong> do Instituto Práxis, é necessário ter graduação completa em <strong> Enfermagem </strong>."} />
       </section>
 
       {/* Floating buttons */}

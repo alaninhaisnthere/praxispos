@@ -38,44 +38,66 @@ export default function FaleConosco() {
                         priority
                     />
                 </div>
-                <div
-                    className={`relative z-10 flex flex-col items-left justify-center h-full px-8 ${isMobile ? "gap-1 ml-4 bottom-44" : "gap-5 ml-64"}`}
-                >
-                    <div>
-                        <Image
-                            src="/logo-hero.webp"
-                            alt="Logo Hero"
-                            width={isMobile ? 150 : 250}
-                            height={isMobile ? 60 : 100}
-                        />
-                    </div>
-                    <h1
-                        className={`text-[#f7dc9c] font-gothamblack text-left font-bold ${isMobile ? "text-5xl" : "text-7xl"}`}
-                    >
-                        FALE CONOSCO
-                    </h1>
-                    <h1
-                        className={`text-white text-left font-bold ${isMobile ? "text-3xl" : "text-3xl mb-28"}`}
-                    >
-                        Queremos você pertinho de nós!
-                    </h1>
-                </div>
             </section>
 
-            {/* 7a seção */}
+            {/* impacto */}
+            <section className="relative w-full py-10">
+                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
+                {isMobile ? (
+                    <div className="relative z-10 flex flex-col items-center gap-8">
+                        <div className="text-center">
+                            <h1 className="text-3xl text-pretty font-bold leading-relaxed pb-2 text-[#FAFAFA]">
+                            Inscreva-se hoje e comece a construir o futuro que <br/>
+                            <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#f8d37c]">você merece!</span>
+                            </h1>
+                            <Image
+                                src="/faleconosco-impacto.webp"
+                                alt="Fale conosco"
+                                width={700}
+                                height={700}
+                                layout="responsive"
+                                objectFit="cover"
+                                priority
+                            />
+                        </div>
+                    </div>
+                ) : (
+                    <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+                        <div className="flex flex-row items-center justify-center gap-6">
+                            <Image
+                                src="/faleconosco-impacto.webp"
+                                alt="Fale conosco"
+                                width={700}
+                                height={700}
+                                layout="responsive"
+                                objectFit="cover"
+                                priority
+                            />
+                            <h1 className="text-5xl text-pretty font-bold leading-relaxed text-[#FAFAFA]">
+                                Inscreva-se hoje e comece a construir o futuro que <br/>
+                                <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#f8d37c]">você merece!</span>
+
+                            </h1>
+                        </div>
+                    </div>
+                )}
+            </section>
+
+
+            {/* form + info */}
             <section id="section-form" className="relative w-full py-5 pb-10">
                 <div className="text-center">
                     <h1 className={`font-extrabold ${isMobile ? "text-3xl pb-5" : "text-5xl py-10"} text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text uppercase`}>
-                        Inscreva-se hoje e comece a construir o futuro que você merece!
+                        Sua opinião é muito importante para nós!
                     </h1>
                     <div className="mx-auto">
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-[2rem]">
                             <div className="md:w-1/2">
                                 <FormsFaleConosco />
                             </div>
-                            <div className="md:w-1/2 text-left pr-5">
-                                <div className="flex flex-col justify-center items-start mb-3">
-                                    <div className="flex items-start mb-2 p-2 bg-[#134169]">
+                            <div className="md:w-1/2 text-left gap-[2rem]">
+                                <div className="flex flex-col justify-center items-start mb-3 rounded-xl p-4 bg-[#134169]">
+                                    <div className="flex items-start mb-2 p-2">
                                         <Image
                                             src="/arrow-r.webp"
                                             alt="Seta"
@@ -90,7 +112,7 @@ export default function FaleConosco() {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-start mb-2 p-2 bg-[#134169]">
+                                    <div className="flex items-start mb-2 p-2">
                                         <Image
                                             src="/arrow-r.webp"
                                             alt="Seta"
@@ -105,7 +127,7 @@ export default function FaleConosco() {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-start p-2 pr-4 bg-[#134169]">
+                                    <div className="flex items-start p-2 pr-4">
                                         <Image
                                             src="/arrow-r.webp"
                                             alt="Seta"
