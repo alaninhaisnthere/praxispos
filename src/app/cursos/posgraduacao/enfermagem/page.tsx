@@ -37,13 +37,16 @@ export default function Enfermagem() {
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
-          <Image
-            src={isMobile ? "/enfermagem-hero-mobile.webp" : "/enfermagem-hero.webp"}
-            alt="Imagem de fundo"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
+          <ScrollLink to="section-form" smooth={true} duration={500}>
+            <Image
+              src={isMobile ? "/enfermagem-hero-mobile.webp" : "/enfermagem-hero.webp"}
+              alt="Imagem de fundo"
+              layout="fill"
+              objectFit="cover"
+              priority
+              className="cursor-pointer"
+            />
+          </ScrollLink>
         </div>
       </section>
 
@@ -386,7 +389,7 @@ export default function Enfermagem() {
         </div>
       </section>
 
-      {/* destaques + form */}
+      {/* destaques */}
       <section id="section-form" className="relative w-full py-5 pb-10">
         <div className="text-center">
           <div className="mx-auto">
@@ -425,6 +428,15 @@ export default function Enfermagem() {
                         Indique um amigo para fazer a pós junto com você e ganhe descontos cumulativos, podendo estudar de graça na Práxis.                      </p>
                     </div>
                   </div>
+                  <div className="pt-10">
+                    <Image
+                      src="/arrow-d.webp"
+                      alt="Seta"
+                      width={60}
+                      height={60}
+                      className="animate-bounce"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -432,26 +444,35 @@ export default function Enfermagem() {
         </div>
       </section>
 
-      {/* liberte-se */}
-      <section className="relative w-full py-10">
+      {/* form */}
+      <section className="py-5 flex justify-center">
+        <div className="md:w-1/2">
+          <FormComponent />
+        </div>
+      </section>
+
+      {/* 6a seção */}
+      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <Image
           src="/image-3.webp"
           alt="Imagem de fundo"
-          layout="responsive"
           width={2000}
           height={2000}
-          className="w-full"
         />
       </section>
 
-      {/* floatings */}
-      <section className="pb-5">
+
+      {/* FAQ */}
+      <section className="relative z-10 pb-10 mt-10 md:mt-28">
         <FAQ />
       </section>
-      <section className="z-50">
+
+      {/* Floating buttons */}
+      <section className="relative z-50">
         <FloatingButton message="Olá! Tenho formação em Enfermagem e gostaria de mais informações sobre a pós-graduação da Práxis." />
         <ScrollToTopButton />
       </section>
+
     </main>
   );
 }

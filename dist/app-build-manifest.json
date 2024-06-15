@@ -21,6 +21,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/cursos/posgraduacao/enfermagem/page.js"
+    ],
+    "/cursos/posgraduacao/biomedicina/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cursos/posgraduacao/biomedicina/page.js"
+    ],
+    "/sobrenos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sobrenos/page.js"
     ]
   }
 }
