@@ -277,6 +277,13 @@ const Home: React.FC = () => {
         )}
       </section>
 
+      {/* texto */}
+      <section>
+        <h1 className="font-extrabold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text py-5">
+        Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
+        </h1>
+      </section>
+
       {/* form */}
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
