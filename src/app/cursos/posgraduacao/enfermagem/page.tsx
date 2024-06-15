@@ -156,7 +156,7 @@ export default function Enfermagem() {
             </h1>
             <p className="flex flex-col text-center justify-center font-medium text-2xl text-pretty leading-relaxed">
               Aqui você aprenderá as técnicas que são tendências no mercado da
-              estética em 2024, como: bioestimuladores ozonioterapia harmonia
+              estética em 2024, como: bioestimuladores, ozonioterapia, harmonia
               facial além de aulas de biossegurança e empreendedorismo.
             </p>
             <p className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">

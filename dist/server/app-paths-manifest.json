@@ -1,5 +1,7 @@
 {
   "/page": "app/page.js",
   "/cursos/posgraduacao/page": "app/cursos/posgraduacao/page.js",
-  "/cursos/posgraduacao/enfermagem/page": "app/cursos/posgraduacao/enfermagem/page.js"
+  "/cursos/posgraduacao/enfermagem/page": "app/cursos/posgraduacao/enfermagem/page.js",
+  "/cursos/posgraduacao/biomedicina/page": "app/cursos/posgraduacao/biomedicina/page.js",
+  "/cursos/posgraduacao/farmacia/page": "app/cursos/posgraduacao/farmacia/page.js"
 }

@@ -146,18 +146,18 @@ export default function Biomedicina() {
       >
         {isMobile ?
           <div className="flex flex-col items-center gap-4">
-            <h1 className="font-extrabold text-2xl uppercase text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
-              Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
-              do Instituto Práxis
-            </h1>
             <Image
               src="/biomed-main.webp"
               alt="Biomedicina"
               width={800}
               height={700} />
-            <p className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
+            <h1 className="font-extrabold text-2xl uppercase text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
+              Apresento a você a Pós Graduação Lato Sensu em Estética Avançada
+              do Instituto Práxis
+            </h1>
+            <p className="flex flex-col justify-center text-center font-medium text-2xl text-pretty leading-relaxed">
               Aqui você aprenderá as técnicas que são tendências no mercado da
-              estética em 2024, como: bioestimuladores ozonioterapia harmonia
+              estética em 2024, como: bioestimuladores, ozonioterapia, harmonia
               facial além de aulas de biossegurança e empreendedorismo.
             </p>
             <p className="font-bold text-2xl text-pretty text-white bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-6 py-6 my-4">
@@ -444,8 +444,15 @@ export default function Biomedicina() {
         </div>
       </section>
 
+      {/* texto */}
+      <section>
+        <h1 className="py-10 font-bold text-center flex justify-center text-3xl">
+          Preencha o cadastro e seja atendido pela nossa equipe de consultores:
+        </h1>
+      </section>
+
       {/* form */}
-      <section className="py-5 flex justify-center">
+      <section className="pb-5 flex justify-center">
         <div className="md:w-1/2">
           <FormComponent />
         </div>
