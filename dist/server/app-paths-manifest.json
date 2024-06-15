@@ -3,6 +3,5 @@
   "/cursos/posgraduacao/farmacia/page": "app/cursos/posgraduacao/farmacia/page.js",
   "/sobrenos/page": "app/sobrenos/page.js",
   "/faleconosco/page": "app/faleconosco/page.js",
-  "/page": "app/page.js",
-  "/icon.ico/route": "app/icon.ico/route.js"
+  "/page": "app/page.js"
 }

@@ -94,7 +94,7 @@ const Home: React.FC = () => {
       renderArrowNext={renderArrowNext}
     >
       {imagesDesktop.map((image, index) => (
-        <Link key={index} href={image.link} passHref target="_blank">
+        <Link key={index} href={image.link} passHref >
           <div
             className="w-full h-[778px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
       renderArrowNext={renderArrowNext}
     >
       {imagesMobile.map((image, index) => (
-        <Link key={index} href={image.link} passHref target="_blank" >
+        <Link key={index} href={image.link} passHref >
           <div
             className="w-full h-[750px] cursor-pointer relative"
             onClick={() => handleImageClick(image.link)}
