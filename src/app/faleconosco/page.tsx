@@ -41,14 +41,13 @@ export default function FaleConosco() {
             </section>
 
             {/* impacto */}
-            <section className="relative w-full py-10">
-                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
+            <section>
                 {isMobile ? (
-                    <div className="relative z-10 flex flex-col items-center gap-8">
+                    <div className="relative z-10 flex flex-col items-center gap-8 py-5">
                         <div className="text-center">
-                            <h1 className="text-3xl text-pretty font-bold leading-relaxed pb-2 text-[#FAFAFA]">
-                            Inscreva-se hoje e comece a construir o futuro que <br/>
-                            <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#f8d37c]">você merece!</span>
+                            <h1 className="text-3xl text-pretty font-bold leading-relaxed pb-2">
+                                Inscreva-se hoje e comece a construir o futuro que <br />
+                                <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#796028]">você merece!</span>
                             </h1>
                             <Image
                                 src="/faleconosco-impacto.webp"
@@ -62,7 +61,7 @@ export default function FaleConosco() {
                         </div>
                     </div>
                 ) : (
-                    <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
+                    <div className="relative z-10 flex flex-row gap-[3rem] py-8">
                         <div className="flex flex-row items-center justify-center gap-6">
                             <Image
                                 src="/faleconosco-impacto.webp"
@@ -73,9 +72,9 @@ export default function FaleConosco() {
                                 objectFit="cover"
                                 priority
                             />
-                            <h1 className="text-5xl text-pretty font-bold leading-relaxed text-[#FAFAFA]">
-                                Inscreva-se hoje e comece a construir o futuro que <br/>
-                                <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#f8d37c]">você merece!</span>
+                            <h1 className="text-5xl text-pretty font-bold leading-relaxed">
+                                Inscreva-se hoje e comece a construir o futuro que <br />
+                                <span className=" uppercase underline underline-offset-8 decoration-dotted text-[#796028]">você merece!</span>
 
                             </h1>
                         </div>
@@ -83,20 +82,20 @@ export default function FaleConosco() {
                 )}
             </section>
 
-
             {/* form + info */}
-            <section id="section-form" className="relative w-full py-5 pb-10">
-                <div className="text-center">
-                    <h1 className={`font-extrabold ${isMobile ? "text-3xl pb-5" : "text-5xl py-10"} text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text uppercase`}>
-                        Sua opinião é muito importante para nós!
-                    </h1>
-                    <div className="mx-auto">
-                        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-[2rem]">
+            <section className="relative w-full py-10">
+                <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
+                <section id="section-form" className="relative w-full py-5 pb-10">
+                    <div className="text-center">
+                        <h1 className={`font-extrabold ${isMobile ? "text-3xl pb-5" : "text-5xl pb-10"} text-center text-pretty text-[#FAFAFA] uppercase`}>
+                            Sua opinião é muito importante para nós!
+                        </h1>
+                        <div className="flex flex-col items-center justify-center gap-[2rem] md:flex-row">
                             <div className="md:w-1/2">
                                 <FormsFaleConosco />
                             </div>
                             <div className="md:w-1/2 text-left gap-[2rem]">
-                                <div className="flex flex-col justify-center items-start mb-3 rounded-xl p-4 bg-[#134169]">
+                                <div className="flex flex-col justify-center items-start rounded-xl p-4 bg-[#0c2235]">
                                     <div className="flex items-start mb-2 p-2">
                                         <Image
                                             src="/arrow-r.webp"
@@ -152,10 +151,10 @@ export default function FaleConosco() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
 
             {/* floatings */}
