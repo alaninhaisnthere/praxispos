@@ -61,75 +61,11 @@ export default function Subjects() {
                     <ul className="text-xl">
                         <li className="py-2 font-medium text-lg">
                             <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Anátomo - Fisiologia do Sistema Tegumentar, Veno-Linfático e Metabolismo
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Disfunções Estéticas Faciais, Corporais e Drenagem Linfática e Saúde Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Cosmetofarmacologia e Prescrição Aplicada a Disfunções Estéticas
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Marketing Digital e Empreendedorismo na Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Avaliação, Anamnese e Exame Físico Aplicado à Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Peelings Estéticos Avançados e Despigmentantes
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
                             Toxina Botulínica e Mesobotox
                         </li>
                         <li className="py-2 font-medium text-lg">
                             <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Práticas Integrativas na Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Mesoterapia Estética e Procedimento Estético Injetável em Microvasos (PEIM)
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Microagulhamento e Ozonioterapia
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Legislação Sanitária, Biossegurança, Primeiros Socorros e Intercorrências na Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Nutracêuticos e Prescrição na Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Eletroestética I
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Análise de Exames Laboratoriais Associados à Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Acupuntura Aplicada à Estética
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Tricologia e Terapias Capilares
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            PRP e PRF
-                        </li>
-                        <li className="py-2 font-medium text-lg">
-                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Eletroestética II
+                            Peelings Estéticos Avançados e Despigmentantes
                         </li>
                         <li className="py-2 font-medium text-lg">
                             <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
@@ -141,9 +77,70 @@ export default function Subjects() {
                         </li>
                         <li className="py-2 font-medium text-lg">
                             <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
-                            Atividades Científicas Complementares
+                            Mesoterapia Estética e Procedimento Estético Injetável em Microvasos (PEIM)
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Tricologia e Terapias Capilares
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Microagulhamento e Ozonioterapia
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Eletroestética I (Laser e infravermelho (laserterapia regional e sistêmica), alta frequência, jato de plasma, endermologia, led azul, led âmbar, peeling físico: peeling de diamante)
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Eletroestética II (Ultrassom de baixa potência; Ultra-som de alta potência; Ultracavitação; Radiofrequência; Criolipólise; Criolipólise de placas; Carboxiterapia)
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Legislação Sanitária, Biossegurança, Primeiros Socorros e Intercorrências na Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Nutracêuticos e Prescrição na Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Acupuntura Aplicada à Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            PRP e PRF
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Avaliação, Anamnese e Exame Físico Aplicado à Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Cosmetofarmacologia e Prescrição Aplicada a Disfunções Estéticas
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Anátomo - Fisiologia do Sistema Tegumentar, Veno-Linfático e Metabolismo
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Disfunções Estéticas Faciais, Corporais e Drenagem Linfática e Saúde Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Práticas Integrativas na Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Análise de Exames Laboratoriais Associados à Estética
+                        </li>
+                        <li className="py-2 font-medium text-lg">
+                            <span className="inline-block w-2 h-2 mr-2 bg-primary rounded-full align-middle"></span>
+                            Marketing Digital e Empreendedorismo na Estética
                         </li>
                     </ul>
+
                 </AccordionItem>
             </Accordion>
             <Divider orientation="horizontal" style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }} />

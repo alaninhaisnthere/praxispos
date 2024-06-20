@@ -77,7 +77,7 @@ const Footer = () => {
             <p>Rua Caetano Marchesini, 952, Bairro Portão,
               <br />
               CEP: 81070-110, Curitiba-PR</p>
-            <p>+55 (41) 99246-0242</p>
+            <p>+55 (41) 99168-4819</p>
             <p className="text-sm py-2">
               Instituto Práxis, 2024. <br />
               Todos os direitos reservados.</p>

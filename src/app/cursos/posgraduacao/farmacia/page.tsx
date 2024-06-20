@@ -152,7 +152,7 @@ export default function Farmacia() {
               width={800}
               height={700} />
             <h1 className="font-extrabold text-2xl uppercase text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text">
-            Apresento a você a Pós Graduação Lato Sensu em Farmácia em Estética do Instituto Práxis
+              Apresento a você a Pós Graduação Lato Sensu em Farmácia em Estética do Instituto Práxis
             </h1>
             <p className="flex flex-col justify-center font-medium text-2xl text-pretty leading-relaxed">
               Aqui você aprenderá as técnicas que são tendências no mercado da
@@ -179,7 +179,7 @@ export default function Farmacia() {
           </div>
           : <div className="flex flex-col gap-8 pb-8">
             <h1 className="font-bold text-5xl text-center text-pretty tracking-wide text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] px-8 py-4 bg-clip-text">
-            Apresento a você a Pós Graduação Lato Sensu em Farmácia em Estética do Instituto Práxis
+              Apresento a você a Pós Graduação Lato Sensu em Farmácia em Estética do Instituto Práxis
 
             </h1>
             <div className="flex flex-row gap-10 pt-8">
@@ -231,9 +231,7 @@ export default function Farmacia() {
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4]"></div>
         <div className="relative flex flex-col gap-4 p-10 bg-[#FAFAFA] rounded-lg shadow-lg">
           <div>
-            <h2 className="font-bold text-xl pb-2">
-              Formação Prática de Excelência:
-            </h2>
+            <h2 className="font-bold text-xl pb-2">Benefícios:</h2>
             <div className="flex items-start mb-2">
               <Image
                 src="/arrow-r.webp"
@@ -243,8 +241,7 @@ export default function Farmacia() {
                 className="mt-2 mr-2"
               />
               <p className="font-medium text-lg leading-relaxed">
-                Aulas práticas com equipamentos de última geração e técnicas
-                modernas.
+                <span className="underline underline-offset-4 decoration-2 decoration-dotted">Turmas Limitadas</span> para uma melhor experiência educacional.
               </p>
             </div>
             <div className="flex items-start mb-2">
@@ -256,8 +253,67 @@ export default function Farmacia() {
                 className="mt-2 mr-2"
               />
               <p className="font-medium text-lg leading-relaxed">
-                Professores experientes e atuantes no mercado, trazendo cases
-                reais e atualizados.
+                Atendimento totalmente <span className="underline underline-offset-4 decoration-2 decoration-dotted">personalizado</span>.
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src="/arrow-r.webp"
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                Práticas <span className="underline underline-offset-4 decoration-2 decoration-dotted">Hands-on</span> supervisionadas.
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src="/arrow-r.webp"
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                Todo <span className="underline underline-offset-4 decoration-2 decoration-dotted">material</span> teórico e prático <span className="underline underline-offset-4 decoration-2 decoration-dotted">100% incluso.</span>
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src="/arrow-r.webp"
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                <span className="underline underline-offset-4 decoration-2 decoration-dotted">Professores</span> experientes e <span className="underline underline-offset-4 decoration-2 decoration-dotted">atuantes</span> no mercado, trazendo <span className="underline underline-offset-4 decoration-2 decoration-dotted">casos reais e atualizados.</span>
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src="/arrow-r.webp"
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                <span className="underline underline-offset-4 decoration-2 decoration-dotted">Aulas práticas</span> com equipamentos de <span className="underline underline-offset-4 decoration-2 decoration-dotted">última geração</span> e técnicas <span className="underline underline-offset-4 decoration-2 decoration-dotted">modernas.</span>
+              </p>
+            </div>
+            <div className="flex items-start mb-2">
+              <Image
+                src="/arrow-r.webp"
+                alt="Seta"
+                width={10}
+                height={10}
+                className="mt-2 mr-2"
+              />
+              <p className="font-medium text-lg leading-relaxed">
+                Carga horária de <span className="underline underline-offset-4 decoration-2 decoration-dotted">500 horas</span> sendo <span className="underline underline-offset-4 decoration-2 decoration-dotted">135 horas</span> só de práticas.
               </p>
             </div>
           </div>
@@ -293,90 +349,6 @@ export default function Farmacia() {
               <p className="font-medium text-lg leading-relaxed">
                 Localização privilegiada na Gran Universidade, no bairro Portão
                 em Curitiba.
-              </p>
-            </div>
-          </div>
-          <Divider
-            orientation="horizontal"
-            style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
-          />
-          <div>
-            <h2 className="font-bold text-xl pb-2">
-              Certificado reconhecido pelo MEC:
-            </h2>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                <span>
-                  <Link
-                    href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE="
-                    className="font-semibold text-[#134169]"
-                  >
-                    Clique aqui
-                  </Link>
-                </span>
-                <span> para verificar a nossa certificação junto ao MEC.</span>
-              </p>
-            </div>
-          </div>
-          <Divider
-            orientation="horizontal"
-            style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
-          />
-          <div>
-            <h2 className="font-bold text-xl pb-2">Benefícios:</h2>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Turmas Limitadas para uma melhor experiência educacional.
-              </p>
-            </div>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Atendimento totalmente personalizado.
-              </p>
-            </div>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Práticas Hands-on supervisionadas.
-              </p>
-            </div>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Todo material teórico e prático 100% incluso.
               </p>
             </div>
           </div>
@@ -468,8 +440,8 @@ export default function Farmacia() {
       </section>
 
 
-       {/* FAQ */}
-       <section className="relative z-10 pb-10 mt-10 md:mt-28">
+      {/* FAQ */}
+      <section className="relative z-10 pb-10 mt-10 md:mt-28">
         <FAQ content={"Para se inscrever na Pós Graduação Lato Sensu em <strong>Farmácia em Estética</strong> do Instituto Práxis, é necessário ter graduação completa em <strong>Farmácia</strong>."} />
       </section>
 

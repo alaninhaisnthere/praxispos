@@ -67,7 +67,7 @@ export default function SobreNos() {
             </h1>
             <h1 className="text-balance text-xl">
               Acreditamos que a educação vai além dos livros e das salas de aula. Trata-se de experiências reais, conexões humanas e crescimento pessoal.
-              Nossa logomarca, a semente da vida, representa a nossa crença no potencial que cada um carrega dentro de si. Assim como uma semente cresce e se transforma em algo belo e poderoso, estamos aqui para nutrir e ajudar você a florescer, alcançar seus objetivos e realizar seus sonhos.
+              Nossa logomarca, inspirada na semente da vida, representa a nossa crença no potencial que cada um carrega dentro de si. Assim como uma semente cresce e se transforma em algo belo e poderoso, estamos aqui para nutrir e ajudar você a florescer, alcançar seus objetivos e realizar seus sonhos.
             </h1>
           </div>
           :
@@ -89,7 +89,7 @@ export default function SobreNos() {
                 </h1>
                 <h1 className="text-balance text-xl">
                   Acreditamos que a educação vai além dos livros e das salas de aula. Trata-se de experiências reais, conexões humanas e crescimento pessoal.
-                  Nossa logomarca, a semente da vida, representa a nossa crença no potencial que cada um carrega dentro de si. Assim como uma semente cresce e se transforma em algo belo e poderoso, estamos aqui para nutrir e ajudar você a florescer, alcançar seus objetivos e realizar seus sonhos.
+                  Nossa logomarca, inspirada na semente da vida, representa a nossa crença no potencial que cada um carrega dentro de si. Assim como uma semente cresce e se transforma em algo belo e poderoso, estamos aqui para nutrir e ajudar você a florescer, alcançar seus objetivos e realizar seus sonhos.
                 </h1>
               </div>
               <Image
@@ -192,7 +192,7 @@ export default function SobreNos() {
                 Nossas Pós-graduações são certificadas pelo MEC!
               </h1>
               <h1 className="text-balance text-xl">
-                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
               </h1>
             </div>
             <div className="flex flex-col justify-center gap-3">
@@ -201,7 +201,7 @@ export default function SobreNos() {
               </h1>
               <div className="flex flex-row justify-evenly pt-2 gap-5">
                 <div className="flex flex-col justify-between gap-2">
-                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
+                  <Link href="/">
                     <Image
                       src="/biomed-mec.webp"
                       alt="Biomedicina"
@@ -214,7 +214,7 @@ export default function SobreNos() {
                 </div>
 
                 <div className="flex flex-col justify-between gap-2">
-                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                  <Link href="/">
                     <Image
                       src="/enfermagem-mec.webp"
                       alt="Enfermagem"
@@ -227,7 +227,7 @@ export default function SobreNos() {
                 </div>
 
                 <div className="flex flex-col justify-between gap-2">
-                  <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
+                  <Link href="/">
                     <Image
                       src="/farma-mec.webp"
                       alt="Farmácia"
@@ -255,7 +255,7 @@ export default function SobreNos() {
                   Nossas Pós-graduações são certificadas pelo MEC!
                 </h1>
                 <h1 className="text-balance text-xl">
-                  O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo Baiano</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+                  O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada <strong>Faculdade Brasileira do Recôncavo</strong>, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a <strong>qualidade de nossos certificados</strong>, mas também garante o reconhecimento oficial pelo <strong>Ministério da Educação (MEC)</strong>, proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
                 </h1>
                 <div className="flex flex-col justify-center gap-3">
                   <h1 className="text-xl text-pretty uppercase text-white font-bold bg-[#AA8E4B] px-6 py-2 my-5">
@@ -263,7 +263,8 @@ export default function SobreNos() {
                   </h1>
                   <div className="flex flex-row justify-evenly pt-2 gap-5">
                     <div className="flex flex-col justify-between gap-2">
-                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDM=">
+                      <Link href="/">
+
                         <Image
                           src="/biomed-mec.webp"
                           alt="Biomedicina"
@@ -275,7 +276,8 @@ export default function SobreNos() {
                       </h1>
                     </div>
                     <div className="flex flex-col justify-between gap-2">
-                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDE=">
+                      <Link href="/">
+
                         <Image
                           src="/enfermagem-mec.webp"
                           alt="Enfermagem"
@@ -288,7 +290,8 @@ export default function SobreNos() {
                     </div>
 
                     <div className="flex flex-col justify-between gap-2">
-                      <Link href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTkyODQ=/93916316abe23148507bd4c260e4b878/NzA1MDI=">
+                      <Link href="/">
+
                         <Image
                           src="/farma-mec.webp"
                           alt="Farmácia"

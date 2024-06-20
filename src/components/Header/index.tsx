@@ -19,8 +19,8 @@ const Header = () => {
       label: "Cursos",
       subItems: [
         { label: "Pós-graduação", href: "/cursos/posgraduacao" },
-        { label: "Curso de extensão", href: "/" },
-        { label: "Workshops", href: "/" },
+        { label: "Curso de extensão", href: "https://wa.me/5541991684819?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20de%20extens%C3%A3o%20da%20Pr%C3%A1xis" },
+        { label: "Workshops", href: "https://wa.me/5541991684819?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Workshops%20da%20Pr%C3%A1xis." },
       ],
     },
     { label: "Fale Conosco", href: "/faleconosco" },

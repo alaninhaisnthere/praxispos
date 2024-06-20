@@ -47,7 +47,7 @@ export default function PosGraduacao() {
       {/* 3a seção */}
 
       <section
-        className={`flex flex-col p-4 ${isMobile ? "items-center" : ""}`}
+        className="flex flex-col p-4 items-center"
       >
 
         {/* Enfermagem */}
@@ -61,12 +61,12 @@ export default function PosGraduacao() {
               height={300}
               className="rounded-2xl" />
             <div className="flex flex-col justify-center gap-[1rem]">
-              <h1 className="font-bold text-2xl tracking-wide uppercase">
+              <h1 className="font-bold text-xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
-              <h1 className="p-2 font-bold text-2xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
+              <h1 className="p-2 font-bold text-xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
                 text-[#FAFAFA]">
-                Enfermagem Dermatológica Estética
+                Enfermagem Dermatológica em Estética
               </h1>
               <h1 className="text-balance font-medium text-xl">
                 Transforme sua paixão em prosperidade: Torne-se um especialista em Estética Avançada com a nossa Pós e alcance a independência financeira que você sempre sonhou!
@@ -98,7 +98,7 @@ export default function PosGraduacao() {
                 </h1>
                 <h1 className="p-2 font-bold text-3xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
                 text-[#FAFAFA]">
-                  Enfermagem Dermatológica Estética
+                Enfermagem Dermatológica em Estética
                 </h1>
                 <h1 className="text-balance font-medium text-xl">
                   Transforme sua paixão em prosperidade: Torne-se um especialista em Estética Avançada com a nossa Pós e alcance a independência financeira que você sempre sonhou!
@@ -128,7 +128,7 @@ export default function PosGraduacao() {
               height={300}
               className="rounded-2xl" />
             <div className="flex flex-col justify-center gap-[1rem]">
-              <h1 className="font-bold text-2xl tracking-wide uppercase">
+              <h1 className="font-bold text-xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
               <h1 className="p-2 font-bold text-2xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 
@@ -195,7 +195,7 @@ export default function PosGraduacao() {
               height={300}
               className="rounded-2xl" />
             <div className="flex flex-col justify-center gap-[1rem]">
-              <h1 className="font-bold text-2xl tracking-wide uppercase">
+              <h1 className="font-bold text-xl tracking-wide uppercase">
                 Pós-graduação Lato Sensu em
               </h1>
               <h1 className="p-2 font-bold text-2xl tracking-wide uppercase bg-gradient-to-r to-[#196193] from-[#AA8E4B] 

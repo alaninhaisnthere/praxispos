@@ -31,7 +31,7 @@ const FloatingButton: React.FC<{ message: string }> = ({ message }) => {
     }
   };
 
-  const whatsappLink = `https://wa.me/5541992460242?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/5541991684819?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="fixed bottom-24 right-4 md:bottom-32 md:right-8 z-50">

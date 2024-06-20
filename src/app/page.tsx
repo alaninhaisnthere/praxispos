@@ -14,7 +14,12 @@ import Button from "@/components/Button";
 import FloatingButton from "@/components/FloatingButton";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import FormComponent from "@/components/Forms";
-import '@/styles/swiper-custom.css';
+import '@/styles/swiper-custom.css'
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 // imgs desktop
 const imagesDesktop = [
@@ -58,72 +63,58 @@ const Home: React.FC = () => {
     router.push(link);
   };
 
-  const desktopCarousel = (
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={0}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 5000 }}
-      loop
-    >
-      {imagesDesktop.map((image, index) => (
-        <SwiperSlide key={index}>
-          <Link href={image.link} passHref>
-            <div
-              className="w-full h-[778px] cursor-pointer relative"
-              onClick={() => handleImageClick(image.link)}
-            >
-              <Image
-                src={image.desktop}
-                alt={`Image ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                priority
-              />
-            </div>
-          </Link>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  );
+  const desktopSlides = imagesDesktop.map((image, index) => (
+    <SwiperSlide key={index}>
+      <Link href={image.link} passHref>
+        <div
+          className="w-full h-[778px] cursor-pointer relative md:block hidden"
+          onClick={() => handleImageClick(image.link)}
+        >
+          <Image
+            src={image.desktop}
+            alt={`Image ${index + 1}`}
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+      </Link>
+    </SwiperSlide>
+  ));
 
-  const mobileCarousel = (
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={0}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 5000 }}
-      loop
-    >
-      {imagesMobile.map((image, index) => (
-        <SwiperSlide key={index}>
-          <Link href={image.link} passHref>
-            <div
-              className="w-full h-[600px] cursor-pointer relative"
-              onClick={() => handleImageClick(image.link)}
-            >
-              <Image
-                src={image.mobile}
-                alt={`Image ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                priority
-              />
-            </div>
-          </Link>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  );
+  const mobileSlides = imagesMobile.map((image, index) => (
+    <SwiperSlide key={index}>
+      <Link href={image.link} passHref>
+        <div
+          className="w-full h-[600px] cursor-pointer relative md:hidden block"
+          onClick={() => handleImageClick(image.link)}
+        >
+          <Image
+            src={image.mobile}
+            alt={`Image ${index + 1}`}
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+      </Link>
+    </SwiperSlide>
+  ));
 
   return (
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
-        {isMobile ? mobileCarousel : desktopCarousel}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          loop
+        >
+          {isMobile ? mobileSlides : desktopSlides}
+        </Swiper>
       </section>
 
       {/* cursos */}
@@ -133,123 +124,66 @@ const Home: React.FC = () => {
 
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#AA8E4B] to-[#f8e4b4] z-0"></div>
-        {isMobile ? (
-          <div className="relative z-10 flex flex-col items-center gap-8">
-            <Image
-              src="./home-impact.webp"
-              alt="Imagem de enfermeira sentada no chão"
-              width={700}
-              height={700}
-              layout="responsive"
-              objectFit="cover"
-              priority
-            />
-            <div className="text-center">
-              <h1 className="font-medium text-xl text-wrap text-left leading-relaxed px-5">
-                O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
-              </h1>
-              <Link href="/sobrenos">
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-sm font-bold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
-                >
-                  Conheça nossa história
-                </Button>
-              </Link>
-            </div>
+        <div className="relative z-10 flex flex-col md:flex-row md:gap-[3rem] items-center gap-8 md:pb-8">
+          <Image
+            src="./home-impact.webp"
+            alt="Imagem de enfermeira sentada no chão"
+            width={700}
+            height={700}
+            layout="responsive"
+            objectFit="cover"
+            priority
+          />
+          <div className="text-center md:text-left md:flex md:flex-col md:justify-center md:gap-6">
+            <h1 className="font-medium text-xl md:text-2xl md- text-wrap leading-relaxed px-5 md:px-0">
+              O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
+            </h1>
+            <Link href="/sobrenos">
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-sm md:text-xl font-bold md:font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
+              >
+                Conheça nossa história
+              </Button>
+            </Link>
           </div>
-        ) : (
-          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
-            <Image
-              src="./home-impact.webp"
-              alt="Compromisso"
-              width={700}
-              height={700}
-              layout="responsive"
-              objectFit="cover"
-              priority
-            />
-            <div className="flex flex-col justify-center gap-6">
-              <h1 className="text-2xl text-pretty leading-relaxed">
-                O <strong>Instituto Práxis</strong> passou por um <strong>reposicionamento de marca</strong>, adotando um <strong>novo nome</strong>, uma <strong>nova identidade visual</strong> e uma <strong>nova maneira de se conectar</strong> com você, mas trazendo consigo <strong>anos de experiência</strong> de seus sócios e um <strong>corpo docente altamente capacitado</strong>.
-              </h1>
-              <Link href="/sobrenos">
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-xl font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
-                >
-                  Conheça nossa história
-                </Button>
-              </Link>
-            </div>
-          </div>
-        )}
+        </div>
       </section>
-
 
       {/* mec */}
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-[#134169] to-[#5987B8] z-0"></div>
-        {isMobile ? (
-          <div className="relative z-10 flex flex-col items-center gap-8">
-            <Image
-              src="./compromisso.webp"
-              alt="Compromisso Práxis"
-              width={700}
-              height={700}
-              layout="responsive"
-              objectFit="cover"
-              priority
-            />
-            <div className="text-center">
-              <h1 className="font-medium text-xl text-wrap text-left leading-relaxed px-5 text-[#FAFAFA]">
-                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
-              </h1>
-              <Link href="/sobrenos#MEC">
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-sm font-bold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
-                >
-                  Confira os nossos certificados
-                </Button>
-              </Link>
-            </div>
+        <div className="relative z-10 flex flex-col md:flex-row md:gap-[3rem] items-center gap-8 md:pb-8">
+          <div className="text-center md:text-left md:flex md:flex-col md:justify-center md:gap-6">
+            <h1 className="font-medium text-xl md:text-2xl leading-relaxed px-5 md:px-0 text-[#FAFAFA]">
+              O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+            </h1>
+            <Link href="/sobrenos#MEC">
+              <Button
+                variant="default"
+                size="default"
+                className="text-white text-sm md:text-xl font-bold md:font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
+              >
+                Confira os nossos certificados
+              </Button>
+            </Link>
           </div>
-        ) : (
-          <div className="relative z-10 flex flex-row gap-[3rem] pb-8">
-            <div className="flex flex-col justify-center gap-6">
-              <h1 className="text-2xl text-pretty leading-relaxed text-[#FAFAFA]">
-                O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
-              </h1>
-              <Link href="/sobrenos#MEC">
-                <Button
-                  variant="default"
-                  size="default"
-                  className="text-white text-xl font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
-                >
-                  Confira os nossos certificados
-                </Button>
-              </Link>
-            </div>
-            <Image
-              src="./compromisso.webp"
-              alt="Compromisso Práxis"
-              width={700}
-              height={700}
-              layout="responsive"
-              objectFit="cover"
-              priority
-            />
-          </div>
-        )}
+          <Image
+            src="./compromisso.webp"
+            alt="Compromisso Práxis"
+            width={700}
+            height={700}
+            layout="responsive"
+            objectFit="cover"
+            priority
+          />
+        </div>
       </section>
 
       {/* texto */}
       <section>
-        <h1 className="font-extrabold text-2xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text py-5">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-center text-pretty text-transparent bg-gradient-to-r to-[#196193] from-[#AA8E4B] bg-clip-text py-5">
           Na Práxis, nosso compromisso é transformar desafios em oportunidades, fornecendo uma educação de excelência e suporte integral para que você possa superar qualquer obstáculo em seu caminho rumo ao sucesso profissional.
         </h1>
       </section>
@@ -257,9 +191,9 @@ const Home: React.FC = () => {
       {/* form */}
       <section className="relative w-full py-10">
         <div className="absolute w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] inset-0 bg-gradient-to-r from-cyan-900 to-sky-900 z-0"></div>
-        {isMobile ?
-          <div className="relative z-10 flex flex-col items-center gap-[2rem]">
-            <h1 className="text-2xl text-balance text-center leading-relaxed text-[#FAFAFA] font-semibold">
+        <div className="relative z-10 flex flex-col md:flex-row md:justify-center gap-[2rem] items-center">
+          <div className="text-center flex flex-col justify-center items-center md:gap-[2rem]">
+            <h1 className="text-2xl md:text-3xl text-balance leading-relaxed text-[#FAFAFA] font-semibold">
               Preencha o cadastro e seja atendido pela nossa equipe de consultores:
             </h1>
             <Image
@@ -267,31 +201,13 @@ const Home: React.FC = () => {
               alt="Seta"
               width={30}
               height={30}
-              className="animate-bounce"
+              className="animate-bounce py-5"
             />
             <div className="flex justify-center">
               <FormComponent />
             </div>
           </div>
-          :
-          <div className="relative z-10 flex flex-row justify-center gap-[2rem]">
-            <div className="flex flex-col justify-center items-center gap-[2rem]">
-              <h1 className="text-3xl text-pretty text-center leading-relaxed text-[#FAFAFA] font-semibold">
-                Preencha o cadastro e seja atendido pela nossa equipe de consultores:
-              </h1>
-              <Image
-                src="/arrow-d.webp"
-                alt="Seta"
-                width={30}
-                height={30}
-                className="animate-bounce"
-              />
-              <div className="flex justify-center">
-                <FormComponent />
-              </div>
-            </div>
-          </div>
-        }
+        </div>
       </section>
 
       {/* floatings */}
