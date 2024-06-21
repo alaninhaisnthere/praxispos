@@ -14,8 +14,6 @@ import FormComponent from "@/components/Forms";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import Subjects from "@/components/Subjects";
 
-import Link from "next/link";
-
 export default function Biomedicina() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
@@ -33,11 +31,17 @@ export default function Biomedicina() {
     };
   }, []);
 
+  const handleViewContent = () => {
+    if (window.fbq) {
+      window.fbq('track', 'ViewContent');
+    }
+  };
+
   return (
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
-          <ScrollLink to="section-form" smooth={true} duration={500}>
+          <ScrollLink to="section-form" smooth={true} duration={500} onClick={handleViewContent}>
             <Image
               src={isMobile ? "/biomed-hero-mobile.webp" : "/biomed-hero.webp"}
               alt="Imagem de fundo"
@@ -172,6 +176,7 @@ export default function Biomedicina() {
                 variant="default"
                 size="default"
                 className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+                onClick={handleViewContent}
               >
                 SIM, QUERO SABER MAIS!
               </Button>
@@ -207,6 +212,7 @@ export default function Biomedicina() {
                     variant="default"
                     size="default"
                     className="text-white text-2xl font-semibold tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out"
+                    onClick={handleViewContent}
                   >
                     SIM, QUERO SABER MAIS!
                   </Button>
@@ -313,41 +319,6 @@ export default function Biomedicina() {
               />
               <p className="font-medium text-lg leading-relaxed">
                 Carga horária de <span className="underline underline-offset-4 decoration-2 decoration-dotted">500 horas</span> sendo <span className="underline underline-offset-4 decoration-2 decoration-dotted">135 horas</span> só de práticas.
-              </p>
-            </div>
-          </div>
-          <Divider
-            orientation="horizontal"
-            style={{ width: "100%", height: "2px", backgroundColor: "#9A792D" }}
-          />
-          <div>
-            <h2 className="font-bold text-xl pb-2">
-              Formação Prática de Excelência:
-            </h2>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Aulas práticas com equipamentos de última geração e técnicas
-                modernas.
-              </p>
-            </div>
-            <div className="flex items-start mb-2">
-              <Image
-                src="/arrow-r.webp"
-                alt="Seta"
-                width={10}
-                height={10}
-                className="mt-2 mr-2"
-              />
-              <p className="font-medium text-lg leading-relaxed">
-                Professores experientes e atuantes no mercado, trazendo cases
-                reais e atualizados.
               </p>
             </div>
           </div>

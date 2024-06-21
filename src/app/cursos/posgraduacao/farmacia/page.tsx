@@ -33,11 +33,17 @@ export default function Farmacia() {
     };
   }, []);
 
+  const handleViewContent = () => {
+    if (window.fbq) {
+      window.fbq('track', 'ViewContent');
+    }
+  };
+
   return (
     <main className="flex flex-col min-h-screen">
       <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[778px]">
         <div className="absolute inset-0">
-          <ScrollLink to="section-form" smooth={true} duration={500}>
+          <ScrollLink to="section-form" smooth={true} duration={500} onClick={handleViewContent}>
             <Image
               src={isMobile ? "/farmacia-hero-mobile.webp" : "/farmacia-hero.webp"}
               alt="Imagem de fundo"
@@ -172,6 +178,7 @@ export default function Farmacia() {
                 variant="default"
                 size="default"
                 className="text-white text-xl font-semibold hover:scale-105 transition-transform duration-300 ease-in-out mb-4"
+                onClick={handleViewContent}
               >
                 SIM, QUERO SABER MAIS!
               </Button>
@@ -208,6 +215,7 @@ export default function Farmacia() {
                     variant="default"
                     size="default"
                     className="text-white text-2xl font-semibold tracking-wide hover:scale-105 transition-transform duration-300 ease-in-out"
+                    onClick={handleViewContent}
                   >
                     SIM, QUERO SABER MAIS!
                   </Button>

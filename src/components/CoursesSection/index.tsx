@@ -22,6 +22,11 @@ const CourseSection = () => {
         };
     }, []);
 
+    const handleViewContent = () => {
+        if (window.fbq) {
+            window.fbq('track', 'ViewContent');
+        }
+    };
 
     return (
         <section className="container mx-auto my-5 px-4 md:px-0">
@@ -51,7 +56,7 @@ const CourseSection = () => {
                         Enfermagem Dermatológica em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/enfermagem">
-                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out" onClick={handleViewContent}>
                             <Button>
                                 Saiba Mais
                             </Button>
@@ -68,7 +73,7 @@ const CourseSection = () => {
                         Biomedicina em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/biomedicina">
-                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out" onClick={handleViewContent}>
                             <Button>
                                 Saiba Mais
                             </Button>
@@ -86,7 +91,7 @@ const CourseSection = () => {
                         em Estética
                     </h3>
                     <Link legacyBehavior href="/cursos/posgraduacao/farmacia">
-                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out">
+                        <a className="text-white uppercase tracking-wide hover:scale-125 transition-transform duration-300 ease-in-out" onClick={handleViewContent}>
                             <Button>
                                 Saiba Mais
                             </Button>

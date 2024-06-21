@@ -63,16 +63,13 @@ export default function AppLayout({
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '997382224690371');
+              fbq('init', '1630330594474302');
               fbq('track', 'PageView');
+              fbq('track', 'Contact');
+              fbq('track', 'ViewContent');
             `,
           }}
         />
-        <noscript>
-          <Image alt="script" height="1" width="1" style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=997382224690371&ev=PageView&noscript=1"
-          />
-        </noscript>
       </head>
       <body className={`${montserrat.className} min-h-screen flex flex-col`}>
         <NextUIProvider>

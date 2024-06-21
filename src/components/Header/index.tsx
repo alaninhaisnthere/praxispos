@@ -52,9 +52,8 @@ const Header = () => {
   }, [handleClickOutside]);
 
   return (
-    <nav className="bg-[#134169] uppercase">
+    <nav className="bg-[#134169] uppercase w-full">
       <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto p-2">
-
         <div className="flex flex-row items-center">
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/logo-header.webp" alt="Logo" width={142} height={150} />

@@ -23,11 +23,16 @@ const FloatingButton: React.FC<{ message: string }> = ({ message }) => {
   }, []);
 
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'WhatsApp Button',
-        event_label: 'WhatsApp Contact',
-      });
+    if (typeof window !== "undefined") {
+      if (window.gtag) {
+        window.gtag('event', 'click', {
+          event_category: 'WhatsApp Button',
+          event_label: 'WhatsApp Contact',
+        });
+      }
+      if (window.fbq) {
+        window.fbq('track', 'Contact');
+      }
     }
   };
 

@@ -37,7 +37,7 @@ const FormComponent: React.FC = () => {
             if (response.ok) {
                 alert('Mensagem enviada com sucesso!');
 
-                // Google Ads
+                // google analytics
                 if (window.gtag) {
                     window.gtag('event', 'conversion', {
                         send_to: 'AW-16557313988/OTj9CKHulLQZEMSfktc9',
@@ -46,9 +46,9 @@ const FormComponent: React.FC = () => {
                     });
                 }
 
-                // Facebook Pixel
+                // pixel
                 if (window.fbq) {
-                    window.fbq('track', 'Lead');
+                    window.fbq('track', 'Contact');
                 }
 
                 reset();

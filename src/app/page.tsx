@@ -63,6 +63,12 @@ const Home: React.FC = () => {
     router.push(link);
   };
 
+  const handleViewContent = () => {
+    if (window.fbq) {
+      window.fbq('track', 'ViewContent');
+    }
+  };
+
   const desktopSlides = imagesDesktop.map((image, index) => (
     <SwiperSlide key={index}>
       <Link href={image.link} passHref>
@@ -143,6 +149,7 @@ const Home: React.FC = () => {
                 variant="default"
                 size="default"
                 className="text-white text-sm md:text-xl font-bold md:font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
+                onClick={handleViewContent}
               >
                 Conheça nossa história
               </Button>
@@ -157,13 +164,14 @@ const Home: React.FC = () => {
         <div className="relative z-10 flex flex-col md:flex-row md:gap-[3rem] items-center gap-8 md:pb-8">
           <div className="text-center md:text-left md:flex md:flex-col md:justify-center md:gap-6">
             <h1 className="font-medium text-xl md:text-2xl leading-relaxed px-5 md:px-0 text-[#FAFAFA]">
-              O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo Baiano, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
+              O Sucesso da Práxis é solidificado por nossa parceria estratégica com a renomada Faculdade Brasileira do Recôncavo, uma instituição com anos de história e excelência na área educacional. Essa colaboração não apenas reforça a qualidade de nossos certificados, mas também garante o reconhecimento oficial pelo Ministério da Educação (MEC), proporcionando a você a tranquilidade e confiança necessárias em sua jornada educacional e profissional.
             </h1>
             <Link href="/sobrenos#MEC">
               <Button
                 variant="default"
                 size="default"
                 className="text-white text-sm md:text-xl font-bold md:font-semibold uppercase hover:scale-110 transition-transform duration-300 ease-in-out mt-4"
+                onClick={handleViewContent}
               >
                 Confira os nossos certificados
               </Button>
